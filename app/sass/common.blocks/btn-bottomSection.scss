@@ -1,0 +1,22 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.btn-bottomSection__checkbox[type=checkbox] {display: none;}
+
+.form-check-label[type=checkbox] + .btn-bottomSection__label:before {
+  content: "\2713";
+  color: transparent;
+  display: inline-block;
+  border: 1px solid #000;
+  font-size: 20px;
+  line-height: 22px;
+  margin: -5px 5px 0 0;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  vertical-align: middle;
+  transition: color ease .3s;
+}
+
+.form-check-label[type=checkbox]:checked + .btn-bottomSection__label:before {
+  color: #000;
+}

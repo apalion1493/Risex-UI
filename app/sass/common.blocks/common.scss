@@ -1,0 +1,46 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #F2F2F2 !important;
+}
+
+.wrapper {
+  background: #ffffff;
+  margin-top: 13px;
+}
+
+.inner {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.title-h2 {
+  font-size: 20px;
+  color: #353535;
+  line-height: 28px;
+}
+
+.caption-text {
+  font-size: 14px;
+  color: #7D7D7D;
+  line-height: 28px;
+}
+
+.wrapper_bottom-block {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.btn-bottomSection {
+  button {
+    width: 100%;
+  }
+}

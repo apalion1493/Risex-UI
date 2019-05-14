@@ -1,0 +1,53 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.offers-item {
+  width: 135px;
+  border: 1px solid #F1F1F1;
+  border-radius: 6px;
+  margin-right: 13px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.244339);
+}
+
+.offers-item__contentCheck {
+  display: none;
+}
+
+.offers-item__contentIcon {
+  background: url("../../img/check-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 12px;
+  height: 7px;
+  margin-bottom: 0;
+}
+
+.offers-item__contentCheck:checked ~ .offers-item__contentIcon {
+  transform: rotate(180deg);
+}
+
+.offers-item__content-collapse {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offers-item__content-title {
+  font-size: 12px;
+  color: #212121;
+}
+
+.offers-item__price {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.offers-item_padding {
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.offers-item__hiddenText {
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.24375px;
+}
