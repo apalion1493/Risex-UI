@@ -17,7 +17,20 @@
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 6px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  padding-top: 12px;
+
+}
+
+.slider-bank__box.active {
+  background: rgba(0, 159, 6, 0.3);
+  border: 1px solid #00C441;
+
+  .slider-bank__box-text {
+    color: #000;
+    opacity: 1;
+    font-weight: normal;
+  }
 }
 
 .slider-bank__box-text {
@@ -25,4 +38,9 @@
   color: #2A3427;
   opacity: 0.4;
   font-weight: 500;
+  margin-top: 6px;
+}
+
+.slider-bank .slick-list {
+  padding-left: 20px;
 }

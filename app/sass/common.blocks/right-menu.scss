@@ -5,7 +5,6 @@
   min-width: 80%;
   background: #ffffff;
   transition: 0.3s;
-  border-right: 1px solid;
   height: 100%;
   z-index: 2000;
 }
@@ -16,6 +15,7 @@
   top: 0;
   padding-left: 8px;
   padding-right: 8px;
+  overflow: scroll;
 }
 
 .right-menu_position.active {
@@ -35,7 +35,7 @@
 }
 
 .right-menu__item {
-  margin-top: 31px;
+  margin-top: 24px;
   background: inherit;
   border-radius: 4px;
   width: 100%;
@@ -143,4 +143,14 @@
   width: 17px;
   height: 17px;
   display: block;
+}
+
+.right-menu__close {
+  background: url("../../img/icon-close.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
 }

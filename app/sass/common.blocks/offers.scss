@@ -5,7 +5,20 @@
   border: 1px solid #F1F1F1;
   border-radius: 6px;
   margin-right: 13px;
+  outline: none;
+}
+
+.offers-item.active {
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.244339);
+  background: #00CC4F;
+
+  * {
+    color: #ffffff;
+  }
+
+  .offers-item__priceBox {
+    border-bottom: 1px solid #ffffff;
+  }
 }
 
 .offers-item__contentCheck {
@@ -28,6 +41,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .offers-item__content-title {
@@ -46,8 +61,22 @@
   padding-right: 13px;
 }
 
+.offers-item__priceBox {
+  border-bottom: 1px solid #F1F1F1;
+  padding-top: 12px;
+  padding-bottom: 9px;
+}
+
 .offers-item__hiddenText {
   font-size: 10px;
   line-height: 12px;
   letter-spacing: 0.24375px;
+}
+
+.offers-list {
+  padding-bottom: 17px;
+}
+
+.offers-list .slick-list {
+  padding-left: 20px;
 }

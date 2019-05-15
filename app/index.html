@@ -27,7 +27,7 @@
     </div>
 </header>
 
-<main class="main">
+<main class="main main_bottom-block">
     <nav class="tab-wrap">
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
             <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Купить BTC</a>
@@ -35,184 +35,237 @@
         </div>
     </nav>
     <section class="wrapper wrapper_green-border">
-        <div class="inner">
-            <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <div class="sale-purchase sale-purchase_padding">
-                        <h2 class="title-h2 text-center">Купить BTC</h2>
-                        <p class="caption-text text-center">выберите способ оплаты</p>
-
-                        <div class="slider-bank">
-                             <div class="slider-bank__box">
-                                 <img src="img/Tinkoff.png" alt="">
-                                 <p class="slider-bank__box-text">Тинькофф</p>
-                             </div>
-                            <div class="slider-bank__box">
-                                <img src="img/Sberbank.png" alt="">
-                                <p class="slider-bank__box-text">Сбербанк</p>
-                            </div>
-                            <div class="slider-bank__box">
-                                <img src="img/QIWI.png" alt="">
-                                <p class="slider-bank__box-text">QIWI</p>
-                            </div>
-                            <div class="slider-bank__box">
-                                <img src="img/Alfa-Bank.png" alt="">
-                                <p class="slider-bank__box-text">Альфа-банк</p>
-                            </div>
-                            <div class="slider-bank__box">
-                                <img src="img/Yandex.png" alt="">
-                                <p class="slider-bank__box-text">Яндекс</p>
-                            </div>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="sale-purchase sale-purchase_padding">
+                    <h2 class="title-h2 text-center">Купить BTC</h2>
+                    <p class="caption-text text-center">выберите способ оплаты</p>
+                    <div class="slider-bank">
+                        <div class="slider-bank__box active">
+                            <img src="img/Tinkoff.png" alt="">
+                            <p class="slider-bank__box-text">Тинькофф</p>
                         </div>
-
-                        <p class="caption-text text-center">введите сумму покупки</p>
-
-                        <div class="converter">
-                            <div class="converter__left-column">
-                                <div class="converter__left-column-first converter__left-column-row">
-                                    <p class="converter__left-column-text">получаете</p>
-                                    <span class="converter__left-column-greenNumber">0,05</span>
-                                </div>
-                                <div class="converter-line"></div>
-                                <div class="converter__left-column-second converter__left-column-row">
-                                    <div>
-                                        <p class="converter__left-column-text">оплачиваете</p>
-                                        <span class="converter__left-column-second-textNumber">17341,72</span>
-                                    </div>
-                                    <div class="converter__advice">
-                                        <p class="converter__advice-text">RiseX советует</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="converter__right-column">
-                                <span class="converter__right-column-text converter__right-column-textGreen">BTC</span>
-                                <div class="converter__right-column-arrows">
-                                    <input id="switch-arrows" class="converter__right-column-arrowsCheck" type="checkbox">
-                                    <label for="switch-arrows" class="converter__right-column-arrowsIcon"></label>
-                                </div>
-                                <span class="converter__right-column-text">RUB</span>
-                            </div>
+                        <div class="slider-bank__box selected">
+                            <img src="img/Sberbank.png" alt="">
+                            <p class="slider-bank__box-text">Сбербанк</p>
+                        </div>
+                        <div class="slider-bank__box">
+                            <img src="img/QIWI.png" alt="">
+                            <p class="slider-bank__box-text">QIWI</p>
+                        </div>
+                        <div class="slider-bank__box">
+                            <img src="img/Alfa-Bank.png" alt="">
+                            <p class="slider-bank__box-text">Альфа-банк</p>
+                        </div>
+                        <div class="slider-bank__box">
+                            <img src="img/Yandex.png" alt="">
+                            <p class="slider-bank__box-text">Яндекс</p>
                         </div>
                     </div>
+                    <p class="caption-text text-center">введите сумму покупки</p>
+                    <div class="converter inner">
+                        <div class="converter__left-column">
+                            <div class="converter__left-column-first converter__left-column-row">
+                                <p class="converter__left-column-text">получаете</p>
+                                <span class="converter__left-column-greenNumber">0,05</span>
+                            </div>
+                            <div class="converter-line"></div>
+                            <div class="converter__left-column-second converter__left-column-row">
+                                <div>
+                                    <p class="converter__left-column-text">оплачиваете</p>
+                                    <span class="converter__left-column-second-textNumber">17341,72</span>
+                                </div>
+                                <div class="converter__advice">
+                                    <p class="converter__advice-text">RiseX советует</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="converter__right-column">
+                            <span class="converter__right-column-text converter__right-column-textGreen">BTC</span>
+                            <div class="converter__right-column-arrows">
+                                <input id="switch-arrows" class="converter__right-column-arrowsCheck" type="checkbox">
+                                <label for="switch-arrows" class="converter__right-column-arrowsIcon"></label>
+                            </div>
+                            <span class="converter__right-column-text">RUB</span>
+                        </div>
+                    </div>
+                    <section class="wrapper wrapper_bottom-block">
+                        <div class="btn-bottomSection inner">
+                            <button type="button" class="btn btn-success">Купить 0,05 BTC</button>
+                            <input class="form-check-input btn-bottomSection__checkbox" type="checkbox" value="" id="defaultCheck5">
+                            <label class="form-check-label btn-bottomSection__label" for="defaultCheck5">Я знаком с условиями сделки</label>
+                        </div>
+                    </section>
                 </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="sale-purchase sale-purchase_padding">
+                    <h2 class="title-h2 text-center">Продать BTC</h2>
+                    <p class="caption-text text-center">выберите способ оплаты</p>
+                    <div class="slider-bank">
+                        <div class="slider-bank__box active">
+                            <img src="img/Tinkoff.png" alt="">
+                            <p class="slider-bank__box-text">Тинькофф</p>
+                        </div>
+                        <div class="slider-bank__box selected">
+                            <img src="img/Sberbank.png" alt="">
+                            <p class="slider-bank__box-text">Сбербанк</p>
+                        </div>
+                        <div class="slider-bank__box">
+                            <img src="img/QIWI.png" alt="">
+                            <p class="slider-bank__box-text">QIWI</p>
+                        </div>
+                        <div class="slider-bank__box">
+                            <img src="img/Alfa-Bank.png" alt="">
+                            <p class="slider-bank__box-text">Альфа-банк</p>
+                        </div>
+                        <div class="slider-bank__box">
+                            <img src="img/Yandex.png" alt="">
+                            <p class="slider-bank__box-text">Яндекс</p>
+                        </div>
+                    </div>
+                    <p class="caption-text text-center">введите сумму покупки</p>
+                    <div class="converter inner">
+                        <div class="converter__left-column">
+                            <div class="converter__left-column-first converter__left-column-row">
+                                <p class="converter__left-column-text">получаете</p>
+                                <span class="converter__left-column-greenNumber">0,05</span>
+                            </div>
+                            <div class="converter-line"></div>
+                            <div class="converter__left-column-second converter__left-column-row">
+                                <div>
+                                    <p class="converter__left-column-text">оплачиваете</p>
+                                    <span class="converter__left-column-second-textNumber">17341,72</span>
+                                </div>
+                                <div class="converter__advice">
+                                    <p class="converter__advice-text">RiseX советует</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="converter__right-column">
+                            <span class="converter__right-column-text converter__right-column-textGreen">BTC</span>
+                            <div class="converter__right-column-arrows">
+                                <input id="switch-arrows2" class="converter__right-column-arrowsCheck" type="checkbox">
+                                <label for="switch-arrows2" class="converter__right-column-arrowsIcon"></label>
+                            </div>
+                            <span class="converter__right-column-text">RUB</span>
+                        </div>
+                    </div>
+                    <section class="wrapper wrapper_bottom-block">
+                        <div class="btn-bottomSection inner">
+                            <button type="button" class="btn btn-success">Купить 0,05 BTC</button>
+                            <input class="form-check-input btn-bottomSection__checkbox" type="checkbox" value="" id="defaultCheck6">
+                            <label class="form-check-label btn-bottomSection__label" for="defaultCheck6">Я знаком с условиями сделки</label>
+                        </div>
+                    </section>
+                </div>
             </div>
         </div>
     </section>
     <section class="wrapper wrapper_green-border">
-        <div class="inner">
-            <p class="caption-text text-center">другие предложения</p>
-            <div class="offers-list">
-                <div class="offers-item">
-                    <div class="offers-item__priceBox offers-item_padding">
-                        <span class="offers-item__price">17341,72 руб</span>
+        <p class="caption-text text-center">другие предложения</p>
+        <div class="offers-list">
+            <div class="offers-item active">
+                <div class="offers-item__priceBox offers-item_padding">
+                    <span class="offers-item__price">17341,72 руб</span>
+                </div>
+                <div class="offers-item__content offers-item_padding">
+                    <div class="offers-item__content-collapse" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                        <span class="offers-item__content-title">Risex<br> рекоммендует</span>
+                        <input id="offers-check1" class="offers-item__contentCheck" type="checkbox">
+                        <label for="offers-check1" class="offers-item__contentIcon"></label>
                     </div>
-                    <div class="offers-item__content offers-item_padding">
-                        <div class="offers-item__content-collapse" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
-                            <span class="offers-item__content-title">Risex<br> рекоммендует</span>
-                            <input id="offers-check1" class="offers-item__contentCheck" type="checkbox">
-                            <label for="offers-check1" class="offers-item__contentIcon"></label>
-                        </div>
-                        <div class="collapse" id="collapseExample1">
-                            <p class="offers-item__hiddenText">Risex дает лучшее решение на соновании соттношения цены и рейтинга продавца</p>
-                        </div>
+                    <div class="collapse" id="collapseExample1">
+                        <p class="offers-item__hiddenText">Risex дает лучшее решение на соновании соттношения цены и рейтинга продавца</p>
                     </div>
                 </div>
-                <div class="offers-item">
-                    <div class="offers-item__priceBox offers-item_padding">
-                        <span class="offers-item__price">16500,06 руб</span>
+            </div>
+            <div class="offers-item">
+                <div class="offers-item__priceBox offers-item_padding">
+                    <span class="offers-item__price">16500,06 руб</span>
+                </div>
+                <div class="offers-item__content offers-item_padding">
+                    <div class="offers-item__content-collapse" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                        <span class="offers-item__content-title">лучшее<br> по курсу</span>
+                        <input id="offers-check2" class="offers-item__contentCheck" type="checkbox">
+                        <label for="offers-check2" class="offers-item__contentIcon"></label>
                     </div>
-                    <div class="offers-item__content offers-item_padding">
-                        <div class="offers-item__content-collapse" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-                            <span class="offers-item__content-title">лучшее<br> по курсу</span>
-                            <input id="offers-check2" class="offers-item__contentCheck" type="checkbox">
-                            <label for="offers-check2" class="offers-item__contentIcon"></label>
-                        </div>
-                        <div class="collapse" id="collapseExample2">
-                            <p class="offers-item__hiddenText">лучшее предложение по курсу, которое дают продавцы</p>
-                        </div>
+                    <div class="collapse" id="collapseExample2">
+                        <p class="offers-item__hiddenText">лучшее предложение по курсу, которое дают продавцы</p>
                     </div>
                 </div>
-                <div class="offers-item">
-                    <div class="offers-item__priceBox offers-item_padding">
-                        <span class="offers-item__price">17900,06</span>
+            </div>
+            <div class="offers-item">
+                <div class="offers-item__priceBox offers-item_padding">
+                    <span class="offers-item__price">17900,06</span>
+                </div>
+                <div class="offers-item__content offers-item_padding">
+                    <div class="offers-item__content-collapse" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                        <span class="offers-item__content-title">Risex<br> рекоммендует</span>
+                        <input id="offers-check3" class="offers-item__contentCheck" type="checkbox">
+                        <label for="offers-check3" class="offers-item__contentIcon"></label>
                     </div>
-                    <div class="offers-item__content offers-item_padding">
-                        <div class="offers-item__content-collapse" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
-                            <span class="offers-item__content-title">Risex<br> рекоммендует</span>
-                            <input id="offers-check3" class="offers-item__contentCheck" type="checkbox">
-                            <label for="offers-check3" class="offers-item__contentIcon"></label>
-                        </div>
-                        <div class="collapse" id="collapseExample3">
-                            <p class="offers-item__hiddenText">Risex дает лучшее решение на соновании соттношения цены и рейтинга продавца</p>
-                        </div>
+                    <div class="collapse" id="collapseExample3">
+                        <p class="offers-item__hiddenText">Risex дает лучшее решение на соновании соттношения цены и рейтинга продавца</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="wrapper wrapper_bottom-block">
-        <div class="inner">
-            <div class="btn-bottomSection">
-                <button type="button" class="btn btn-success">Купить 0,05 BTC</button>
 
-                <input class="form-check-input btn-bottomSection__checkbox" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label btn-bottomSection__label" for="defaultCheck1">Я знаком с условиями сделки</label>
-            </div>
-        </div>
-    </section>
 </main>
 
-<footer>
-
-</footer>
-
-<div class="right-menu right-menu_position">
-    <ul class="right-menu__list">
-        <li class="right-menu__item">
-            <a class="right-menu__link" href="#">
-                <span class="right-menu__icon right-menu__icon-exchange"></span>
-                <span class="right-menu__text">Обмен</span>
-            </a>
-        </li>
-        <li class="right-menu__item active">
-            <a class="right-menu__link" href="#">
-                <span class="right-menu__icon right-menu__icon-purse"></span>
-                <span class="right-menu__text">Кошелек</span>
-            </a>
-        </li>
-        <li class="right-menu__item">
-            <a class="right-menu__link" href="#">
-                <span class="right-menu__icon right-menu__icon-operations"></span>
-                <span class="right-menu__text">Мои операции</span>
-            </a>
-        </li>
-        <li class="right-menu__item">
-            <a class="right-menu__link" href="#">
-                <span class="right-menu__icon right-menu__icon-profile"></span>
-                <span class="right-menu__text">Личный профиль</span>
-            </a>
-        </li>
-        <li class="right-menu__item">
-            <a class="right-menu__link" href="#">
-                <span class="right-menu__icon right-menu__icon-support"></span>
-                <span class="right-menu__text">Поддержка</span>
-            </a>
-        </li>
-        <li class="right-menu__item">
-            <a class="right-menu__link" href="#">
-                <span class="right-menu__icon right-menu__icon-conclusion"></span>
-                <span class="right-menu__text">Экстренный вывод</span>
-            </a>
-        </li>
-        <li class="right-menu__item ">
-            <a class="right-menu__link" href="#">
-                <span class="right-menu__icon right-menu__icon-output"></span>
-                <span class="right-menu__text">Выйти</span>
-            </a>
-        </li>
-    </ul>
+<div>
+    <div class="right-menu right-menu_position">
+        <ul class="right-menu__list">
+            <li class="right-menu__item">
+                <a class="right-menu__link" href="#">
+                    <span class="right-menu__icon right-menu__icon-exchange"></span>
+                    <span class="right-menu__text">Обмен</span>
+                </a>
+            </li>
+            <li class="right-menu__item active">
+                <a class="right-menu__link" href="#">
+                    <span class="right-menu__icon right-menu__icon-purse"></span>
+                    <span class="right-menu__text">Кошелек</span>
+                </a>
+            </li>
+            <li class="right-menu__item">
+                <a class="right-menu__link" href="#">
+                    <span class="right-menu__icon right-menu__icon-operations"></span>
+                    <span class="right-menu__text">Мои операции</span>
+                </a>
+            </li>
+            <li class="right-menu__item">
+                <a class="right-menu__link" href="#">
+                    <span class="right-menu__icon right-menu__icon-profile"></span>
+                    <span class="right-menu__text">Личный профиль</span>
+                </a>
+            </li>
+            <li class="right-menu__item">
+                <a class="right-menu__link" href="#">
+                    <span class="right-menu__icon right-menu__icon-support"></span>
+                    <span class="right-menu__text">Поддержка</span>
+                </a>
+            </li>
+            <li class="right-menu__item">
+                <a class="right-menu__link" href="#">
+                    <span class="right-menu__icon right-menu__icon-conclusion"></span>
+                    <span class="right-menu__text">Экстренный вывод</span>
+                </a>
+            </li>
+            <li class="right-menu__item ">
+                <a class="right-menu__link" href="#">
+                    <span class="right-menu__icon right-menu__icon-output"></span>
+                    <span class="right-menu__text">Выйти</span>
+                </a>
+            </li>
+        </ul>
+        <div class="right-menu__close"></div>
+    </div>
+    <div class="milk-shadow"></div>
 </div>
+
 </body>
 
 <script src="js/libs.min.js"></script>
