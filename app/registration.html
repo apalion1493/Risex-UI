@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Регистрация</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="libs/slick.css">
+    <link rel="stylesheet" href="libs/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<main class="main main_bottom-block registration">
+    <h3 class="text-center">Регистрация</h3>
+    <div>
+        <div class="registration-blockWarning">
+            <p class="registration-blockWarning__text">Выберите более надежный пароль. В нем должно быть более 13 символов, (иметь прописную и заглавную букву, спецсимвол и цифру)</p>
+        </div>
+        <div class="registration-container">
+            <div class="registration-box">
+                <form>
+                    <div class="form-group error-form">
+                        <label for="">Логин</label>
+                        <input type="text" class="form-control"  placeholder="Придумайте логин">
+                        <small class="registration-errorText">такой логин занят</small>
+                    </div>
+                    <div class="form-group error-form">
+                        <label for="">E-mail</label>
+                        <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="yourname@yourmail.com">
+                        <small class="registration-errorText">такой e-mail занят</small>
+                    </div>
+                    <div class="form-group error-form">
+                        <label for="">Пароль</label>
+                        <input type="password" class="form-control"  placeholder="Придумайте пароль">
+                        <small class="registration-errorText">слабый</small>
+                    </div>
+                    <div class="form-group error-form">
+                        <label for="">Повторно пароль</label>
+                        <input type="password" class="form-control"  aria-describedby="emailHelp" placeholder="Введите пароль еще раз">
+                        <small class="registration-errorText">пароли не совпадают</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Код партнера</label>
+                        <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Пропустите, если не знаете">
+                    </div>
+
+                    <div class="registration-box__points">
+                        <div class="registration-box__points-block">
+                            <input type="radio" id="radio" name="radio" checked>
+                            <label for="radio"></label>
+                        </div>
+                        <div class="registration-box__points-block">
+                            <input type="radio" id="radio1" name="radio">
+                            <label for="radio1"></label>
+                        </div>
+                        <div class="registration-box__points-block">
+                            <input type="radio" id="radio2" name="radio">
+                            <label for="radio2"></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="button" class="btn btn-success btn-risex btn-risex_registration" data-toggle="modal" data-target="#exampleModalCenter">Далее</button>
+                    </div>
+
+                    <div class="form-group registration-container__checkbox">
+                        <input class="form-check-input btn-bottomSection__checkbox" type="checkbox" value="" id="defaultCheck6">
+                        <label class="form-check-label btn-bottomSection__label" for="defaultCheck6">Я прочитал и согласен с <a href="#">правилами</a></label>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="registration-account">
+            <p class="registration-account__text">Уже есть аккаунт?</p>
+            <a class="registration-account__link" href="#">Войти</a>
+        </div>
+    </div>
+
+</main>
+
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered " role="document">
+        <div class="modal-type-acc">
+            <div class="modal-content modal-type-acc__title">
+                <div class="modal-body">
+                    <h2>Выберите тип аккаунта</h2>
+                </div>
+            </div>
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-type-acc__block">
+                        <div class="modal-type-acc__block-img">
+                            <div class="modal-type-acc__block-icon"></div>
+                        </div>
+                        <div class="modal-type-acc__block-text">
+                            <span>Новичок</span>
+                            <p>система сама подберет наиболее подходящие варианты обмена</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-content mt-3">
+                <div class="modal-body">
+                    <div class="modal-type-acc__block">
+                        <div class="modal-type-acc__block-img">
+                            <div class="modal-type-acc__block-icon"></div>
+                        </div>
+                        <div class="modal-type-acc__block-text">
+                            <span>Продвинутый</span>
+                            <p>создавайте свои объявления, полный набор инструментов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="js/libs.min.js"></script>
+<script src="libs/slick.min.js"></script>
+<script src="js/main.js"></script>
+</html>

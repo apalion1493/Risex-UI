@@ -1,0 +1,60 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+
+.modal-type-acc {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+
+  .modal-body {
+    padding: 14px;
+  }
+}
+
+.modal-content.modal-type-acc__title {
+  background-color: initial;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+
+  h2 {
+    font-size: 20px;
+    font-weight: normal;
+  }
+}
+
+.modal-type-acc__block {
+  display: flex;
+}
+
+.modal-type-acc__block-text {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    color: #009A3C;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 10px;
+    color: #000;
+    margin-bottom: 0;
+  }
+}
+
+.modal-type-acc__block-img {
+  min-width: 46px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-type-acc__block-icon {
+  background: url("../../img/modal-icon.png") no-repeat center;
+  background-size: 100% auto;
+  width: 46px;
+  height: 46px;
+}
