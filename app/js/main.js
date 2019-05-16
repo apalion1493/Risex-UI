@@ -8,6 +8,10 @@ $(document).ready(function(){
         $(".right-menu").removeClass('active');
         $(".milk-shadow").removeClass('active');
     });
+
+    $('.switch-btn').click(function(){
+        $(this).toggleClass('switch-on');
+    });
 });
 
 jQuery(function($){
