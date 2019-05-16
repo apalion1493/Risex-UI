@@ -99,14 +99,18 @@
 
 .registration-container__checkbox {
 
+  label {
+    width: 250px;
+  }
+
   label:before {
     border: 1px solid rgba(0, 0, 0, 0.38) !important;
   }
 
   input[type=checkbox]:checked + .btn-bottomSection__label:after {
     background: rgba(0, 0, 0, 0.38);
-    left: 8px;
-    bottom: 9px;
+    left: 9px;
+    bottom: 10px;
   }
 
   a {
