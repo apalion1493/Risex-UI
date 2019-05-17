@@ -1,25 +1,40 @@
-$(document).ready(function(){
-    $('.header-burger').click(function () {
-        $(".right-menu").addClass('active');
-        $(".milk-shadow").addClass('active');
-    });
+// $(document).ready(function(){
+//     $('.header-burger').click(function () {
+//         $(".right-menu").addClass('active');
+//         $(".milk-shadow").addClass('active');
+//     });
+//
+//     $('.right-menu__close').click(function () {
+//         $(".right-menu").removeClass('active');
+//         $(".milk-shadow").removeClass('active');
+//     });
+//
+//     $('.switch-btn').click(function(){
+//         $(this).toggleClass('switch-on');
+//     });
+// });
+//
+// jQuery(function($){
+//     $(document).mouseup(function (e){
+//         var div = $(".right-menu");
+//         if (!div.is(e.target) && div.has(e.target).length === 0) {
+//             $(".right-menu").removeClass('active');
+//             $(".milk-shadow").removeClass('active');
+//         }
+//     });
+// });
 
-    $('.right-menu__close').click(function () {
-        $(".right-menu").removeClass('active');
-        $(".milk-shadow").removeClass('active');
-    });
+let menuActive       = document.querySelector('.header-burger');
+let menuClose        = document.querySelector('.right-menu__close');
 
-    $('.switch-btn').click(function(){
-        $(this).toggleClass('switch-on');
-    });
-});
+menuActive.onclick = function() {
+    document.querySelector('.right-menu').classList.toggle('active');
+    document.querySelector('.milk-shadow').classList.toggle('active');
+};
 
-jQuery(function($){
-    $(document).mouseup(function (e){
-        var div = $(".right-menu");
-        if (!div.is(e.target) && div.has(e.target).length === 0) {
-            $(".right-menu").removeClass('active');
-            $(".milk-shadow").removeClass('active');
-        }
-    });
-});
+menuClose.onclick = function() {
+    document.querySelector('.right-menu').classList.remove('active');
+    document.querySelector('.milk-shadow').classList.remove('active');
+};
+
+

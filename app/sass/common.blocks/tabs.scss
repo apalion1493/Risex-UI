@@ -24,3 +24,127 @@
   }
 }
 
+
+
+
+.tabs {
+  min-width: 320px;
+  max-width: 800px;
+  padding: 0;
+  margin: 0 auto;
+}
+/* Стили секций с содержанием */
+.tabs>section {
+  display: none;
+  //padding: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+.tabs>section>p {
+  margin: 0 0 5px;
+  line-height: 1.5;
+  color: #383838;
+  /* прикрутим анимацию */
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Прячем чекбоксы */
+.tabs>input {
+  display: none;
+  position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+.tabs>label {
+  display: inline-block;
+  padding: 15px 25px;
+  text-align: center;
+  color: #353535;
+  background: #fff;
+  width: 49%;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+
+.tabs>label:after {
+  content: '';
+  position: absolute;
+  background: #ffffff;
+  width: 200%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+/* Шрифт-иконки от Font Awesome в формате Unicode */
+//.tabs>.label-tab:before {
+//  font-family: 'Roboto', sans-serif;
+//  font-weight: normal;
+//  margin-right: 10px;
+//  font-size: 14px;
+//  color: #089D42;
+//}
+//.tabs>.label-tab[for*="1"]:before {
+//  content: "\f17a";
+//}
+//.tabs>.label-tab[for*="2"]:before {
+//  content: "\f17a";
+//}
+
+/* Изменения стиля переключателей вкладок при наведении */
+
+.tabs>.label-tab:hover {
+  color: #888;
+  cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs>input:checked+.label-tab {
+  color: #089D42;
+  border: none;
+  border-bottom: 1px solid #1BA450;
+  background: #fff;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+  display: block;
+}
+/* Убираем текст с переключателей
+* и оставляем иконки на малых экранах
+*/
+
+//@media screen and (max-width: 680px) {
+//  .tabs>.label-tab {
+//    font-size: 0;
+//  }
+//  .tabs>.label-tab:before {
+//    margin: 0;
+//    font-size: 18px;
+//  }
+//}
+/* Изменяем внутренние отступы
+*  переключателей для малых экранов
+*/
+@media screen and (max-width: 400px) {
+  .tabs>.label-tab {
+    padding: 15px;
+  }
+}
