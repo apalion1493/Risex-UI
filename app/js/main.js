@@ -26,7 +26,7 @@
 
 let menuActive       = document.querySelector('.header-burger');
 let menuClose        = document.querySelector('.right-menu__close');
-let switchButton     = document.querySelector('.switch-btn');
+// let switchButton     = document.querySelector('.switch-btn');
 
 menuActive.onclick = function() {
     document.querySelector('.right-menu').classList.toggle('active');
@@ -38,6 +38,6 @@ menuClose.onclick = function() {
     document.querySelector('.milk-shadow').classList.remove('active');
 };
 
-switchButton.onclick = function() {
-    document.querySelector('.switch-btn').classList.toggle('switch-on');
-};
+// switchButton.onclick = function() {
+//     document.querySelector('.switch-btn').classList.toggle('switch-on');
+// };
