@@ -30,13 +30,17 @@
 <main class="main main_bottom-block">
     <div class="tabs">
         <input id="tab1" type="radio" name="tabs" checked>
-        <label for="tab1" class="label-tab" title="">Купить BTC</label>
+        <label for="tab1" class="label-tab" title="">
+            <span class="tab-span tab-span_left">Купить BTC</span>
+        </label>
 
         <input id="tab2" type="radio" name="tabs">
-        <label for="tab2" class="label-tab" title="">Продать BTC</label>
+        <label for="tab2" class="label-tab" title="">
+            <span class="tab-span tab-span_right">Продать BTC</span>
+        </label>
 
-        <section id="content-tab1">
-            <div class="sale-purchase sale-purchase_padding">
+        <section id="content-tab1" class="">
+            <div class="sale-purchase sale-purchase_padding wrapper_green-border">
                 <h2 class="title-h2 text-center">Купить BTC</h2>
                 <p class="caption-text text-center">выберите способ оплаты</p>
                 <div class="slider-bank">
@@ -98,7 +102,7 @@
             </div>
         </section>
         <section id="content-tab2">
-            <div class="sale-purchase sale-purchase_padding">
+            <div class="sale-purchase sale-purchase_padding wrapper_green-border">
                 <h2 class="title-h2 text-center">Продать BTC</h2>
                 <p class="caption-text text-center">выберите способ оплаты</p>
                 <div class="slider-bank">
@@ -160,25 +164,9 @@
             </div>
         </section>
 
-    <!--<nav class="tab-wrap">-->
-        <!--<div class="nav nav-tabs" id="nav-tab" role="tablist">-->
-            <!--<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Купить BTC</a>-->
-            <!--<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Продать BTC</a>-->
-        <!--</div>-->
-    <!--</nav>-->
-        <!--<section class="wrapper wrapper_green-border">-->
-            <!--<div class="tab-content" id="nav-tabContent">-->
-                <!--<div class="tab-pane fade show active" id="nav-home">-->
-                   <!---->
-                <!--</div>-->
-                <!--<div class="tab-pane fade" id="nav-profile">-->
-                   <!---->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</section>-->
     </div>
     <section class="wrapper wrapper_green-border">
-        <p class="caption-text text-center">другие предложения</p>
+        <p class="caption-text text-center pt-2">другие предложения</p>
         <div class="offers-list inner">
             <!--<div class="offers-item active">-->
                 <!--<div class="offers-item__priceBox offers-item_padding">-->
@@ -245,7 +233,7 @@
                     <p>16500,06 руб</p>
                 </div>
                 <input id="collapsible2" class="toggle" type="checkbox">
-                <label for="collapsible2" class="lbl-toggle">лучшее по курсу</label>
+                <label for="collapsible2" class="lbl-toggle">лучшее<br> по курсу</label>
                 <div class="collapsible-content">
                     <div class="content-inner">
                         <p>лучшее предложение по курсу, которое дают продавцы</p>
@@ -321,31 +309,7 @@
 </div>
 </body>
 
-<!--<script src="js/libs.min.js"></script>-->
-<!--<script src="libs/slick.min.js"></script>-->
 <script src="js/main.js"></script>
 
-<!--<script>-->
-    <!--$('.slider-bank').slick({-->
-        <!--dots: false,-->
-        <!--infinite: false,-->
-        <!--speed: 300,-->
-        <!--slidesToShow: 1,-->
-        <!--centerMode: false,-->
-        <!--prevArrow: false,-->
-        <!--nextArrow: false,-->
-        <!--variableWidth: true-->
-    <!--});-->
 
-    <!--$('.offers-list').slick({-->
-        <!--dots: false,-->
-        <!--infinite: false,-->
-        <!--speed: 300,-->
-        <!--slidesToShow: 1,-->
-        <!--centerMode: false,-->
-        <!--prevArrow: false,-->
-        <!--nextArrow: false,-->
-        <!--variableWidth: true-->
-    <!--});-->
-<!--</script>-->
 </html>
