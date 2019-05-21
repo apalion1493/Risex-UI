@@ -29,140 +29,270 @@
 </header>
 
 <main class="main">
-    <nav class="tab-wrap wrapper_green-border">
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Профиль</a>
-            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Безопасность</a>
-        </div>
-    </nav>
-    <section class="">
-        <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                <div class="wrapper wrapper_green-border">
-                    <div class="inner">
-                        <div class="profile-main">
-                            <img src="img/Avatar.png" alt="">
-                            <span class="profile-main__name">ChangeMeNow</span>
-                            <p class="profile-main__review">отзывы (<span class="profile-main__review-green">2</span>/<span class="profile-main__review-red">0</span>)</p>
-                            <p class="profile-main__text">о себе</p>
-                            <form class="profile-main__form" action="">
-                                <textarea class="profile-main__form-textarea" rows="1"  name="text" placeholder="Напишите о себе несколько слов"></textarea>
-                            </form>
-                        </div>
+    <!--<nav class="tab-wrap wrapper_green-border">-->
+        <!--&lt;!&ndash;<div class="nav nav-tabs" id="nav-tab" role="tablist">&ndash;&gt;-->
+            <!--&lt;!&ndash;<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Профиль</a>&ndash;&gt;-->
+            <!--&lt;!&ndash;<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Безопасность</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--</nav>-->
+    <!--<section class="">-->
+        <!--<div class="tab-content" id="nav-tabContent">-->
+            <!--<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">-->
+                <!--<div class="wrapper wrapper_green-border">-->
+                    <!--<div class="inner">-->
+                        <!--<div class="profile-main">-->
+                            <!--<img src="img/Avatar.png" alt="">-->
+                            <!--<span class="profile-main__name">ChangeMeNow</span>-->
+                            <!--<p class="profile-main__review">отзывы (<span class="profile-main__review-green">2</span>/<span class="profile-main__review-red">0</span>)</p>-->
+                            <!--<p class="profile-main__text">о себе</p>-->
+                            <!--<form class="profile-main__form" action="">-->
+                                <!--<textarea class="profile-main__form-textarea" rows="1"  name="text" placeholder="Напишите о себе несколько слов"></textarea>-->
+                            <!--</form>-->
+                        <!--</div>-->
 
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="wrapper wrapper_green-border">-->
+                    <!--<div class="inner">-->
+                        <!--<div class="transaction-turnover transaction-turnover_indents">-->
+                            <!--<h3>Оборот транзакций</h3>-->
+                            <!--<div>-->
+                                <!--<div class="transaction-turnover__container">-->
+                                    <!--<div class="transaction-turnover__block">-->
+                                        <!--<div class="transaction-turnover__block-name transaction-turnover__block-name_btc">BTC</div>-->
+                                        <!--<div class="transaction-turnover__block-number">0.27050742</div>-->
+                                    <!--</div>-->
+
+                                    <!--<div class="transaction-turnover__block">-->
+                                        <!--<div class="transaction-turnover__block-name transaction-turnover__block-name_usd">USD</div>-->
+                                        <!--<div class="transaction-turnover__block-number">$1000</div>-->
+                                    <!--</div>-->
+
+                                    <!--<div class="transaction-turnover__block">-->
+                                        <!--<div class="transaction-turnover__block-name transaction-turnover__block-name_total">Итого</div>-->
+                                        <!--<div class="transaction-turnover__block-number">$ 1429</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div>-->
+                                    <!--<div class="progress">-->
+                                        <!--<div class="progress-bar transaction-turnover_color-first" role="progressbar" style="width: 89%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>-->
+                                        <!--<div class="progress-bar transaction-turnover_color-second" role="progressbar" style="width: 11%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="wrapper wrapper_green-border">-->
+                    <!--<div class="inner">-->
+                        <!--<div class="section-info">-->
+                            <!--<a class="section-info__link" href="authorization-history.html">История авторизаций <span class="section-info__arrow"></span></a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="wrapper wrapper_green-border">-->
+                    <!--<div class="inner">-->
+                        <!--<div class="section-info">-->
+                            <!--<a class="section-info__link" href="safety-logs.html">Логи безопасности <span class="section-info__arrow"></span></a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">-->
+                <!--<div class="security-container">-->
+                    <!--<div class="inner">-->
+                        <!--<div class="section-security">-->
+                            <!--<div class="section-security__wrapper">-->
+                                <!--<div class="section-security__block section-security__blockLeft">-->
+                                    <!--<h3>E-mail</h3>-->
+                                    <!--<p class="section-security__block-text">Email: aleksey.stepikin@gmail.com</p>-->
+                                <!--</div>-->
+                                <!--<div class="section-security__block section-security__blockRight">-->
+                                    <!--<a href="#">Изменить</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="section-security">-->
+                            <!--<div class="section-security__wrapper">-->
+                                <!--<div class="section-security__block section-security__blockLeft">-->
+                                    <!--<h3>Пароль</h3>-->
+                                    <!--<p class="section-security__block-text">***************</p>-->
+                                <!--</div>-->
+                                <!--<div class="section-security__block section-security__blockRight">-->
+                                    <!--<a href="#">Изменить</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="section-security">-->
+                            <!--<div class="section-security__wrap">-->
+                                <!--<div class="section-security__wrap-firstRow">-->
+                                    <!--<h3>Двухфакторная аунтефикация</h3>-->
+                                    <!--<div class="switch-btn"></div>-->
+                                <!--</div>-->
+                                <!--<div class="section-security__wrap-secondRow">-->
+                                    <!--<p>Уровень защиты: слабый.<br>-->
+                                        <!--Для усиленя защиты рекоммендуем включить двухфакторную аунтефикацию</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                        <!--</div>-->
+
+                        <!--<div class="section-security">-->
+                            <!--<div class="section-security__wrap">-->
+                                <!--<div class="section-security__wrap-firstRow">-->
+                                    <!--<h3>Email уведомления</h3>-->
+                                    <!--<div class="switch-btn"></div>-->
+                                <!--</div>-->
+                                <!--<div class="section-security__wrap-secondRow">-->
+                                    <!--<p>Уведомления приходят при создании чата, новой сделки и изменении почты.</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
+
+    <div class="tabs">
+        <input id="tab1" type="radio" name="tabs" checked>
+        <label for="tab1" class="label-tab" title="">
+            <span class="tab-span tab-span_left">Профиль</span>
+        </label>
+
+        <input id="tab2" type="radio" name="tabs">
+        <label for="tab2" class="label-tab" title="">
+            <span class="tab-span tab-span_right">Безопасность</span>
+        </label>
+
+        <section id="content-tab1">
+            <div class="wrapper wrapper_green-border">
+                <div class="inner">
+                    <div class="profile-main">
+                        <img src="img/Avatar.png" alt="">
+                        <span class="profile-main__name">ChangeMeNow</span>
+                        <p class="profile-main__review">отзывы (<span class="profile-main__review-green">2</span>/<span class="profile-main__review-red">0</span>)</p>
+                        <p class="profile-main__text">о себе</p>
+                        <form class="profile-main__form" action="">
+                            <textarea class="profile-main__form-textarea" rows="1"  name="text" placeholder="Напишите о себе несколько слов"></textarea>
+                        </form>
                     </div>
+
                 </div>
-                <div class="wrapper wrapper_green-border">
-                    <div class="inner">
-                        <div class="transaction-turnover transaction-turnover_indents">
-                            <h3>Оборот транзакций</h3>
+            </div>
+            <div class="wrapper wrapper_green-border">
+                <div class="inner">
+                    <div class="transaction-turnover transaction-turnover_indents">
+                        <h3>Оборот транзакций</h3>
+                        <div>
+                            <div class="transaction-turnover__container">
+                                <div class="transaction-turnover__block">
+                                    <div class="transaction-turnover__block-name transaction-turnover__block-name_btc">BTC</div>
+                                    <div class="transaction-turnover__block-number">0.27050742</div>
+                                </div>
+
+                                <div class="transaction-turnover__block">
+                                    <div class="transaction-turnover__block-name transaction-turnover__block-name_usd">USD</div>
+                                    <div class="transaction-turnover__block-number">$1000</div>
+                                </div>
+
+                                <div class="transaction-turnover__block">
+                                    <div class="transaction-turnover__block-name transaction-turnover__block-name_total">Итого</div>
+                                    <div class="transaction-turnover__block-number">$ 1429</div>
+                                </div>
+                            </div>
                             <div>
-                                <div class="transaction-turnover__container">
-                                    <div class="transaction-turnover__block">
-                                        <div class="transaction-turnover__block-name transaction-turnover__block-name_btc">BTC</div>
-                                        <div class="transaction-turnover__block-number">0.27050742</div>
-                                    </div>
-
-                                    <div class="transaction-turnover__block">
-                                        <div class="transaction-turnover__block-name transaction-turnover__block-name_usd">USD</div>
-                                        <div class="transaction-turnover__block-number">$1000</div>
-                                    </div>
-
-                                    <div class="transaction-turnover__block">
-                                        <div class="transaction-turnover__block-name transaction-turnover__block-name_total">Итого</div>
-                                        <div class="transaction-turnover__block-number">$ 1429</div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="progress">
-                                        <div class="progress-bar transaction-turnover_color-first" role="progressbar" style="width: 89%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                                        <div class="progress-bar transaction-turnover_color-second" role="progressbar" style="width: 11%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
+                                <div class="progress">
+                                    <div class="progress-bar transaction-turnover_color-first" role="progressbar" style="width: 89%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar transaction-turnover_color-second" role="progressbar" style="width: 11%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                    </div>
                 </div>
-                <div class="wrapper wrapper_green-border">
-                    <div class="inner">
-                        <div class="section-info">
-                            <a class="section-info__link" href="authorization-history.html">История авторизаций <span class="section-info__arrow"></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrapper wrapper_green-border">
-                    <div class="inner">
-                        <div class="section-info">
-                            <a class="section-info__link" href="safety-logs.html">Логи безопасности <span class="section-info__arrow"></span></a>
-                        </div>
+            </div>
+            <div class="wrapper wrapper_green-border">
+                <div class="inner">
+                    <div class="section-info">
+                        <a class="section-info__link" href="authorization-history.html">История авторизаций <span class="section-info__arrow"></span></a>
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                <div class="security-container">
-                    <div class="inner">
-                        <div class="section-security">
-                            <div class="section-security__wrapper">
-                                <div class="section-security__block section-security__blockLeft">
-                                    <h3>E-mail</h3>
-                                    <p class="section-security__block-text">Email: aleksey.stepikin@gmail.com</p>
-                                </div>
-                                <div class="section-security__block section-security__blockRight">
-                                    <a href="#">Изменить</a>
-                                </div>
+            <div class="wrapper wrapper_green-border">
+                <div class="inner">
+                    <div class="section-info">
+                        <a class="section-info__link" href="safety-logs.html">Логи безопасности <span class="section-info__arrow"></span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="content-tab2">
+            <div class="security-container">
+                <div class="inner">
+                    <div class="section-security">
+                        <div class="section-security__wrapper">
+                            <div class="section-security__block section-security__blockLeft">
+                                <h3>E-mail</h3>
+                                <p class="section-security__block-text">Email: aleksey.stepikin@gmail.com</p>
+                            </div>
+                            <div class="section-security__block section-security__blockRight">
+                                <a href="#">Изменить</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-security">
+                        <div class="section-security__wrapper">
+                            <div class="section-security__block section-security__blockLeft">
+                                <h3>Пароль</h3>
+                                <p class="section-security__block-text">***************</p>
+                            </div>
+                            <div class="section-security__block section-security__blockRight">
+                                <a href="#">Изменить</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-security">
+                        <div class="section-security__wrap">
+                            <div class="section-security__wrap-firstRow">
+                                <h3>Двухфакторная аунтефикация</h3>
+                                <div class="switch-btn"></div>
+                            </div>
+                            <div class="section-security__wrap-secondRow">
+                                <p>Уровень защиты: слабый.<br>
+                                    Для усиленя защиты рекоммендуем включить двухфакторную аунтефикацию</p>
                             </div>
                         </div>
 
-                        <div class="section-security">
-                            <div class="section-security__wrapper">
-                                <div class="section-security__block section-security__blockLeft">
-                                    <h3>Пароль</h3>
-                                    <p class="section-security__block-text">***************</p>
-                                </div>
-                                <div class="section-security__block section-security__blockRight">
-                                    <a href="#">Изменить</a>
-                                </div>
+                    </div>
+
+                    <div class="section-security">
+                        <div class="section-security__wrap">
+                            <div class="section-security__wrap-firstRow">
+                                <h3>Email уведомления</h3>
+                                <div class="switch-btn"></div>
                             </div>
-                        </div>
-
-                        <div class="section-security">
-                            <div class="section-security__wrap">
-                                <div class="section-security__wrap-firstRow">
-                                    <h3>Двухфакторная аунтефикация</h3>
-                                    <div class="switch-btn"></div>
-                                </div>
-                                <div class="section-security__wrap-secondRow">
-                                    <p>Уровень защиты: слабый.<br>
-                                        Для усиленя защиты рекоммендуем включить двухфакторную аунтефикацию</p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="section-security">
-                            <div class="section-security__wrap">
-                                <div class="section-security__wrap-firstRow">
-                                    <h3>Email уведомления</h3>
-                                    <div class="switch-btn"></div>
-                                </div>
-                                <div class="section-security__wrap-secondRow">
-                                    <p>Уведомления приходят при создании чата, новой сделки и изменении почты.</p>
-                                </div>
+                            <div class="section-security__wrap-secondRow">
+                                <p>Уведомления приходят при создании чата, новой сделки и изменении почты.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 </main>
 
 <div>
-    <div class="right-menu right-menu_position">
+    <div id="test-id" class="right-menu right-menu_position">
         <ul class="right-menu__list">
             <li class="right-menu__item">
-                <a class="right-menu__link" href="#">
+                <a class="right-menu__link" href="index.html">
                     <span class="right-menu__icon right-menu__icon-exchange"></span>
                     <span class="right-menu__text">Обмен</span>
                 </a>
@@ -174,13 +304,13 @@
                 </a>
             </li>
             <li class="right-menu__item">
-                <a class="right-menu__link" href="#">
+                <a class="right-menu__link" href="my-operations.html">
                     <span class="right-menu__icon right-menu__icon-operations"></span>
                     <span class="right-menu__text">Мои операции</span>
                 </a>
             </li>
             <li class="right-menu__item">
-                <a class="right-menu__link" href="#">
+                <a class="right-menu__link" href="newbie-profile.html ">
                     <span class="right-menu__icon right-menu__icon-profile"></span>
                     <span class="right-menu__text">Личный профиль</span>
                 </a>

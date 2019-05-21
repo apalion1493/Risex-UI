@@ -73,5 +73,13 @@ body {
 }
 
 .wrapper_green-border {
-  border-bottom: 1px solid #CFE2D6;
+  border-bottom: 1px solid #CFE2D6 !important;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.tabs > section {
+  border: none !important;
 }

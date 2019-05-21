@@ -37,7 +37,7 @@
 .tabs>section {
   display: none;
   //padding: 15px;
-  background: #fff;
+  //background: #fff;
   border: 1px solid #ddd;
 }
 .tabs>section>p {
@@ -75,7 +75,8 @@
 /* Стили переключателей вкладок (табов) */
 .tabs>label {
   display: inline-block;
-  padding: 15px 25px;
+  padding-top: 13px;
+  padding-bottom: 8px;
   text-align: center;
   color: #353535;
   background: #fff;
@@ -85,66 +86,49 @@
   position: relative;
 }
 
+.triple-tabs>label {
+  width: 32%;
+}
+
 .tabs>label:after {
   content: '';
   position: absolute;
   background: #ffffff;
-  width: 200%;
+  width: 706%;
   height: 100%;
   bottom: 0;
-  left: 0;
+  left: -300%;
   z-index: -1;
 }
-/* Шрифт-иконки от Font Awesome в формате Unicode */
-//.tabs>.label-tab:before {
-//  font-family: 'Roboto', sans-serif;
-//  font-weight: normal;
-//  margin-right: 10px;
-//  font-size: 14px;
-//  color: #089D42;
-//}
-//.tabs>.label-tab[for*="1"]:before {
-//  content: "\f17a";
-//}
-//.tabs>.label-tab[for*="2"]:before {
-//  content: "\f17a";
-//}
 
-/* Изменения стиля переключателей вкладок при наведении */
-
-.tabs>.label-tab:hover {
-  color: #888;
-  cursor: pointer;
-}
 /* Стили для активной вкладки */
 .tabs>input:checked+.label-tab {
-  color: #089D42;
   border: none;
-  border-bottom: 1px solid #1BA450;
   background: #fff;
 }
-/* Активация секций с помощью псевдокласса :checked */
+
+.tab-span {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  padding-bottom: 10px;
+}
+
+.tab-span_left {
+  margin-left: 9px;
+}
+
+.tab-span_right {
+  margin-right: 9px;
+}
+
+.tabs>input:checked+.label-tab .tab-span {
+  color: #089D42;
+  border-bottom: 2px solid #1BA450;
+}
+
 #tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
   display: block;
-}
-/* Убираем текст с переключателей
-* и оставляем иконки на малых экранах
-*/
-
-//@media screen and (max-width: 680px) {
-//  .tabs>.label-tab {
-//    font-size: 0;
-//  }
-//  .tabs>.label-tab:before {
-//    margin: 0;
-//    font-size: 18px;
-//  }
-//}
-/* Изменяем внутренние отступы
-*  переключателей для малых экранов
-*/
-@media screen and (max-width: 400px) {
-  .tabs>.label-tab {
-    padding: 15px;
-  }
 }
