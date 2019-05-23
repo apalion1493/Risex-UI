@@ -175,3 +175,11 @@
   line-height: 12px;
   color: #A7A7A7;
 }
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+
+  .review-container-chat__window {
+    min-block-size: 50px;
+  }
+}}
