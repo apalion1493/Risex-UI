@@ -39,7 +39,7 @@
             <span class="tab-span tab-span_right">Продать BTC</span>
         </label>
 
-        <section id="content-tab1" class="">
+        <section class="content-tab1">
             <div class="sale-purchase sale-purchase_padding wrapper_green-border">
                 <h2 class="title-h2 text-center">Купить BTC</h2>
                 <p class="caption-text text-center">выберите способ оплаты</p>
@@ -64,19 +64,24 @@
                         <img src="img/Yandex.png" alt="">
                         <p class="slider-bank__box-text">Яндекс</p>
                     </div>
+                    <div class="indent-block"></div>
                 </div>
                 <p class="caption-text text-center">введите сумму покупки</p>
                 <div class="converter inner">
                     <div class="converter__left-column">
                         <div class="converter__left-column-first converter__left-column-row">
                             <p class="converter__left-column-text">получаете</p>
-                            <span class="converter__left-column-greenNumber">0,05</span>
+                            <form class="converter__left-column-form converter__left-column-form-recipient" action="">
+                                <input type="text" value="0,05">
+                            </form>
                         </div>
                         <div class="converter-line"></div>
                         <div class="converter__left-column-second converter__left-column-row">
                             <div>
                                 <p class="converter__left-column-text">оплачиваете</p>
-                                <span class="converter__left-column-second-textNumber">17341,72</span>
+                                <form class="converter__left-column-form converter__left-column-form-pay" action="">
+                                    <input type="text" value="17341,72">
+                                </form>
                             </div>
                             <div class="converter__advice">
                                 <p class="converter__advice-text">RiseX советует</p>
@@ -96,12 +101,12 @@
                     <div class="btn-bottomSection inner">
                         <button type="button" class="btn btn-success">Купить 0,05 BTC</button>
                         <input class="form-check-input btn-bottomSection__checkbox" type="checkbox" value="" id="defaultCheck5">
-                        <label class="form-check-label btn-bottomSection__label" for="defaultCheck5">Я знаком с условиями сделки</label>
+                        <label class="form-check-label btn-bottomSection__label" for="defaultCheck5">Я знаком с <a href="#ModalWindow">условиями</a> сделки</label>
                     </div>
                 </section>
             </div>
         </section>
-        <section id="content-tab2">
+        <section class="content-tab2">
             <div class="sale-purchase sale-purchase_padding wrapper_green-border">
                 <h2 class="title-h2 text-center">Продать BTC</h2>
                 <p class="caption-text text-center">выберите способ оплаты</p>
@@ -126,19 +131,24 @@
                         <img src="img/Yandex.png" alt="">
                         <p class="slider-bank__box-text">Яндекс</p>
                     </div>
+                    <div class="indent-block"></div>
                 </div>
                 <p class="caption-text text-center">введите сумму покупки</p>
                 <div class="converter inner">
                     <div class="converter__left-column">
                         <div class="converter__left-column-first converter__left-column-row">
                             <p class="converter__left-column-text">получаете</p>
-                            <span class="converter__left-column-greenNumber">0,05</span>
+                            <form class="converter__left-column-form converter__left-column-form-recipient" action="">
+                                <input type="text" value="0,05">
+                            </form>
                         </div>
                         <div class="converter-line"></div>
                         <div class="converter__left-column-second converter__left-column-row">
                             <div>
                                 <p class="converter__left-column-text">оплачиваете</p>
-                                <span class="converter__left-column-second-textNumber">17341,72</span>
+                                <form class="converter__left-column-form converter__left-column-form-pay" action="">
+                                    <input type="text" value="17341,72">
+                                </form>
                             </div>
                             <div class="converter__advice">
                                 <p class="converter__advice-text">RiseX советует</p>
@@ -167,54 +177,7 @@
     </div>
     <section class="wrapper wrapper_green-border">
         <p class="caption-text text-center pt-2">другие предложения</p>
-        <div class="offers-list inner">
-            <!--<div class="offers-item active">-->
-                <!--<div class="offers-item__priceBox offers-item_padding">-->
-                    <!--<span class="offers-item__price">17341,72 руб</span>-->
-                <!--</div>-->
-                <!--<div class="offers-item__content offers-item_padding">-->
-                    <!--<div class="offers-item__content-collapse" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">-->
-                        <!--<span class="offers-item__content-title">Risex<br> рекоммендует</span>-->
-                        <!--<input id="offers-check1" class="offers-item__contentCheck" type="checkbox">-->
-                        <!--<label for="offers-check1" class="offers-item__contentIcon"></label>-->
-                    <!--</div>-->
-                    <!--<div class="collapse" id="collapseExample1">-->
-                        <!--<p class="offers-item__hiddenText">Risex дает лучшее решение на соновании соттношения цены и рейтинга продавца</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="offers-item">-->
-                <!--<div class="offers-item__priceBox offers-item_padding">-->
-                    <!--<span class="offers-item__price">16500,06 руб</span>-->
-                <!--</div>-->
-                <!--<div class="offers-item__content offers-item_padding">-->
-                    <!--<div class="offers-item__content-collapse" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">-->
-                        <!--<span class="offers-item__content-title">лучшее<br> по курсу</span>-->
-                        <!--<input id="offers-check2" class="offers-item__contentCheck" type="checkbox">-->
-                        <!--<label for="offers-check2" class="offers-item__contentIcon"></label>-->
-                    <!--</div>-->
-                    <!--<div class="collapse" id="collapseExample2">-->
-                        <!--<p class="offers-item__hiddenText">лучшее предложение по курсу, которое дают продавцы</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="offers-item">-->
-                <!--<div class="offers-item__priceBox offers-item_padding">-->
-                    <!--<span class="offers-item__price">17900,06</span>-->
-                <!--</div>-->
-                <!--<div class="offers-item__content offers-item_padding">-->
-                    <!--<div class="offers-item__content-collapse" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">-->
-                        <!--<span class="offers-item__content-title">Risex<br> рекоммендует</span>-->
-                        <!--<input id="offers-check3" class="offers-item__contentCheck" type="checkbox">-->
-                        <!--<label for="offers-check3" class="offers-item__contentIcon"></label>-->
-                    <!--</div>-->
-                    <!--<div class="collapse" id="collapseExample3">-->
-                        <!--<p class="offers-item__hiddenText">Risex дает лучшее решение на соновании соттношения цены и рейтинга продавца</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-
-
+        <div class="offers-list">
             <div class="wrap-collabsible active">
                 <div class="wrap-collabsible__first-text">
                     <p>17341,72 руб</p>
@@ -227,7 +190,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="wrap-collabsible">
                 <div class="wrap-collabsible__first-text">
                     <p>16500,06 руб</p>
@@ -240,7 +202,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="wrap-collabsible">
                 <div class="wrap-collabsible__first-text">
                     <p>17900,06</p>
@@ -253,6 +214,7 @@
                     </div>
                 </div>
             </div>
+            <div class="indent-block"></div>
         </div>
     </section>
 </main>
@@ -267,7 +229,7 @@
                 </a>
             </li>
             <li class="right-menu__item active">
-                <a class="right-menu__link" href="#">
+                <a class="right-menu__link" href="purse.html">
                     <span class="right-menu__icon right-menu__icon-purse"></span>
                     <span class="right-menu__text">Кошелек</span>
                 </a>
@@ -306,6 +268,26 @@
         <div class="right-menu__close"></div>
     </div>
     <div class="milk-shadow"></div>
+</div>
+
+<div id="ModalWindow" class="Modal">
+    <div class="Modal_Body Modal_Body-conditions">
+        <div class="modal-type-acc">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-type-acc__block">
+                        <p>1. Должны совершаться в простой письменной форме, за исключением сделок, требующих нотариального удостоверения:
+                            1) сделки юридических лиц между собой и с гражданами;
+                            2) сделки граждан между собой на сумму, превышающую десять тысяч рублей, а в случаях, предусмотренных законом, - независимо от суммы сделки.
+                            (в ред. Федерального закона от 07.05.2013 N 100-ФЗ)
+                            (см. текст в предыдущей редакции)
+                            2. Соблюдение простой письменной формы не требуется для сделок, которые в соответствии со статьей 159 настоящего Кодекса могут быть совершены устно.</p>
+                    </div>
+                </div>
+                <a class="Modal_Body__close" href="#">закрыть</a>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 

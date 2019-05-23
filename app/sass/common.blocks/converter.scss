@@ -114,3 +114,30 @@
 .converter__right-column-arrowsCheck:checked ~ .converter__right-column-arrowsIcon {
    transform: rotate(180deg);
 }
+
+.converter__left-column-form {
+  input {
+    background: #E1EDE5;
+    border: none;
+  }
+}
+
+.converter__left-column-form-recipient {
+  input {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.325px;
+    color: #089D42;
+    width: 90px;
+  }
+}
+
+.converter__left-column-form-pay {
+  input {
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.87);
+    width: 120px;
+  }
+}

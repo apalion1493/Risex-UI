@@ -38,7 +38,7 @@ body {
   padding-top: 13px;
   padding-bottom: 13px;
   box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.18416);
-  z-index: 100;
+  z-index: 10;
 }
 
 .btn-bottomSection {
@@ -82,4 +82,25 @@ body {
 
 .tabs > section {
   border: none !important;
+}
+
+.red-btn {
+  width: 100%;
+}
+
+.btn.btn-outline-secondary {
+  color: #353535;
+  background: #F7F8FA;
+}
+
+.btn.btn-grey {
+  background: #C3C3C3;
+  color: #F6F7F6;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.170658);
+}
+
+.indent-block {
+  min-width: 20px;
+  height: 10px;
+  display: flex;
 }

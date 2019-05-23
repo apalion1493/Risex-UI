@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Регистрация</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="libs/slick.css">
-    <link rel="stylesheet" href="libs/slick-theme.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -61,7 +59,7 @@
                     </div>
 
                     <div class="form-group">
-                        <button type="button" class="btn btn-success btn-risex btn-risex_registration" data-toggle="modal" data-target="#exampleModalCenter">Далее</button>
+                        <button type="button" class="btn btn-success btn-risex btn-risex_registration" >Далее</button>
                     </div>
 
                     <div class="form-group registration-container__checkbox">
@@ -74,15 +72,14 @@
         </div>
         <div class="registration-account">
             <p class="registration-account__text">Уже есть аккаунт?</p>
-            <a class="registration-account__link" href="#">Войти</a>
+            <a class="registration-account__link" href="#ModalWindow">Войти</a>
         </div>
     </div>
 
 </main>
 
-
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered " role="document">
+<div id="ModalWindow" class="Modal">
+    <div class="Modal_Body">
         <div class="modal-type-acc">
             <div class="modal-content modal-type-acc__title">
                 <div class="modal-body">
@@ -116,11 +113,10 @@
                 </div>
             </div>
         </div>
+        <a class="Modal_Body__close" href="#"></a>
     </div>
 </div>
 </body>
 
-<script src="js/libs.min.js"></script>
-<script src="libs/slick.min.js"></script>
 <script src="js/main.js"></script>
 </html>

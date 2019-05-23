@@ -75,6 +75,9 @@
 
 .offers-list {
   padding-bottom: 17px;
+  display: flex;
+  overflow-x: scroll;
+  align-items: flex-start;
 }
 
 .offers-list .slick-list {
@@ -87,11 +90,17 @@
 
 .wrap-collabsible {
   margin-bottom: 1.2rem;
+  min-width: 135px;
   width: 136px;
   border: 1px solid #F1F1F1;
   border-radius: 6px;
   padding: 13px 13px 5px;
   overflow: hidden;
+  margin-left: 13px;
+
+  &:first-child {
+    margin-left: 20px;
+  }
 }
 
 input[type='checkbox'] {
@@ -202,4 +211,9 @@ input[type='checkbox'] {
     height: 7px;
   }
 
+}
+
+.wrap-collabsible.wrap-collabsible-walletHistory,
+.wrap-collabsible.wrap-collabsible-operation {
+  margin-left: 0;
 }
