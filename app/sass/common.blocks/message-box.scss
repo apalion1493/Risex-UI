@@ -29,13 +29,13 @@
     outline: none;
   }
 
-  &:before {
+  /*&:before {
     content: 'Напишите сообщение…';
     position: absolute;
     font-size: 14px;
     line-height: 20px;
     color: #919191;
-  }
+  }*/
 
   &:focus:before{
     opacity: 0;

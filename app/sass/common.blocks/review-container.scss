@@ -183,3 +183,9 @@
     min-block-size: 50px;
   }
 }}
+
+[contentEditable=true]:empty:not(:focus):before{
+  content:attr(data-text);
+  color: #919191;
+  font-size: 14px;
+}
