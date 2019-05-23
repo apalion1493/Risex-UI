@@ -71,7 +71,11 @@
 
         <div class="message-box">
             <form action="">
-                <textarea class="form-control message-box__textarea" placeholder="Напишите сообщение…" rows="1"></textarea>
+                <div class="message-box__container">
+                    <div contenteditable="true" class="message-box__textarea"></div>
+                    <a class="message-box__textarea-download" href="#"></a>
+                </div>
+
                 <button type="button" class="btn btn-success w-100 mt-2">Личная заметка о пользователе</button>
             </form>
         </div>
