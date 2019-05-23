@@ -42,6 +42,10 @@
   }
 }
 
+.message-box__textarea-long {
+  width: 100%;
+}
+
 .form-control.message-box__textarea::-webkit-input-placeholder {color:#919191;}
 .form-control.message-box__textarea::-moz-placeholder          {color:#919191;}/* Firefox 19+ */
 .form-control.message-box__textarea:-moz-placeholder           {color:#919191;}/* Firefox 18- */

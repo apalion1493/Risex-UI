@@ -25,6 +25,8 @@
 
 .modal-type-acc__block {
   display: flex;
+  max-height: 360px;
+  overflow-y: scroll;
 }
 
 .modal-type-acc__block-text {
@@ -140,4 +142,8 @@
     top: auto;
     width: auto;
   }
+}
+
+.modal-content.Modal_Body__modal-content {
+  background: #F0F0F0;
 }

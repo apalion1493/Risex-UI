@@ -80,7 +80,7 @@
 .section-security__switch {
   position: relative;
   display: inline-block;
-  width: 64px;
+  min-width: 64px;
   height: 30px;
   margin-left: auto;
 

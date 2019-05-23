@@ -338,3 +338,10 @@
   border: none;
   opacity: 1;
 }
+
+@media (max-width: 355px) {
+  .transactions-beginning-page__section-arrival-status {
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+}
