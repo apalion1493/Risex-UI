@@ -178,13 +178,13 @@
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) {
 
-  .review-container-chat__window {
-    margin-top: 20px;
-  }
-
-  .review-container-chat__window-info {
-    margin-bottom: 10px;
-  }
+  //.review-container-chat__window {
+  //  margin-top: 20px;
+  //}
+  //
+  //.review-container-chat__window-info {
+  //  margin-bottom: 10px;
+  //}
 
   .review-container-chat {
     display: -webkit-box !important;
