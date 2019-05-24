@@ -185,6 +185,10 @@
   .review-container-chat__window-info {
     margin-bottom: 10px;
   }
+
+  .review-container-chat {
+    display: -webkit-box !important;
+  }
 }}
 
 [contentEditable=true]:empty:not(:focus):before{
