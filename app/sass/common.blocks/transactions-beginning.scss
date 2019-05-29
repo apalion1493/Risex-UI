@@ -296,6 +296,7 @@
   padding-right: 8px;
   padding-left: 5px;
   color: #353535;
+  height: 100%;
 }
 
 .form-button .form-group__sale {
@@ -306,6 +307,18 @@
 
     &:active, &:focus {
       background: #ffffff;
+    }
+  }
+}
+
+.form-button .form-group__grey {
+  background: #EEF2F0;
+
+  input {
+    background: #EEF2F0;
+
+    &:active, &:focus {
+      background: #EEF2F0;
     }
   }
 }

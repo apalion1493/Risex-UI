@@ -64,7 +64,7 @@
 .right-menu__icon-exchange:before {
   content: '';
   position: absolute;
-  background-image: url("../img/icon-exchange.svg");
+  background-image: url("../img/menu-icon/icon-exchange.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
@@ -76,7 +76,7 @@
 .right-menu__icon-purse:before {
   content: '';
   position: absolute;
-  background-image: url("../img/icon-purse.svg");
+  background-image: url("../img/menu-icon/icon-purse.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
@@ -88,7 +88,7 @@
 .right-menu__icon-operations:before  {
   content: '';
   position: absolute;
-  background-image: url("../img/icon-operations.svg");
+  background-image: url("../img/menu-icon/icon-operations.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
@@ -100,7 +100,7 @@
 .right-menu__icon-profile:before  {
   content: '';
   position: absolute;
-  background-image: url("../img/icon-profile.svg");
+  background-image: url("../img/menu-icon/icon-profile.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
@@ -112,7 +112,7 @@
 .right-menu__icon-support:before {
   content: '';
   position: absolute;
-  background-image: url("../img/icon-headphones.svg");
+  background-image: url("../img/menu-icon/icon-headphones.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
@@ -124,7 +124,7 @@
 .right-menu__icon-conclusion:before {
   content: '';
   position: absolute;
-  background-image: url("../img/icon-conclusion.svg");
+  background-image: url("../img/menu-icon/icon-conclusion.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
@@ -136,13 +136,173 @@
 .right-menu__icon-output:before {
   content: '';
   position: absolute;
-  background-image: url("../img/icon-output.svg");
+  background-image: url("../img/menu-icon/icon-output.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
   width: 17px;
   height: 17px;
   display: block;
+}
+
+.right-menu__icon-message:before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/menu-icon/menu-icon-message.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  width: 21px;
+  height: 16px;
+  display: block;
+}
+
+.right-menu__icon-register:before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/menu-icon/menu-icon-message.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  width: 21px;
+  height: 16px;
+  display: block;
+}
+
+.right-menu__icon-login:before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/menu-icon/menu-icon-message.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  width: 21px;
+  height: 16px;
+  display: block;
+}
+
+
+
+.right-menu__item.active {
+  .right-menu__icon-exchange:before {
+    content: '';
+    position: absolute;
+    background-image: url("../img/menu-icon/icon-exchange-active.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    width: 22px;
+    height: 17px;
+    display: block;
+  }
+
+  .right-menu__icon-purse:before {
+    content: '';
+    position: absolute;
+    background-image: url("../img/menu-icon/icon-purse-active.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    width: 25px;
+    height: 21px;
+    display: block;
+  }
+
+  .right-menu__icon-operations:before  {
+    content: '';
+    position: absolute;
+    background-image: url("../img/menu-icon/icon-operations-active.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    width: 26px;
+    height: 24px;
+    display: block;
+  }
+
+  .right-menu__icon-profile:before  {
+    content: '';
+    position: absolute;
+    background-image: url("../img/menu-icon/icon-profile-active.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    width: 19px;
+    height: 19px;
+    display: block;
+  }
+
+  .right-menu__icon-support:before {
+    content: '';
+    position: absolute;
+    background-image: url("../img/menu-icon/icon-headphones-active.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    width: 21px;
+    height: 22px;
+    display: block;
+  }
+
+  .right-menu__icon-conclusion:before {
+    content: '';
+    position: absolute;
+    background-image: url("../img/menu-icon/icon-conclusion-active.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+
+  .right-menu__icon-output:before {
+    content: '';
+    position: absolute;
+    background-image: url("../img/menu-icon/icon-output-active.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    width: 17px;
+    height: 17px;
+    display: block;
+  }
+
+  .right-menu__icon-message:before {
+    content: '';
+    position: absolute;
+    background-image: url("../img/menu-icon/menu-icon-message-active.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    width: 21px;
+    height: 16px;
+    display: block;
+  }
+
+  .right-menu__icon-register:before {
+    content: '';
+    position: absolute;
+    background-image: url("../img/menu-icon/menu-icon-message-active.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    width: 21px;
+    height: 16px;
+    display: block;
+  }
+
+  .right-menu__icon-login:before {
+    content: '';
+    position: absolute;
+    background-image: url("../img/menu-icon/menu-icon-message-active.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    width: 21px;
+    height: 16px;
+    display: block;
+  }
 }
 
 .right-menu__close {

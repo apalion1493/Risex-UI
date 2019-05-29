@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<header class="header header_indent">
+<header class="header header_indent header-noTabs wrapper_green-border">
     <div class="header-container">
         <div class="header-burger">
             <div class="header-burger__line"></div>
@@ -26,60 +26,45 @@
     </div>
 </header>
 
-<main class="main transactions-beginning-page">
-    <ul class="tabs wrapper_green-border review-container-tabs">
-        <li class="tabs-li">
-            <input id="tab1" type="radio" name="tabs" checked>
-            <label for="tab1" class="label-tab " title="">
-                <span class="tab-span tab-span_left">Купить BTC</span>
-            </label>
-            <section class="tab-content top-margin bottom-padding">
-                <div class="container review-container  wrapper_green-border">
-                    <header class="review-container__header">
-                        <a href="#">
-                            <span class="review-container__header-arrow"></span>
-                            <span class="review-container__header-text">К покупке</span>
-                        </a>
-                    </header>
-                    <div class="review-container__line"></div>
-                    <div class="review-container__content">
-                        <h4 class="review-container__content-title">Как вы оцените продавца?</h4>
-                        <p class="review-container__content-text">Отрицательный отзыв автоматически заблокирует этого пользователя для вас.</p>
-                        <div class="review-container__content-blocking">
-                            <form class="d-flex flex-column align-items-start" action="">
-                                <div>
-                                    <input class="form-check-input btn-bottomSection__checkbox" type="checkbox" value="" id="review-container-1">
-                                    <label class="form-check-label btn-bottomSection__label" for="review-container-1">Заблокировать с отзывом</label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input btn-bottomSection__checkbox" type="checkbox" value="" id="review-container-2">
-                                    <label class="form-check-label btn-bottomSection__label" for="review-container-2">Заблокировать без отзыва</label>
-                                </div>
-                            </form>
-
-                        </div>
-                        <p class="review-container__content-text">Можете оставить личную заметку об этом пользователей. Это пригодится в будущем</p>
-                    </div>
-                </div>
-            </section>
-        </li>
-        <li class="tabs-li">
-            <input id="tab2" type="radio" name="tabs">
-            <label for="tab2" class="label-tab " title="">
-                <span class="tab-span tab-span_right">Продать BTC</span>
-            </label>
-            <section class="tab-content top-margin"></section>
-        </li>
-    </ul>
-    <div class="message-box">
-        <form action="">
-            <div class="message-box__container">
-                <div data-text="Напишите сообщение..." contenteditable="true" class="message-box__textarea message-box__textarea-long"></div>
+<main class="main">
+    <section class="wrapper wrapper_green-border">
+        <div class="message-block">
+            <div class="message-block__img">
+                <img src="" alt="">
             </div>
-
-            <button type="button" class="btn btn-success w-100 mt-2">Личная заметка о пользователе</button>
-        </form>
-    </div>
+            <div class="message-block__text">
+                <span class="message-block__text-name">Nickname</span>
+                <p class="message-block__text-content">Супер! Спасибо! Все быстро прошло!</p>
+            </div>
+        </div>
+        <div class="message-block">
+            <div class="message-block__img">
+                <img src="" alt="">
+            </div>
+            <div class="message-block__text">
+                <span class="message-block__text-name">Nickname</span>
+                <p class="message-block__text-content">Супер! Спасибо! Все быстро прошло!</p>
+            </div>
+        </div>
+        <div class="message-block">
+            <div class="message-block__img">
+                <img src="" alt="">
+            </div>
+            <div class="message-block__text">
+                <span class="message-block__text-name">Nickname</span>
+                <p class="message-block__text-content">Супер! Спасибо! Все быстро прошло!</p>
+            </div>
+        </div>
+        <div class="message-block">
+            <div class="message-block__img">
+                <img src="" alt="">
+            </div>
+            <div class="message-block__text border-bottom-0">
+                <span class="message-block__text-name">Nickname</span>
+                <p class="message-block__text-content">Супер! Спасибо! Все быстро прошло!</p>
+            </div>
+        </div>
+    </section>
 </main>
 
 <div>

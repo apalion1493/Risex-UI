@@ -28,195 +28,238 @@
 </header>
 
 <main class="main main_bottom-block">
-    <div class="tabs">
-        <input id="tab1" type="radio" name="tabs" checked>
-        <label for="tab1" class="label-tab" title="">
-            <span class="tab-span tab-span_left">Купить BTC</span>
-        </label>
-
-        <input id="tab2" type="radio" name="tabs">
-        <label for="tab2" class="label-tab" title="">
-            <span class="tab-span tab-span_right">Продать BTC</span>
-        </label>
-
-        <section class="content-tab1">
-            <div class="sale-purchase sale-purchase_padding wrapper_green-border">
-                <h2 class="title-h2 text-center">Купить BTC</h2>
-                <p class="caption-text text-center">выберите способ оплаты</p>
-                <div class="slider-bank">
-                    <div class="slider-bank__box active">
-                        <img src="img/Promsvyazbank.png" alt="">
-                        <p class="slider-bank__box-text">ПСБ</p>
-                    </div>
-                    <div class="slider-bank__box selected">
-                        <img src="img/Sberbank.png" alt="">
-                        <p class="slider-bank__box-text">Сбербанк</p>
-                    </div>
-                    <div class="slider-bank__box">
-                        <img src="img/Raiffeisen.png" alt="">
-                        <p class="slider-bank__box-text">Raiffeisen</p>
-                    </div>
-                    <div class="slider-bank__box">
-                        <img src="img/Alfa-Bank.png" alt="">
-                        <p class="slider-bank__box-text">Альфа-банк</p>
-                    </div>
-                    <div class="slider-bank__box">
-                        <img src="img/PrivatBank.png" alt="">
-                        <p class="slider-bank__box-text">PrivatBank</p>
-                    </div>
-                    <div class="indent-block"></div>
-                </div>
-                <p class="caption-text text-center">введите сумму покупки</p>
-                <div class="converter inner">
-                    <div class="converter__left-column">
-                        <div class="converter__left-column-first converter__left-column-row">
-                            <p class="converter__left-column-text">получаете</p>
-                            <form class="converter__left-column-form converter__left-column-form-recipient" action="">
-                                <input type="text" value="0,05">
-                            </form>
+    <ul class="tabs wrapper_green-border">
+        <li class="tabs-li">
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1" class="label-tab" title="">
+                <span class="tab-span tab-span_left">Купить BTC</span>
+            </label>
+            <section class="tab-content top-margin pb-index">
+                <div class="sale-purchase sale-purchase_padding wrapper_green-border">
+                    <h2 class="title-h2 text-center">Купить BTC</h2>
+                    <p class="caption-text text-center">выберите способ оплаты</p>
+                    <div class="slider-bank">
+                        <div class="slider-bank__box active">
+                            <img src="img/Promsvyazbank.png" alt="">
+                            <p class="slider-bank__box-text">ПСБ</p>
                         </div>
-                        <div class="converter-line"></div>
-                        <div class="converter__left-column-second converter__left-column-row">
-                            <div>
-                                <p class="converter__left-column-text">оплачиваете</p>
-                                <form class="converter__left-column-form converter__left-column-form-pay" action="">
-                                    <input type="text" value="17341,72">
+                        <div class="slider-bank__box selected">
+                            <img src="img/Sberbank.png" alt="">
+                            <p class="slider-bank__box-text">Сбербанк</p>
+                        </div>
+                        <div class="slider-bank__box">
+                            <img src="img/Raiffeisen.png" alt="">
+                            <p class="slider-bank__box-text">Raiffeisen</p>
+                        </div>
+                        <div class="slider-bank__box">
+                            <img src="img/Alfa-Bank.png" alt="">
+                            <p class="slider-bank__box-text">Альфа-банк</p>
+                        </div>
+                        <div class="slider-bank__box">
+                            <img src="img/PrivatBank.png" alt="">
+                            <p class="slider-bank__box-text">PrivatBank</p>
+                        </div>
+                        <div class="indent-block"></div>
+                    </div>
+                    <p class="caption-text text-center">введите сумму покупки</p>
+                    <div class="converter inner">
+                        <div class="converter__left-column">
+                            <div class="converter__left-column-first converter__left-column-row">
+                                <p class="converter__left-column-text">получаете</p>
+                                <form class="converter__left-column-form converter__left-column-form-recipient" action="">
+                                    <input type="text" value="0,05">
                                 </form>
                             </div>
-                            <div class="converter__advice">
-                                <p class="converter__advice-text">RiseX советует</p>
+                            <div class="converter-line"></div>
+                            <div class="converter__left-column-second converter__left-column-row">
+                                <div>
+                                    <p class="converter__left-column-text">оплачиваете</p>
+                                    <form class="converter__left-column-form converter__left-column-form-pay" action="">
+                                        <input type="text" value="17341,72">
+                                    </form>
+                                </div>
+                                <div class="converter__advice">
+                                    <p class="converter__advice-text">RiseX советует</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="converter__right-column">
-                        <span class="converter__right-column-text converter__right-column-textGreen">BTC</span>
-                        <div class="converter__right-column-arrows">
-                            <input id="switch-arrows" class="converter__right-column-arrowsCheck" type="checkbox">
-                            <label for="switch-arrows" class="converter__right-column-arrowsIcon"></label>
+                        <div class="converter__right-column">
+                            <span class="converter__right-column-text converter__right-column-textGreen">BTC</span>
+                            <div class="converter__right-column-arrows">
+                                <input id="switch-arrows" class="converter__right-column-arrowsCheck" type="checkbox">
+                                <label for="switch-arrows" class="converter__right-column-arrowsIcon"></label>
+                            </div>
+                            <span class="converter__right-column-text">RUB</span>
                         </div>
-                        <span class="converter__right-column-text">RUB</span>
                     </div>
+                    <section class="wrapper wrapper_bottom-block">
+                        <div class="btn-bottomSection inner">
+                            <button type="button" class="btn btn-success">Купить 0,05 BTC</button>
+                            <input class="form-check-input btn-bottomSection__checkbox" type="checkbox" value="" id="defaultCheck5">
+                            <label class="form-check-label btn-bottomSection__label" for="defaultCheck5">Я знаком с условиями сделки</label>
+                        </div>
+                    </section>
                 </div>
-                <section class="wrapper wrapper_bottom-block">
-                    <div class="btn-bottomSection inner">
-                        <button type="button" class="btn btn-success">Купить 0,05 BTC</button>
-                        <input class="form-check-input btn-bottomSection__checkbox" type="checkbox" value="" id="defaultCheck5">
-                        <label class="form-check-label btn-bottomSection__label" for="defaultCheck5">Я знаком с условиями сделки</label>
+                <section class="wrapper wrapper_green-border">
+                    <p class="caption-text text-center pt-2">другие предложения</p>
+                    <div class="offers-list">
+                        <div class="wrap-collabsible active">
+                            <div class="wrap-collabsible__first-text">
+                                <p>17341,72 руб</p>
+                            </div>
+                            <input id="collapsible" class="toggle" type="checkbox">
+                            <label for="collapsible" class="lbl-toggle">Risex рекоммендует</label>
+                            <div class="collapsible-content">
+                                <div class="content-inner">
+                                    <p>Risex дает лучшее решение на соновании соттношения цены и рейтинга продавца</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap-collabsible">
+                            <div class="wrap-collabsible__first-text">
+                                <p>16500,06 руб</p>
+                            </div>
+                            <input id="collapsible2" class="toggle" type="checkbox">
+                            <label for="collapsible2" class="lbl-toggle">лучшее<br> по курсу</label>
+                            <div class="collapsible-content">
+                                <div class="content-inner">
+                                    <p>лучшее предложение по курсу, которое дают продавцы</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap-collabsible">
+                            <div class="wrap-collabsible__first-text">
+                                <p>17900,06</p>
+                            </div>
+                            <input id="collapsible3" class="toggle" type="checkbox">
+                            <label for="collapsible3" class="lbl-toggle">лучшее по отзывам</label>
+                            <div class="collapsible-content">
+                                <div class="content-inner">
+                                    <p>лучшее предложение по курсу, которое дают продавцы</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="indent-block"></div>
                     </div>
                 </section>
-            </div>
-        </section>
-        <section class="content-tab2">
-            <div class="sale-purchase sale-purchase_padding wrapper_green-border">
-                <h2 class="title-h2 text-center">Продать BTC</h2>
-                <p class="caption-text text-center">выберите способ оплаты</p>
-                <div class="slider-bank">
-                    <div class="slider-bank__box active">
-                        <img src="img/Promsvyazbank.png" alt="">
-                        <p class="slider-bank__box-text">ПСБ</p>
-                    </div>
-                    <div class="slider-bank__box selected">
-                        <img src="img/Sberbank.png" alt="">
-                        <p class="slider-bank__box-text">Сбербанк</p>
-                    </div>
-                    <div class="slider-bank__box">
-                        <img src="img/Raiffeisen.png" alt="">
-                        <p class="slider-bank__box-text">Raiffeisen</p>
-                    </div>
-                    <div class="slider-bank__box">
-                        <img src="img/Alfa-Bank.png" alt="">
-                        <p class="slider-bank__box-text">Альфа-банк</p>
-                    </div>
-                    <div class="slider-bank__box">
-                        <img src="img/PrivatBank.png" alt="">
-                        <p class="slider-bank__box-text">PrivatBank</p>
-                    </div>
-                    <div class="indent-block"></div>
-                </div>
-                <p class="caption-text text-center">введите сумму покупки</p>
-                <div class="converter inner">
-                    <div class="converter__left-column">
-                        <div class="converter__left-column-first converter__left-column-row">
-                            <p class="converter__left-column-text">получаете</p>
-                            <form class="converter__left-column-form converter__left-column-form-recipient" action="">
-                                <input type="text" value="0,05">
-                            </form>
+            </section>
+        </li>
+        <li class="tabs-li">
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2" class="label-tab" title="">
+                <span class="tab-span tab-span_right">Продать BTC</span>
+            </label>
+            <section class="tab-content top-margin pb-index">
+                <div class="sale-purchase sale-purchase_padding wrapper_green-border">
+                    <h2 class="title-h2 text-center">Продать BTC</h2>
+                    <p class="caption-text text-center">выберите способ оплаты</p>
+                    <div class="slider-bank">
+                        <div class="slider-bank__box active">
+                            <img src="img/Promsvyazbank.png" alt="">
+                            <p class="slider-bank__box-text">ПСБ</p>
                         </div>
-                        <div class="converter-line"></div>
-                        <div class="converter__left-column-second converter__left-column-row">
-                            <div>
-                                <p class="converter__left-column-text">оплачиваете</p>
-                                <form class="converter__left-column-form converter__left-column-form-pay" action="">
-                                    <input type="text" value="17341,72">
+                        <div class="slider-bank__box selected">
+                            <img src="img/Sberbank.png" alt="">
+                            <p class="slider-bank__box-text">Сбербанк</p>
+                        </div>
+                        <div class="slider-bank__box">
+                            <img src="img/Raiffeisen.png" alt="">
+                            <p class="slider-bank__box-text">Raiffeisen</p>
+                        </div>
+                        <div class="slider-bank__box">
+                            <img src="img/Alfa-Bank.png" alt="">
+                            <p class="slider-bank__box-text">Альфа-банк</p>
+                        </div>
+                        <div class="slider-bank__box">
+                            <img src="img/PrivatBank.png" alt="">
+                            <p class="slider-bank__box-text">PrivatBank</p>
+                        </div>
+                        <div class="indent-block"></div>
+                    </div>
+                    <p class="caption-text text-center">введите сумму покупки</p>
+                    <div class="converter inner">
+                        <div class="converter__left-column">
+                            <div class="converter__left-column-first converter__left-column-row">
+                                <p class="converter__left-column-text">получаете</p>
+                                <form class="converter__left-column-form converter__left-column-form-recipient" action="">
+                                    <input type="text" value="0,05">
                                 </form>
                             </div>
-                            <div class="converter__advice">
-                                <p class="converter__advice-text">RiseX советует</p>
+                            <div class="converter-line"></div>
+                            <div class="converter__left-column-second converter__left-column-row">
+                                <div>
+                                    <p class="converter__left-column-text">оплачиваете</p>
+                                    <form class="converter__left-column-form converter__left-column-form-pay" action="">
+                                        <input type="text" value="17341,72">
+                                    </form>
+                                </div>
+                                <div class="converter__advice">
+                                    <p class="converter__advice-text">RiseX советует</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="converter__right-column">
-                        <span class="converter__right-column-text converter__right-column-textGreen">BTC</span>
-                        <div class="converter__right-column-arrows">
-                            <input id="switch-arrows2" class="converter__right-column-arrowsCheck" type="checkbox">
-                            <label for="switch-arrows2" class="converter__right-column-arrowsIcon"></label>
+                        <div class="converter__right-column">
+                            <span class="converter__right-column-text converter__right-column-textGreen">BTC</span>
+                            <div class="converter__right-column-arrows">
+                                <input id="switch-arrows2" class="converter__right-column-arrowsCheck" type="checkbox">
+                                <label for="switch-arrows2" class="converter__right-column-arrowsIcon"></label>
+                            </div>
+                            <span class="converter__right-column-text">RUB</span>
                         </div>
-                        <span class="converter__right-column-text">RUB</span>
                     </div>
+                    <section class="wrapper wrapper_bottom-block">
+                        <div class="btn-bottomSection inner">
+                            <button type="button" class="btn btn-success">Купить 0,05 BTC</button>
+                            <input class="form-check-input btn-bottomSection__checkbox" type="checkbox" value="" id="defaultCheck6">
+                            <label class="form-check-label btn-bottomSection__label" for="defaultCheck6">Я знаком с условиями сделки</label>
+                        </div>
+                    </section>
                 </div>
-                <section class="wrapper wrapper_bottom-block">
-                    <div class="btn-bottomSection inner">
-                        <button type="button" class="btn btn-success">Купить 0,05 BTC</button>
-                        <input class="form-check-input btn-bottomSection__checkbox" type="checkbox" value="" id="defaultCheck6">
-                        <label class="form-check-label btn-bottomSection__label" for="defaultCheck6">Я знаком с условиями сделки</label>
+                <section class="wrapper wrapper_green-border">
+                    <p class="caption-text text-center pt-2">другие предложения</p>
+                    <div class="offers-list">
+                        <div class="wrap-collabsible active">
+                            <div class="wrap-collabsible__first-text">
+                                <p>17341,72 руб</p>
+                            </div>
+                            <input id="collapsible2-1" class="toggle" type="checkbox">
+                            <label for="collapsible2-1" class="lbl-toggle">Risex рекоммендует</label>
+                            <div class="collapsible-content">
+                                <div class="content-inner">
+                                    <p>Risex дает лучшее решение на соновании соттношения цены и рейтинга продавца</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap-collabsible">
+                            <div class="wrap-collabsible__first-text">
+                                <p>16500,06 руб</p>
+                            </div>
+                            <input id="collapsible2-2" class="toggle" type="checkbox">
+                            <label for="collapsible2-2" class="lbl-toggle">лучшее<br> по курсу</label>
+                            <div class="collapsible-content">
+                                <div class="content-inner">
+                                    <p>лучшее предложение по курсу, которое дают продавцы</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap-collabsible">
+                            <div class="wrap-collabsible__first-text">
+                                <p>17900,06</p>
+                            </div>
+                            <input id="collapsible2-3" class="toggle" type="checkbox">
+                            <label for="collapsible2-3" class="lbl-toggle">лучшее по отзывам</label>
+                            <div class="collapsible-content">
+                                <div class="content-inner">
+                                    <p>лучшее предложение по курсу, которое дают продавцы</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="indent-block"></div>
                     </div>
                 </section>
-            </div>
-        </section>
-
-    </div>
-    <section class="wrapper wrapper_green-border">
-        <p class="caption-text text-center pt-2">другие предложения</p>
-        <div class="offers-list">
-            <div class="wrap-collabsible active">
-                <div class="wrap-collabsible__first-text">
-                    <p>17341,72 руб</p>
-                </div>
-                <input id="collapsible" class="toggle" type="checkbox">
-                <label for="collapsible" class="lbl-toggle">Risex рекоммендует</label>
-                <div class="collapsible-content">
-                    <div class="content-inner">
-                        <p>Risex дает лучшее решение на соновании соттношения цены и рейтинга продавца</p>
-                    </div>
-                </div>
-            </div>
-            <div class="wrap-collabsible">
-                <div class="wrap-collabsible__first-text">
-                    <p>16500,06 руб</p>
-                </div>
-                <input id="collapsible2" class="toggle" type="checkbox">
-                <label for="collapsible2" class="lbl-toggle">лучшее<br> по курсу</label>
-                <div class="collapsible-content">
-                    <div class="content-inner">
-                        <p>лучшее предложение по курсу, которое дают продавцы</p>
-                    </div>
-                </div>
-            </div>
-            <div class="wrap-collabsible">
-                <div class="wrap-collabsible__first-text">
-                    <p>17900,06</p>
-                </div>
-                <input id="collapsible3" class="toggle" type="checkbox">
-                <label for="collapsible3" class="lbl-toggle">лучшее по отзывам</label>
-                <div class="collapsible-content">
-                    <div class="content-inner">
-                        <p>лучшее предложение по курсу, которое дают продавцы</p>
-                    </div>
-                </div>
-            </div>
-            <div class="indent-block"></div>
-        </div>
-    </section>
+            </section>
+        </li>
+    </ul>
 </main>
 
 <div>
@@ -241,6 +284,12 @@
                 </a>
             </li>
             <li class="right-menu__item">
+                <a class="right-menu__link" href="my-operations.html">
+                    <span class="right-menu__icon right-menu__icon-message"></span>
+                    <span class="right-menu__text">Сообщения</span>
+                </a>
+            </li>
+            <li class="right-menu__item">
                 <a class="right-menu__link" href="newbie-profile.html ">
                     <span class="right-menu__icon right-menu__icon-profile"></span>
                     <span class="right-menu__text">Личный профиль</span>
@@ -256,6 +305,18 @@
                 <a class="right-menu__link" href="#">
                     <span class="right-menu__icon right-menu__icon-conclusion"></span>
                     <span class="right-menu__text">Экстренный вывод</span>
+                </a>
+            </li>
+            <li class="right-menu__item">
+                <a class="right-menu__link" href="registration.html">
+                    <span class="right-menu__icon right-menu__icon-register"></span>
+                    <span class="right-menu__text">Регистрация</span>
+                </a>
+            </li>
+            <li class="right-menu__item">
+                <a class="right-menu__link" href="#">
+                    <span class="right-menu__icon right-menu__icon-login"></span>
+                    <span class="right-menu__text">Вход</span>
                 </a>
             </li>
             <li class="right-menu__item ">

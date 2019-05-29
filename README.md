@@ -20,3 +20,11 @@ https://apalion1493.github.io/Risex-UI/app/assessment2.html
 https://apalion1493.github.io/Risex-UI/app/assessment3.html
 
 https://apalion1493.github.io/Risex-UI/app/transactions-beginning.html
+
+https://apalion1493.github.io/Risex-UI/app/alert.html
+
+https://apalion1493.github.io/Risex-UI/app/message.html
+
+https://apalion1493.github.io/Risex-UI/app/pro-deal.html
+
+https://apalion1493.github.io/Risex-UI/app/transaction-confirmation.html

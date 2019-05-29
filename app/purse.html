@@ -27,188 +27,192 @@
 </header>
 
 <main class="main">
-    <div class="tabs triple-tabs">
-        <input id="tab1" type="radio" name="tabs" checked>
-        <label for="tab1" class="label-tab" title="">
-            <span class="tab-span tab-span_left">Счет</span>
-        </label>
-
-        <input id="tab2" type="radio" name="tabs">
-        <label for="tab2" class="label-tab" title="">
-            <span class="tab-span tab-span_right">Пополнить</span>
-        </label>
-
-        <input id="tab3" type="radio" name="tabs">
-        <label for="tab3" class="label-tab" title="">
-            <span class="tab-span tab-span_right">Вывести</span>
-        </label>
-
-        <section class="content-tab1">
-            <div class="your-balance">
-                <div class="your-balance__first">
-                    <span class="your-balance__first-btn your-balance__first-plus">+</span>
-                    <div class="your-balance__first-content">
-                        <h4 class="your-balance__first-content-title">Ваш баланс</h4>
-                        <span class="your-balance__first-content-balance">$ 266,<span class="your-balance__first-content-thinFont">11</span></span>
-                        <span class="your-balance__first-content-bank">BTC 0,05</span>
+    <ul class="tabs triple-tabs wrapper_green-border">
+        <li class="tabs-li">
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1" class="label-tab" title="">
+                <span class="tab-span tab-span_left">Счет</span>
+            </label>
+            <section class="tab-content top-margin">
+                <div class="your-balance">
+                    <div class="your-balance__first">
+                        <span class="your-balance__first-btn your-balance__first-plus">+</span>
+                        <div class="your-balance__first-content">
+                            <h4 class="your-balance__first-content-title">Ваш баланс</h4>
+                            <span class="your-balance__first-content-balance">$ 266,<span class="your-balance__first-content-thinFont">11</span></span>
+                            <span class="your-balance__first-content-bank">BTC 0,05</span>
+                        </div>
+                        <span class="your-balance__first-btn your-balance__first-minus">-</span>
                     </div>
-                    <span class="your-balance__first-btn your-balance__first-minus">-</span>
+                    <div class="your-balance__line"></div>
+                    <div class="your-balance__second">
+                        <div class="your-balance__second-column">
+                            <span class="your-balance__second-column-title">К использованию</span>
+                            <span class="your-balance__second-column-number">0,05 BTC</span>
+                        </div>
+
+                        <div class="your-balance__second-column">
+                            <span class="your-balance__second-column-title">В эскроу</span>
+                            <span class="your-balance__second-column-number">0,00 BTC</span>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="your-balance__line"></div>
-                <div class="your-balance__second">
-                    <div class="your-balance__second-column">
-                        <span class="your-balance__second-column-title">К использованию</span>
-                        <span class="your-balance__second-column-number">0,05 BTC</span>
-                    </div>
-
-                    <div class="your-balance__second-column">
-                        <span class="your-balance__second-column-title">В эскроу</span>
-                        <span class="your-balance__second-column-number">0,00 BTC</span>
-                    </div>
-                </div>
-
-            </div>
-            <div class="wallet-history wrapper_green-border">
-                <h3 class="text-center wallet-history__title">История кошелька</h3>
-                <div class="wrap-collabsible-container">
-                    <div class="wrap-collabsible wrap-collabsible-walletHistory">
-                        <input id="collapsible3-1" class="toggle" type="checkbox">
-                        <label for="collapsible3-1" class="lbl-toggle">
+                <div class="wallet-history wrapper_green-border">
+                    <h3 class="text-center wallet-history__title">История кошелька</h3>
+                    <div class="wrap-collabsible-container">
+                        <div class="wrap-collabsible wrap-collabsible-walletHistory">
+                            <input id="collapsible3-1" class="toggle" type="checkbox">
+                            <label for="collapsible3-1" class="lbl-toggle">
                             <span class="wrap-collabsible-operation__text">
                                 <time class="wrap-collabsible-operation__text-data">13.04.2019 16:49</time>
                                 <span class="wrap-collabsible-operation__text-title">трансфер</span>
                             </span>
 
-                        </label>
-                        <div class="collapsible-content">
-                            <div class="content-inner">
-                                <ul class="wrap-collabsible-operation__list">
-                                    <li class="wrap-collabsible-operation__item">
-                                        <p>Сумма</p>
-                                        <p>-0.19465562</p>
-                                    </li>
-                                    <li class="wrap-collabsible-operation__item">
-                                        <p>Баланс было</p>
-                                        <p>0.19475562</p>
-                                    </li>
-                                    <li class="wrap-collabsible-operation__item">
-                                        <p>Баланс стало</p>
-                                        <p>0.0001348</p>
-                                    </li>
-                                    <li class="wrap-collabsible-operation__item">
-                                        <p>Описание:</p>
-                                    </li>
-                                </ul>
+                            </label>
+                            <div class="collapsible-content">
+                                <div class="content-inner">
+                                    <ul class="wrap-collabsible-operation__list">
+                                        <li class="wrap-collabsible-operation__item">
+                                            <p>Сумма</p>
+                                            <p>-0.19465562</p>
+                                        </li>
+                                        <li class="wrap-collabsible-operation__item">
+                                            <p>Баланс было</p>
+                                            <p>0.19475562</p>
+                                        </li>
+                                        <li class="wrap-collabsible-operation__item">
+                                            <p>Баланс стало</p>
+                                            <p>0.0001348</p>
+                                        </li>
+                                        <li class="wrap-collabsible-operation__item">
+                                            <p>Описание:</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="wrap-collabsible wrap-collabsible-walletHistory">
-                        <input id="collapsible3-2" class="toggle" type="checkbox">
-                        <label for="collapsible3-2" class="lbl-toggle">
+                        <div class="wrap-collabsible wrap-collabsible-walletHistory">
+                            <input id="collapsible3-2" class="toggle" type="checkbox">
+                            <label for="collapsible3-2" class="lbl-toggle">
                             <span class="wrap-collabsible-operation__text">
                                 <time class="wrap-collabsible-operation__text-data">13.04.2019 16:49</time>
                                 <span class="wrap-collabsible-operation__text-title">вывод</span>
                             </span>
 
-                        </label>
-                        <div class="collapsible-content">
-                            <div class="content-inner">
-                                <ul class="wrap-collabsible-operation__list">
-                                    <li class="wrap-collabsible-operation__item">
-                                        <p>Сумма</p>
-                                        <p>-0.19465562</p>
-                                    </li>
-                                    <li class="wrap-collabsible-operation__item">
-                                        <p>Баланс было</p>
-                                        <p>0.19475562</p>
-                                    </li>
-                                    <li class="wrap-collabsible-operation__item">
-                                        <p>Баланс стало</p>
-                                        <p>0.0001348</p>
-                                    </li>
-                                    <li class="wrap-collabsible-operation__item">
-                                        <p>Описание:</p>
-                                    </li>
-                                </ul>
+                            </label>
+                            <div class="collapsible-content">
+                                <div class="content-inner">
+                                    <ul class="wrap-collabsible-operation__list">
+                                        <li class="wrap-collabsible-operation__item">
+                                            <p>Сумма</p>
+                                            <p>-0.19465562</p>
+                                        </li>
+                                        <li class="wrap-collabsible-operation__item">
+                                            <p>Баланс было</p>
+                                            <p>0.19475562</p>
+                                        </li>
+                                        <li class="wrap-collabsible-operation__item">
+                                            <p>Баланс стало</p>
+                                            <p>0.0001348</p>
+                                        </li>
+                                        <li class="wrap-collabsible-operation__item">
+                                            <p>Описание:</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="wrap-collabsible wrap-collabsible-walletHistory">
-                        <input id="collapsible3-3" class="toggle" type="checkbox">
-                        <label for="collapsible3-3" class="lbl-toggle">
+                        <div class="wrap-collabsible wrap-collabsible-walletHistory">
+                            <input id="collapsible3-3" class="toggle" type="checkbox">
+                            <label for="collapsible3-3" class="lbl-toggle">
                             <span class="wrap-collabsible-operation__text">
                                 <time class="wrap-collabsible-operation__text-data">13.04.2019 16:49</time>
                                 <span class="wrap-collabsible-operation__text-title">вывод</span>
                             </span>
 
-                        </label>
-                        <div class="collapsible-content">
-                            <div class="content-inner">
-                                <ul class="wrap-collabsible-operation__list">
-                                    <li class="wrap-collabsible-operation__item">
-                                        <p>Сумма</p>
-                                        <p>-0.19465562</p>
-                                    </li>
-                                    <li class="wrap-collabsible-operation__item">
-                                        <p>Баланс было</p>
-                                        <p>0.19475562</p>
-                                    </li>
-                                    <li class="wrap-collabsible-operation__item">
-                                        <p>Баланс стало</p>
-                                        <p>0.0001348</p>
-                                    </li>
-                                    <li class="wrap-collabsible-operation__item">
-                                        <p>Описание:</p>
-                                    </li>
-                                </ul>
-                                <p class="wrap-collabsible-operation__blockchain-text">Вывод средств через блокчейн на кошелёк
-                                    <br> 3DNsMPAGDUwPGWK4fGYK7jSAxAqE8vGTku</p>
+                            </label>
+                            <div class="collapsible-content">
+                                <div class="content-inner">
+                                    <ul class="wrap-collabsible-operation__list">
+                                        <li class="wrap-collabsible-operation__item">
+                                            <p>Сумма</p>
+                                            <p>-0.19465562</p>
+                                        </li>
+                                        <li class="wrap-collabsible-operation__item">
+                                            <p>Баланс было</p>
+                                            <p>0.19475562</p>
+                                        </li>
+                                        <li class="wrap-collabsible-operation__item">
+                                            <p>Баланс стало</p>
+                                            <p>0.0001348</p>
+                                        </li>
+                                        <li class="wrap-collabsible-operation__item">
+                                            <p>Описание:</p>
+                                        </li>
+                                    </ul>
+                                    <p class="wrap-collabsible-operation__blockchain-text">Вывод средств через блокчейн на кошелёк
+                                        <br> 3DNsMPAGDUwPGWK4fGYK7jSAxAqE8vGTku</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="content-tab2">
-            <div class="address-btc wrapper_green-border">
-                <h3 class="address-btc__title">Введите адрес пополнения BTC</h3>
-                <p class="address-btc__desc-text">Отправьте BTC на адрес кошелька приведенного ниже. Депозит будет начислен на соответствующий кошелек.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" value="3PPcukL21p4KjgeuPsMUdT3re4UHHEGHyn">
-                    </div>
-                    <div class="form-group">
-                        <button type="button" class="btn btn-success w-100">Скопировать</button>
-                    </div>
-                </form>
-                <p class="address-btc__text text-center">или QR-код:</p>
-                <img class="address-btc__img-qr" src="img/code-img.jpg" alt="">
-                <ul class="address-btc__list">
-                    <li>Минимальная разрешенная сумма для ввода и вывода - 0.0002 btc</li>
-                    <li>Постоянная комиссия на ввод и вывод - 0.0001 btc</li>
-                </ul>
-            </div>
-        </section>
-        <section class="content-tab3">
-            <div class="withdrawal-btc wrapper_green-border">
-                <h3>Введите адрес для вывода BTC</h3>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control withdrawal-btc__first-form" value="3PPcukL21p4KjgeuPsMUdT3re4UHHEGHyn">
-                        <div class="withdrawal-btc__color">
-                            <input type="text" class="form-control" value="0,05">
-                            <a href="#">вывести все</a>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <button type="button" class="btn btn-success w-100">Запросить вывод</button>
-                    </div>
-                </form>
-                <p class="withdrawal-btc__text">комиссия 0,00001 BTC</p>
-            </div>
-        </section>
+            </section>
+        </li>
 
-    </div>
+        <li class="tabs-li">
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2" class="label-tab" title="">
+                <span class="tab-span tab-span_right">Пополнить</span>
+            </label>
+            <section class="tab-content top-margin">
+                <div class="address-btc wrapper_green-border">
+                    <h3 class="address-btc__title">Введите адрес пополнения BTC</h3>
+                    <p class="address-btc__desc-text">Отправьте BTC на адрес кошелька приведенного ниже. Депозит будет начислен на соответствующий кошелек.</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" value="3PPcukL21p4KjgeuPsMUdT3re4UHHEGHyn">
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-success w-100">Скопировать</button>
+                        </div>
+                    </form>
+                    <p class="address-btc__text text-center">или QR-код:</p>
+                    <img class="address-btc__img-qr" src="img/code-img.jpg" alt="">
+                    <ul class="address-btc__list">
+                        <li>Минимальная разрешенная сумма для ввода и вывода - 0.0002 btc</li>
+                        <li>Постоянная комиссия на ввод и вывод - 0.0001 btc</li>
+                    </ul>
+                </div>
+            </section>
+        </li>
+
+        <li class="tabs-li">
+            <input id="tab3" type="radio" name="tabs">
+            <label for="tab3" class="label-tab" title="">
+                <span class="tab-span tab-span_right">Вывести</span>
+            </label>
+            <section class="tab-content top-margin">
+                <div class="withdrawal-btc wrapper_green-border">
+                    <h3>Введите адрес для вывода BTC</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control withdrawal-btc__first-form" value="3PPcukL21p4KjgeuPsMUdT3re4UHHEGHyn">
+                            <div class="withdrawal-btc__color">
+                                <input type="text" class="form-control" value="0,05">
+                                <a href="#">вывести все</a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-success w-100">Запросить вывод</button>
+                        </div>
+                    </form>
+                    <p class="withdrawal-btc__text">комиссия 0,00001 BTC</p>
+                </div>
+            </section>
+        </li>
+    </ul>
 </main>
 
 <div>
@@ -233,6 +237,12 @@
                 </a>
             </li>
             <li class="right-menu__item">
+                <a class="right-menu__link" href="my-operations.html">
+                    <span class="right-menu__icon right-menu__icon-message"></span>
+                    <span class="right-menu__text">Сообщения</span>
+                </a>
+            </li>
+            <li class="right-menu__item">
                 <a class="right-menu__link" href="newbie-profile.html ">
                     <span class="right-menu__icon right-menu__icon-profile"></span>
                     <span class="right-menu__text">Личный профиль</span>
@@ -248,6 +258,18 @@
                 <a class="right-menu__link" href="#">
                     <span class="right-menu__icon right-menu__icon-conclusion"></span>
                     <span class="right-menu__text">Экстренный вывод</span>
+                </a>
+            </li>
+            <li class="right-menu__item">
+                <a class="right-menu__link" href="registration.html">
+                    <span class="right-menu__icon right-menu__icon-register"></span>
+                    <span class="right-menu__text">Регистрация</span>
+                </a>
+            </li>
+            <li class="right-menu__item">
+                <a class="right-menu__link" href="#">
+                    <span class="right-menu__icon right-menu__icon-login"></span>
+                    <span class="right-menu__text">Вход</span>
                 </a>
             </li>
             <li class="right-menu__item ">

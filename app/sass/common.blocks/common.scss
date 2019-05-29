@@ -10,7 +10,7 @@ body {
 
 .wrapper {
   background: #ffffff;
-  margin-top: 13px;
+  margin-top: 10px;
 }
 
 .inner {
@@ -103,4 +103,70 @@ body {
   min-width: 20px;
   height: 10px;
   display: flex;
+}
+
+.header-noTabs {
+  padding-bottom: 18px;
+}
+
+.alert-data {
+  padding-left: 11px;
+  font-weight: 500;
+  color: #000;
+  font-size: 14px;
+  padding-top: 14px;
+  display: block;
+}
+
+.pb-index {
+  padding-bottom: 98px;
+}
+
+.top-margin {
+  margin-top: 11px ;
+}
+
+.bottom-padding {
+  padding-bottom: 150px;
+}
+
+.return-back {
+  background: #ffffff;
+  padding: 10px 21px 15px;
+
+  a {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #353535;
+  }
+}
+
+.return-back__arrow {
+  background: url("../../img/arrow-link.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 19px;
+  height: 13px;
+  display: block;
+  transform: rotate(180deg);
+  margin-right: 16px;
+}
+
+.bottom-btn-container {
+  padding-top: 12px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 25px;
+
+  button {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 320px;
+    width: 100%;
+  }
 }

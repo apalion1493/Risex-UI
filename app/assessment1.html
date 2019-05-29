@@ -27,58 +27,59 @@
 </header>
 
 <main class="main transactions-beginning-page">
-    <div class="tabs review-container-tabs">
-        <input id="tab1" type="radio" name="tabs" checked>
-        <label for="tab1" class="label-tab " title="">
-            <span class="tab-span tab-span_left">Купить BTC</span>
-        </label>
-
-        <input id="tab2" type="radio" name="tabs">
-        <label for="tab2" class="label-tab " title="">
-            <span class="tab-span tab-span_right">Продать BTC</span>
-        </label>
-
-        <section class="content-tab1">
-            <div class="container review-container  wrapper_green-border">
-                <header class="review-container__header">
-                    <a href="#">
-                        <span class="review-container__header-arrow"></span>
-                        <span class="review-container__header-text">К покупке</span>
-                    </a>
-                </header>
-                <div class="review-container__line"></div>
-                <div class="review-container__content">
-                    <h4 class="review-container__content-title">Как вы оцените продавца?</h4>
-                    <p class="review-container__content-text">Отрицательный отзыв автоматически заблокирует этого пользователя для вас.</p>
-                    <div class="review-container__content-block">
-                        <div class="review-container__content-block-item">
-                            <img src="img/icon-good.svg" alt="">
-                            <p>Хорошо</p>
+    <ul class="tabs wrapper_green-border review-container-tabs">
+        <li class="tabs-li">
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1" class="label-tab " title="">
+                <span class="tab-span tab-span_left">Купить BTC</span>
+            </label>
+            <section class="tab-content top-margin bottom-padding">
+                <div class="container review-container  wrapper_green-border">
+                    <header class="review-container__header">
+                        <a href="#">
+                            <span class="review-container__header-arrow"></span>
+                            <span class="review-container__header-text">К покупке</span>
+                        </a>
+                    </header>
+                    <div class="review-container__line"></div>
+                    <div class="review-container__content">
+                        <h4 class="review-container__content-title">Как вы оцените продавца?</h4>
+                        <p class="review-container__content-text">Отрицательный отзыв автоматически заблокирует этого пользователя для вас.</p>
+                        <div class="review-container__content-block">
+                            <div class="review-container__content-block-item">
+                                <img src="img/icon-good.svg" alt="">
+                                <p>Хорошо</p>
+                            </div>
+                            <div class="review-container__content-block-item">
+                                <img src="img/icon-neutral.svg" alt="">
+                                <p>Нейтрально</p>
+                            </div>
+                            <div class="review-container__content-block-item">
+                                <img src="img/icon-bad.svg" alt="">
+                                <p>Плохо</p>
+                            </div>
                         </div>
-                        <div class="review-container__content-block-item">
-                            <img src="img/icon-neutral.svg" alt="">
-                            <p>Нейтрально</p>
-                        </div>
-                        <div class="review-container__content-block-item">
-                            <img src="img/icon-bad.svg" alt="">
-                            <p>Плохо</p>
-                        </div>
+                        <p class="review-container__content-text">Можете оставить личную заметку об этом пользователей. Это пригодится в будущем</p>
                     </div>
-                    <p class="review-container__content-text">Можете оставить личную заметку об этом пользователей. Это пригодится в будущем</p>
                 </div>
+            </section>
+        </li>
+        <li class="tabs-li">
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2" class="label-tab " title="">
+                <span class="tab-span tab-span_right">Продать BTC</span>
+            </label>
+            <section class="tab-content top-margin"></section>
+        </li>
+    </ul>
+    <div class="message-box">
+        <form action="">
+            <div class="message-box__container">
+                <div contenteditable="true" data-text="Напишите сообщение..." class="message-box__textarea message-box__textarea-long"></div>
             </div>
-        </section>
-        <section class="content-tab2"></section>
 
-        <div class="message-box">
-            <form action="">
-                <div class="message-box__container">
-                    <div contenteditable="true" data-text="Напишите сообщение..." class="message-box__textarea message-box__textarea-long"></div>
-                </div>
-
-                <button type="button" class="btn btn-success w-100 mt-2">Личная заметка о пользователе</button>
-            </form>
-        </div>
+            <button type="button" class="btn btn-success w-100 mt-2">Личная заметка о пользователе</button>
+        </form>
     </div>
 </main>
 
@@ -104,6 +105,12 @@
                 </a>
             </li>
             <li class="right-menu__item">
+                <a class="right-menu__link" href="my-operations.html">
+                    <span class="right-menu__icon right-menu__icon-message"></span>
+                    <span class="right-menu__text">Сообщения</span>
+                </a>
+            </li>
+            <li class="right-menu__item">
                 <a class="right-menu__link" href="newbie-profile.html ">
                     <span class="right-menu__icon right-menu__icon-profile"></span>
                     <span class="right-menu__text">Личный профиль</span>
@@ -119,6 +126,18 @@
                 <a class="right-menu__link" href="#">
                     <span class="right-menu__icon right-menu__icon-conclusion"></span>
                     <span class="right-menu__text">Экстренный вывод</span>
+                </a>
+            </li>
+            <li class="right-menu__item">
+                <a class="right-menu__link" href="registration.html">
+                    <span class="right-menu__icon right-menu__icon-register"></span>
+                    <span class="right-menu__text">Регистрация</span>
+                </a>
+            </li>
+            <li class="right-menu__item">
+                <a class="right-menu__link" href="#">
+                    <span class="right-menu__icon right-menu__icon-login"></span>
+                    <span class="right-menu__text">Вход</span>
                 </a>
             </li>
             <li class="right-menu__item ">

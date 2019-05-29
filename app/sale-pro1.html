@@ -174,23 +174,83 @@
                 <span class="tab-span tab-span_right">Продать BTC</span>
             </label>
             <section class="tab-content top-margin">
-                <div class="transactions-beginning-page__section transactions-beginning-page__first-slide wrapper_green-border">
-                    <div class="transactions-beginning-page__first-slide-mainInfo">
-                        <h2 class="transactions-beginning-page__first-slide-mainInfo-title">Покупка №1</h2>
-                        <span class="transactions-beginning-page__first-slide-mainInfo-percent">0,05 BTC</span>
-                        <p class="transactions-beginning-page__first-slide-mainInfo-sum">за 17341,72 РУБ</p>
-                        <a class="transactions-beginning-page__first-slide-mainInfo-link" href="#ModalWindow">Условия покупки</a>
+                <span>Криптовалюта</span>
+                <div class="slider-bank">
+                    <div class="slider-bank__box active">
+                        <img src="img/Promsvyazbank.png" alt="">
+                        <p class="slider-bank__box-text">ПСБ</p>
                     </div>
-                    <div class="transactions-beginning-page__first-slide-bottomBlock">
-                        <div class="transactions-beginning-page__first-slide-bottomBlock-column">
-                            <p>Комиссия</p>
-                            <span>0,003 BTC</span>
+                    <div class="slider-bank__box selected">
+                        <img src="img/Sberbank.png" alt="">
+                        <p class="slider-bank__box-text">Сбербанк</p>
+                    </div>
+                    <div class="slider-bank__box">
+                        <img src="img/Raiffeisen.png" alt="">
+                        <p class="slider-bank__box-text">Raiffeisen</p>
+                    </div>
+                    <div class="slider-bank__box">
+                        <img src="img/Alfa-Bank.png" alt="">
+                        <p class="slider-bank__box-text">Альфа-банк</p>
+                    </div>
+                    <div class="slider-bank__box">
+                        <img src="img/PrivatBank.png" alt="">
+                        <p class="slider-bank__box-text">PrivatBank</p>
+                    </div>
+                    <div class="indent-block"></div>
+                </div>
+                <span>Способ получения</span>
+                <div class="slider-bank">
+                    <div class="slider-bank__box active">
+                        <img src="img/Promsvyazbank.png" alt="">
+                        <p class="slider-bank__box-text">ПСБ</p>
+                    </div>
+                    <div class="slider-bank__box selected">
+                        <img src="img/Sberbank.png" alt="">
+                        <p class="slider-bank__box-text">Сбербанк</p>
+                    </div>
+                    <div class="slider-bank__box">
+                        <img src="img/Raiffeisen.png" alt="">
+                        <p class="slider-bank__box-text">Raiffeisen</p>
+                    </div>
+                    <div class="slider-bank__box">
+                        <img src="img/Alfa-Bank.png" alt="">
+                        <p class="slider-bank__box-text">Альфа-банк</p>
+                    </div>
+                    <div class="slider-bank__box">
+                        <img src="img/PrivatBank.png" alt="">
+                        <p class="slider-bank__box-text">PrivatBank</p>
+                    </div>
+                    <div class="indent-block"></div>
+                </div>
+                <span>введите сумму покупки</span>
+                <div class="converter inner">
+                    <div class="converter__left-column">
+                        <div class="converter__left-column-first converter__left-column-row">
+                            <p class="converter__left-column-text">получаете</p>
+                            <form class="converter__left-column-form converter__left-column-form-recipient" action="">
+                                <input type="text" value="0,05">
+                            </form>
                         </div>
-
-                        <div class="transactions-beginning-page__first-slide-bottomBlock-column">
-                            <p>Получаете</p>
-                            <span>0,05 BTC</span>
+                        <div class="converter-line"></div>
+                        <div class="converter__left-column-second converter__left-column-row">
+                            <div>
+                                <p class="converter__left-column-text">оплачиваете</p>
+                                <form class="converter__left-column-form converter__left-column-form-pay" action="">
+                                    <input type="text" value="17341,72">
+                                </form>
+                            </div>
+                            <div class="converter__advice">
+                                <p class="converter__advice-text">RiseX советует</p>
+                            </div>
                         </div>
+                    </div>
+                    <div class="converter__right-column">
+                        <span class="converter__right-column-text converter__right-column-textGreen">BTC</span>
+                        <div class="converter__right-column-arrows">
+                            <input id="switch-arrows" class="converter__right-column-arrowsCheck" type="checkbox">
+                            <label for="switch-arrows" class="converter__right-column-arrowsIcon"></label>
+                        </div>
+                        <span class="converter__right-column-text">RUB</span>
                     </div>
                 </div>
                 <div class="transactions-beginning-page__section transactions-beginning-page__second-slide wrapper_green-border transactions-beginning-page__section-active">
