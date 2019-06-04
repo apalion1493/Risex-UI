@@ -28,3 +28,13 @@ https://apalion1493.github.io/Risex-UI/app/message.html
 https://apalion1493.github.io/Risex-UI/app/pro-deal.html
 
 https://apalion1493.github.io/Risex-UI/app/transaction-confirmation.html
+
+https://apalion1493.github.io/Risex-UI/app/sale-pro1.html
+
+https://apalion1493.github.io/Risex-UI/app/sale-pro2.html
+
+https://apalion1493.github.io/Risex-UI/app/sale-pro3.html
+
+https://apalion1493.github.io/Risex-UI/app/sales-setting.html
+
+https://apalion1493.github.io/Risex-UI/app/transaction-parameters.html

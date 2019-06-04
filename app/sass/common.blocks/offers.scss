@@ -10,7 +10,7 @@
 
 .offers-item.active {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.244339);
-  background: #00CC4F;
+  background: $colorButton;
 
   * {
     color: #ffffff;
@@ -183,14 +183,14 @@ input[type='checkbox'] {
 }
 
 .wrap-collabsible.active {
-  background: #00CC4F;
+  background: $colorButton;
 
   * {
     color: #ffffff;
   }
 
   .lbl-toggle {
-    background: #00CC4F;
+    background: $colorButton;
   }
 
   .collapsible-content .content-inner p {

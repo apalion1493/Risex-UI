@@ -19,13 +19,13 @@
   margin-bottom: 0;
   width: 100%;
   padding: 6px 0 13px 8px;
-  background: #F7F8FA;
+  background: $bgSelector;
   border: none;
   border-bottom: 1px solid #F2F6F3;
 
   .lbl-toggle {
     margin-bottom: 0;
-    background: #F7F8FA;
+    background: $bgSelector;
     display: flex;
     align-items: center;
     padding: 0 0 0 3px;
@@ -79,5 +79,5 @@
 
 .wrap-collabsible-container {
   border-radius: 6px;
-  background: #F7F8FA;
+  background: $bgSelector;
 }

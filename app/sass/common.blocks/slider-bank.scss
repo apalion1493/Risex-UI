@@ -25,7 +25,7 @@
 
   img {
     width: 52px;
-    height: 51px;
+    min-height: 51px;
   }
 
   &:first-child {
@@ -58,4 +58,10 @@
 
 .slider-bank .slick-list {
   padding-left: 20px;
+}
+
+@media (min-width: 450px) {
+  .slider-bank {
+    justify-content: center;
+  }
 }

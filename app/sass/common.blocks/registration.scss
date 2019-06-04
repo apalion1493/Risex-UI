@@ -55,7 +55,7 @@
   width: 5px;
   height: 5px;
   content: '';
-  background: #E3F4EA;
+  background: $hoverMenu;
   border-radius: 50%;
   text-align: center;
   opacity: 1;
@@ -66,7 +66,7 @@
 .registration-container .slick-dots .slick-active button:before {
   width: 9px;
   height: 9px;
-  background: #00CC4F;
+  background: $colorButton;
   top: -2px;
 }
 
@@ -165,7 +165,7 @@
 
   input[type=radio] + label:before {
     content: "";
-    background: #E3F4EA;
+    background: $hoverMenu;
     border-radius: 50%;
     width: 5px;
     height: 5px;
@@ -173,7 +173,7 @@
     position: absolute;
   }
   input[type=radio]:checked + label:before {
-    background: #00CC4F;
+    background: $colorButton;
     transform: scale(1.9,1.9);
   }
 }

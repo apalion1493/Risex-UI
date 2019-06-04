@@ -133,7 +133,7 @@
 }
 
 .transactions-beginning-page__section-informer {
-  background: #00CC4F;
+  background: $colorButton;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -230,7 +230,7 @@
 }
 
 .transactions-beginning-page__section-arrival-status {
-  background: #F7F8FA;
+  background: $bgSelector;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,5 +1,12 @@
 @import "../library.blocks/bootstrap/bootstrap-reboot";
 
+$colorButton: #00CC4F;
+$colorButtonHover: #3BB069;
+$hoverMenu: #E3F4EA;
+$bgSelector: #F7F8FA;
+$hoverBgSelector: #EAECF0;
+$bgAddInfo: #070707;
+
 * {
   font-family: 'Roboto', sans-serif;
 }
@@ -145,7 +152,7 @@ body {
 }
 
 .return-back__arrow {
-  background: url("../../img/arrow-link.svg") no-repeat center;
+  background: url("../img/arrow-link.svg") no-repeat center;
   background-size: 100% auto;
   width: 19px;
   height: 13px;
@@ -169,4 +176,67 @@ body {
     max-width: 320px;
     width: 100%;
   }
+}
+
+.slider-container_top-margin {
+  margin-top: 12px;
+}
+
+.arrow-right {
+  background: url("../img/arrow-right-green.svg") no-repeat center;
+  background-size: 100% auto;
+  min-width: 11px;
+  height: 6px;
+  display: block;
+}
+
+.arrow-right_center {
+  margin-top: 38px;
+  margin-left: 4px;
+  margin-right: 5px;
+}
+
+.setting-content {
+  .caption-text.text-center {
+    margin-bottom: 10px;
+  }
+
+  .block-form {
+    .form-group .button-bank {
+      padding-left: 20px;
+      padding-right: 17px;
+    }
+  }
+
+  .block-form.block-form_column {
+    .form-group .button-bank {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+}
+
+.block-form_left {
+  margin-right: 10px;
+}
+
+.block-form_right {
+  margin-left: 10px;
+}
+
+.setting-content {
+  .form-button .form-group {
+    padding-left: 0;
+  }
+}
+
+.shopping-block {
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #fff;
+}
+
+.select-box_mt10 {
+  margin-top: 10px;
 }

@@ -15,6 +15,7 @@
   transition-duration: 300ms; /* анимация */
   margin-left: auto;
 }
+
 .switch-btn::after {
   content: "";
   height: 24px; /* высота кнопки */
@@ -27,9 +28,11 @@
   position: absolute;
   z-index: 1;
 }
+
 .switch-on {
-  background: #3BB069;
+  background: $colorButtonHover;
 }
+
 .switch-on::after {
   left: 37px;
 }

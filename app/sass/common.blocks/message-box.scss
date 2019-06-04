@@ -29,14 +29,6 @@
     outline: none;
   }
 
-  /*&:before {
-    content: 'Напишите сообщение…';
-    position: absolute;
-    font-size: 14px;
-    line-height: 20px;
-    color: #919191;
-  }*/
-
   &:focus:before{
     opacity: 0;
   }
@@ -59,4 +51,19 @@
   display: block;
   margin-right: 21px;
   margin-bottom: 16px;
+  margin-left: auto;
+}
+
+.message-box_conditions {
+  position: static;
+  box-shadow: none;
+
+  .message-box__container {
+    height: 102px;
+  }
+
+  .message-box__textarea {
+    width: 100%;
+    height: 100%;
+  }
 }

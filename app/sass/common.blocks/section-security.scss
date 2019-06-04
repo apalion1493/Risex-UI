@@ -143,8 +143,8 @@
   }
 
   input:checked + .slider {
-    background-color: #3BB069;
-    border: 1px solid #3BB069;
+    background-color: $colorButtonHover;
+    border: 1px solid $colorButtonHover;
 
     &:before {
       background: #ffffff;
@@ -152,7 +152,7 @@
   }
 
   input:focus + .slider {
-    box-shadow: 0 0 1px #3BB069;
+    box-shadow: 0 0 1px $colorButtonHover;
   }
 
   input:checked + .slider:before {

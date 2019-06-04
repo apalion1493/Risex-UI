@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<header class="header header_indent header-noTabs wrapper_green-border">
+<header class="header header_indent header-noTabs">
     <div class="header-container">
         <div class="header-burger">
             <div class="header-burger__line"></div>
@@ -27,32 +27,251 @@
 </header>
 
 <main class="main">
+    <div class="section">
+        <div class="return-back wrapper_green-border">
+            <a href="#">
+                <span class="return-back__arrow"></span>
+                <span class="return-back__text">Назад</span>
+            </a>
+        </div>
+    </div>
     <section class="wrapper wrapper_green-border">
         <div class="inner">
-            <div class="form-group">
-                <label for="exampleFormControlSelect1">Криптовалюта</label>
-                <select size="1" class="form-control test-class" id="exampleFormControlSelect1">
-                    <option>BTC</option>
-                    <option>BTC</option>
-                    <option>BTC</option>
-                    <option>BTC</option>
-                    <option>BTC</option>
-                </select>
+            <div class="form-group mb-0">
+                <!--<label for="exampleFormControlSelect1">Криптовалюта</label>-->
+                <div class="d-flex justify-content-between align-items-center pt-3">
+                    <div class="block-select block-select_half">
+                        <p class="block-select__text">Криптовалюта</p>
+                        <div class="select-box select-box_cryptocurrency">
+                            <div class="select-box__current" tabindex="1">
+                                <div class="select-box__value"><input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked">
+                                    <p class="select-box__input-text select-box__input-text_"><span class="select-box__block-icon select-box__block-icon-bitok"></span>BTC1</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="1" value="2" name="Ben" checked="checked">
+                                    <p class="select-box__input-text"><span class="select-box__block-icon select-box__block-icon-bitok"></span>BTC2</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="2" value="3" name="Ben" checked="checked">
+                                    <p class="select-box__input-text"><span class="select-box__block-icon select-box__block-icon-bitok"></span>BTC3</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="3" value="4" name="Ben" checked="checked">
+                                    <p class="select-box__input-text"><span class="select-box__block-icon select-box__block-icon-bitok"></span>BTC4</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="4" value="5" name="Ben" checked="checked">
+                                    <p class="select-box__input-text"><span class="select-box__block-icon select-box__block-icon-bitok"></span>BTC5</p>
+                                </div>
+                                <img class="select-box__icon" src="img/Shape-icon.svg" alt="Arrow Icon" aria-hidden="true">
+                            </div>
+                            <ul class="select-box__list">
+                                <li><label class="select-box__option" for="0"><span class="select-box__block-icon select-box__block-icon-bitok"></span>BTC1</label></li>
+                                <li><label class="select-box__option" for="1" ><span class="select-box__block-icon select-box__block-icon-bitok"></span>BTC2</label></li>
+                                <li><label class="select-box__option" for="2" ><span class="select-box__block-icon select-box__block-icon-bitok"></span>BTC3</label></li>
+                                <li><label class="select-box__option" for="3" ><span class="select-box__block-icon select-box__block-icon-bitok"></span>BTC4</label></li>
+                                <li><label class="select-box__option" for="4" ><span class="select-box__block-icon select-box__block-icon-bitok"></span>BTC5</label></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <span class="arrow-right arrow-right_center"></span>
+
+                    <div class="block-select block-select_half">
+                        <p class="block-select__text">Валюта</p>
+                        <div class="select-box select-box_currency">
+                            <div class="select-box__current" tabindex="2">
+                                <div class="select-box__value"><input class="select-box__input" type="radio" id="5" value="6" name="Ben1" checked="checked">
+                                    <p class="select-box__input-text"><span class="select-box__block-icon select-box__block-icon-bitok"></span>RUB1</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="6" value="7" name="Ben1" checked="checked">
+                                    <p class="select-box__input-text"><span class="select-box__block-icon select-box__block-icon-bitok"></span>RUB2</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="7" value="8" name="Ben1" checked="checked">
+                                    <p class="select-box__input-text"><span class="select-box__block-icon select-box__block-icon-bitok"></span>RUB3</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="8" value="9" name="Ben1" checked="checked">
+                                    <p class="select-box__input-text"><span class="select-box__block-icon select-box__block-icon-bitok"></span>RUB4</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="9" value="10" name="Ben1" checked="checked">
+                                    <p class="select-box__input-text"><span class="select-box__block-icon select-box__block-icon-bitok"></span>RUB5</p>
+                                </div>
+                                <img class="select-box__icon" src="img/Shape-icon.svg" alt="Arrow Icon" aria-hidden="true">
+                            </div>
+                            <ul class="select-box__list">
+                                <li><label class="select-box__option" for="5"><span class="select-box__block-icon select-box__block-icon-bitok"></span>RUB1</label></li>
+                                <li><label class="select-box__option" for="6" ><span class="select-box__block-icon select-box__block-icon-bitok"></span>RUB2</label></li>
+                                <li><label class="select-box__option" for="7" ><span class="select-box__block-icon select-box__block-icon-bitok"></span>RUB3</label></li>
+                                <li><label class="select-box__option" for="8" ><span class="select-box__block-icon select-box__block-icon-bitok"></span>RUB4</label></li>
+                                <li><label class="select-box__option" for="9"><span class="select-box__block-icon select-box__block-icon-bitok"></span>RUB5</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label for="exampleFormControlSelect2">Валюта</label>
-                <select size="1" class="form-control test-class" id="exampleFormControlSelect2">
-                    <option>RUB</option>
-                    <option>RUB</option>
-                    <option>RUB</option>
-                    <option>RUB</option>
-                    <option>RUB</option>
-                </select>
+            <div class="form-group mb-2">
+                <!--<label for="exampleFormControlSelect1">Криптовалюта</label>-->
+                <div class="d-flex justify-content-between align-items-center pt-3">
+                    <div class="block-select block-select_half">
+                        <p class="block-select__text">Страна</p>
+                        <div class="select-box ">
+                            <div class="select-box__current" tabindex="3">
+                                <div class="select-box__value"><input class="select-box__input" type="radio" id="10" value="11" name="Ben2" checked="checked">
+                                    <p class="select-box__input-text select-box__input-text_">Россия1</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="11" value="12" name="Ben2" checked="checked">
+                                    <p class="select-box__input-text">Россия2</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="12" value="13" name="Ben2" checked="checked">
+                                    <p class="select-box__input-text">Россия3</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="13" value="14" name="Ben2" checked="checked">
+                                    <p class="select-box__input-text">Россия4</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="14" value="15" name="Ben2" checked="checked">
+                                    <p class="select-box__input-text">Россия5</p>
+                                </div>
+                                <img class="select-box__icon" src="img/Shape-icon.svg" alt="Arrow Icon" aria-hidden="true">
+                            </div>
+                            <ul class="select-box__list">
+                                <li><label class="select-box__option" for="10">Россия1</label></li>
+                                <li><label class="select-box__option" for="11" >Россия2</label></li>
+                                <li><label class="select-box__option" for="12" >Россия3</label></li>
+                                <li><label class="select-box__option" for="13" >Россия4</label></li>
+                                <li><label class="select-box__option" for="14" >Россия5</label></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="block-select block-select_half">
+                        <p class="block-select__text">Окно оплаты</p>
+                        <div class="select-box">
+                            <div class="select-box__current" tabindex="4">
+                                <div class="select-box__value"><input class="select-box__input" type="radio" id="15" value="16" name="Ben3" checked="checked">
+                                    <p class="select-box__input-text select-box__text-first">Выбрать1</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="16" value="17" name="Ben3" checked="checked">
+                                    <p class="select-box__input-text">Выбрать2</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="17" value="18" name="Ben3" checked="checked">
+                                    <p class="select-box__input-text">Выбрать3</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="18" value="19" name="Ben3" checked="checked">
+                                    <p class="select-box__input-text">Выбрать4</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="19" value="20" name="Ben3" checked="checked">
+                                    <p class="select-box__input-text">Выбрать5</p>
+                                </div>
+                                <img class="select-box__icon" src="img/Shape-icon.svg" alt="Arrow Icon" aria-hidden="true">
+                            </div>
+                            <ul class="select-box__list">
+                                <li><label class="select-box__option select-box__text-first" for="15">Выбрать1</label></li>
+                                <li><label class="select-box__option" for="16" >Выбрать2</label></li>
+                                <li><label class="select-box__option" for="17" >Выбрать3</label></li>
+                                <li><label class="select-box__option" for="18" >Выбрать4</label></li>
+                                <li><label class="select-box__option" for="19">Выбрать5</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="slider-container">
+            <span class="caption-text text-center d-block">Метод оплаты</span>
+            <div class="slider-bank pt-0">
+                <div class="slider-bank__box active">
+                    <img src="img/Promsvyazbank.png" alt="">
+                    <p class="slider-bank__box-text">ПСБ</p>
+                </div>
+                <div class="slider-bank__box selected">
+                    <img src="img/Sberbank.png" alt="">
+                    <p class="slider-bank__box-text">Сбербанк</p>
+                </div>
+                <div class="slider-bank__box">
+                    <img src="img/Raiffeisen.png" alt="">
+                    <p class="slider-bank__box-text">Raiffeisen</p>
+                </div>
+                <div class="slider-bank__box">
+                    <img src="img/Alfa-Bank.png" alt="">
+                    <p class="slider-bank__box-text">Альфа-банк</p>
+                </div>
+                <div class="slider-bank__box">
+                    <img src="img/PrivatBank.png" alt="">
+                    <p class="slider-bank__box-text">PrivatBank</p>
+                </div>
+                <div class="indent-block"></div>
+            </div>
+        </div>
+        <div class="inner setting-content">
+            <div class="block-form">
+                <p class="caption-text text-center">Цена</p>
+                <form action="" class="form-button">
+                    <div class="form-group ">
+                        <input type="text" class="form-control" value="0,00">
+                        <a class="button-bank" href="#">RUB</a>
+                    </div>
+                </form>
+            </div>
+            <div class="d-flex">
+                <div class="block-form block-form_column block-form_left">
+                    <p class="caption-text text-center">Минимум</p>
+                    <form action="" class="form-button">
+                        <div class="form-group">
+                            <input type="text" class="form-control" value="0,00">
+                            <a class="button-bank" href="#">RUB</a>
+                        </div>
+                    </form>
+                </div>
 
+                <div class="block-form block-form_column block-form_right">
+                    <p class="caption-text text-center">Максимум</p>
+                    <form action="" class="form-button">
+                        <div class="form-group">
+                            <input type="text" class="form-control" value="0,00">
+                            <a class="button-bank" href="#">RUB</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <a href="#content-1" class="accordion-toggle">Дополнительные параметры</a>
+                <div class="accordion-content" id="content-1">
+                    Контент... <br>
+                    Контент... <br>
+                    Контент... <br>
+                    Контент... <br>
+                    Контент... <br>
+                    Контент... <br>
+                    Контент... <br>
+                    Контент... <br>
+                    Контент...
+                </div>
+            </div>
+            <div class="message-box message-box_conditions px-0">
+                <form action="">
+                    <div class="message-box__container">
+                        <div data-text="Условия объявления" contenteditable="true" class="message-box__textarea"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
+    <div class="inner my-3">
+        <button type="button" class="btn btn-success w-100 ">Далее</button>
+    </div>
 </main>
 
 <div>
