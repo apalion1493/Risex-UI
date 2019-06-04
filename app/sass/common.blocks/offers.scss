@@ -1,4 +1,5 @@
 @import "../library.blocks/bootstrap/bootstrap-reboot";
+@import "variable-color";
 
 .offers-item {
   width: 135px;
@@ -10,7 +11,7 @@
 
 .offers-item.active {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.244339);
-  background: $colorButton;
+  background: $color-button;
 
   * {
     color: #ffffff;
@@ -183,14 +184,14 @@ input[type='checkbox'] {
 }
 
 .wrap-collabsible.active {
-  background: $colorButton;
+  background: $color-button;
 
   * {
     color: #ffffff;
   }
 
   .lbl-toggle {
-    background: $colorButton;
+    background: $color-button;
   }
 
   .collapsible-content .content-inner p {

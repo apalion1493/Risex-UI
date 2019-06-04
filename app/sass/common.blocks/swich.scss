@@ -1,4 +1,5 @@
 @import "../library.blocks/bootstrap/bootstrap-reboot";
+@import "variable-color";
 
 .switch-btn {
   display: inline-block;
@@ -30,7 +31,7 @@
 }
 
 .switch-on {
-  background: $colorButtonHover;
+  background: $color-buttonHover;
 }
 
 .switch-on::after {

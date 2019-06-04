@@ -1,4 +1,5 @@
 @import "../library.blocks/bootstrap/bootstrap-reboot";
+@import "variable-color";
 
 .transactions-beginning-page__first-slide-mainInfo {
   display: flex;
@@ -133,7 +134,7 @@
 }
 
 .transactions-beginning-page__section-informer {
-  background: $colorButton;
+  background: $color-button;
   display: flex;
   align-items: center;
   justify-content: center;

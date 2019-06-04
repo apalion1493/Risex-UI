@@ -1,4 +1,5 @@
 @import "../library.blocks/bootstrap/bootstrap-reboot";
+@import "variable-color";
 
 .registration {
   padding: 88px 30px 63px;
@@ -66,7 +67,7 @@
 .registration-container .slick-dots .slick-active button:before {
   width: 9px;
   height: 9px;
-  background: $colorButton;
+  background: $color-button;
   top: -2px;
 }
 
@@ -173,7 +174,7 @@
     position: absolute;
   }
   input[type=radio]:checked + label:before {
-    background: $colorButton;
+    background: $color-button;
     transform: scale(1.9,1.9);
   }
 }

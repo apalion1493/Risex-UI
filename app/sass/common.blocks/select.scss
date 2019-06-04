@@ -1,4 +1,5 @@
 @import "../library.blocks/bootstrap/bootstrap-reboot";
+@import "variable-color";
 
 .select-box {
   position: relative;
@@ -216,4 +217,16 @@
 
 .form-group.form-group_mb10 {
   margin-bottom: 10px;
+}
+
+.block-select.block-select_half {
+  width: 100% !important;
+}
+
+.block-select_half-right {
+  margin-right: 10px;
+}
+
+.block-select_half-left {
+  margin-left: 10px;
 }

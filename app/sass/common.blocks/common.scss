@@ -1,11 +1,5 @@
 @import "../library.blocks/bootstrap/bootstrap-reboot";
-
-$colorButton: #00CC4F;
-$colorButtonHover: #3BB069;
-$hoverMenu: #E3F4EA;
-$bgSelector: #F7F8FA;
-$hoverBgSelector: #EAECF0;
-$bgAddInfo: #070707;
+@import "variable-color";
 
 * {
   font-family: 'Roboto', sans-serif;
