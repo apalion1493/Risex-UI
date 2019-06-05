@@ -158,20 +158,30 @@
     align-items: center;
     border: 1px solid #BCDFC8;
     border-radius: 5px;
-    padding-left: 10px;
     height: 42px;
+    overflow: hidden;
+    position: relative;
+
+    //&:focus, &:active {
+    //  background: #ffffff;
+    //  border-color: #13C64F;
+    //}
 
     input {
       background: #EEF2F0;
       border: none;
       box-shadow: none;
       outline: none;
+      border-radius: 0;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      margin-right: 5px;
 
-      &:focus, &:active {
+      &:focus {
         border: none;
         box-shadow: none;
         outline: none;
-        background: #EEF2F0;
+        background: #ffffff;
       }
     }
 
@@ -298,6 +308,8 @@
   padding-left: 5px;
   color: #353535;
   height: 100%;
+  position: absolute;
+  right: 0;
 }
 
 .form-button .form-group__sale {
@@ -360,6 +372,23 @@
   font-size: 16px;
   line-height: 19px;
   color: #353535;
+}
+
+.transactions-beginning-page__first-slide-mainInfo-desc {
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.form-group_pr39 {
+  padding-right: 39px;
+}
+
+.form-group_pr120 {
+  padding-right: 120px;
 }
 
 @media (max-width: 355px) {

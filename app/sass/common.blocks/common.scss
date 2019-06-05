@@ -71,6 +71,15 @@ body {
 .btn-risex {
   width: 100%;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.170658);
+  max-width: 320px;
+}
+
+.btn-risex_center {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .wrapper_green-border {
@@ -210,6 +219,10 @@ body {
   }
 }
 
+.block-form_column {
+  width: 100%;
+}
+
 .block-form_left {
   margin-right: 10px;
 }
@@ -233,4 +246,57 @@ body {
 
 .select-box_mt10 {
   margin-top: 10px;
+}
+
+.double-column > div:first-child {
+  margin-right: 10px;
+}
+
+.double-column > div:last-child {
+  margin-left: 10px;
+}
+
+
+.btn-main-color {
+  background: $color-button;
+
+  &:hover {
+    background: $color-buttonHover;
+  }
+}
+
+.btn-main-color-hover {
+  background: $color-buttonHover;
+}
+
+.main-hover-block {
+  background: $hoverMenu;
+}
+
+.border-active {
+  border: 1px solid #13C64F;
+}
+
+.color-selector {
+  background: $bgSelector;
+
+  &:hover {
+    background: $hoverBgSelector;
+  }
+}
+
+.color-selector-hover {
+  background: $hoverBgSelector;
+}
+
+.color-add-info {
+  background: $bgInfo;
+}
+
+.bg-inactive-button {
+  background: $inactiveButton;
+}
+
+.secondary-btn {
+  border: $secondaryButtonBorder;
 }

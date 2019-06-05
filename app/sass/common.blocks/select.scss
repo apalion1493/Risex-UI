@@ -9,18 +9,6 @@
   font-size: 14px;
   color: #000000;
 
-  @media (min-width: 768px) {
-    width: 70%;
-  }
-
-  @media (min-width: 992px) {
-    width: 50%;
-  }
-
-  @media (min-width: 1200px) {
-    width: 30%;
-  }
-
   &__current {
     position: relative;
     cursor: pointer;
@@ -132,7 +120,7 @@
 }
 
 .block-select {
-  width: 46.5%;
+  width: 100%;
 }
 
 .block-select__text {
@@ -223,10 +211,10 @@
   width: 100% !important;
 }
 
-.block-select_half-right {
-  margin-right: 10px;
-}
-
-.block-select_half-left {
-  margin-left: 10px;
-}
+//.block-select_half-right {
+//  margin-right: 10px;
+//}
+//
+//.block-select_half-left {
+//  margin-left: 10px;
+//}

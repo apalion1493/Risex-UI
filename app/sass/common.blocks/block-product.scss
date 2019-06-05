@@ -83,23 +83,26 @@
     background: #fff;
     min-height: 42px;
     padding: 13px 8px 15px 9px;
-    margin-left: 16px;
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
     outline: none;
 
-    &:hover {
-      background: $color-buttonHover;
+    &:hover, &:active {
+      background: $color-button;
       color: #fff;
       outline: none;
     }
   }
 
+  &__btn-ml {
+    margin-left: 16px;
+  }
+
 }
 
 @media (max-width: 350px) {
-  .block-product__btn {
+  .block-product__btn-ml{
     margin-left: 5px;
   }
 

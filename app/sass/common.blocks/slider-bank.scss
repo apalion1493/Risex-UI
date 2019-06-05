@@ -45,8 +45,10 @@
   }
 }
 
-.slider-bank__box.selected {
+.slider-bank__box.selected,
+.slider-bank__box:hover {
   border: 1px solid #00C441;
+  transition: 0.3s;
 }
 
 .slider-bank__box-text {

@@ -44,4 +44,20 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// document.getElementsByName("test1")[0].onfocus = function() {myFunction1(this)};
+// document.getElementsByName("test1")[0].onblur = function() {myFunction2(this)};
+// document.getElementsByName("test2")[0].onfocus = function() {myFunction1(this)};
+// document.getElementsByName("test2")[0].onblur = function() {myFunction2(this)};
 
+// document.getElementsByClassName("test-class").onfocus = function() {myFunction1(this)};
+// document.getElementsByClassName("test-class").onblur = function() {myFunction2(this)};
+
+
+
+function myFunction1(t) {
+    t.parentElement.style.borderColor = "#13C64F";
+}
+
+function myFunction2(t) {
+    t.parentElement.style.borderColor = "#DEEFE4";
+}
