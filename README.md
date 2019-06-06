@@ -38,3 +38,5 @@ https://apalion1493.github.io/Risex-UI/app/sale-pro3.html
 https://apalion1493.github.io/Risex-UI/app/sales-setting.html
 
 https://apalion1493.github.io/Risex-UI/app/transaction-parameters.html
+
+https://apalion1493.github.io/Risex-UI/app/main.html
