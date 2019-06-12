@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     let menuActive       = document.querySelector('.header-burger');
     let menuClose        = document.querySelector('.right-menu__close');
@@ -11,37 +12,36 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.right-menu').classList.remove('active');
         document.querySelector('.milk-shadow').classList.remove('active');
     };
-
-
-
-    document.addEventListener('click', function (event) {
-
-        if (!event.target.classList.contains('accordion-toggle')) return;
-
-        var content = document.querySelector(event.target.hash);
-        if (!content) return;
-
-        event.preventDefault();
-
-        if (content.classList.contains('active')) {
-            content.classList.remove('active');
-            return;
-        }
-
-        var accordions = document.querySelectorAll('.accordion-content.active');
-        for (var i = 0; i < accordions.length; i++) {
-            accordions[i].classList.remove('active');
-        }
-
-        content.classList.toggle('active');
-
-    });
-
-    let el = document.querySelector('.accordion-toggle');
-    el.onclick = function() {
-        el.classList.toggle('active');
-    };
 });
+
+document.addEventListener('click', function (event) {
+
+    if (!event.target.classList.contains('accordion-toggle')) return;
+
+    var content = document.querySelector(event.target.hash);
+    if (!content) return;
+
+    event.preventDefault();
+
+    if (content.classList.contains('active')) {
+        content.classList.remove('active');
+        return;
+    }
+
+    var accordions = document.querySelectorAll('.accordion-content.active');
+    for (var i = 0; i < accordions.length; i++) {
+        accordions[i].classList.remove('active');
+    }
+
+    content.classList.toggle('active');
+
+});
+
+let el = document.querySelector('.accordion-toggle');
+el.onclick = function() {
+    el.classList.toggle('active');
+};
+console.log('123');
 
 
 // document.getElementsByName("test1")[0].onfocus = function() {myFunction1(this)};
