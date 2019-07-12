@@ -29,207 +29,276 @@
 </header>
 
 <main class="main">
-    <ul class="tabs triple-tabs wrapper_green-border">
-        <li class="tabs-li">
-            <input id="tab1" type="radio" name="tabs" checked>
-            <label for="tab1" class="label-tab" title="">
-                <span class="tab-span tab-span_left">Профиль</span>
-            </label>
-            <section class="tab-content">
-                <div class="wrapper wrapper_green-border">
-                    <div class="inner">
-                        <div class="profile-main">
-                            <img src="img/Avatar.png" alt="">
-                            <span class="profile-main__name">ChangeMeNow</span>
-                            <p class="profile-main__review">отзывы (<span class="profile-main__review-green">2</span>/<span class="profile-main__review-red">0</span>)</p>
-                            <p class="profile-main__text">о себе</p>
-                            <form class="profile-main__form" action="">
-                                <textarea class="profile-main__form-textarea" rows="1"  name="text" placeholder="Напишите о себе несколько слов"></textarea>
-                            </form>
-                        </div>
-
+    <div class="tab tab_triple wrapper_green-border">
+        <span class="tablinks active" onclick="openCity(event, 'tab1')">Профиль</span>
+        <span class="tablinks " onclick="openCity(event, 'tab2')">Уведомления</span>
+        <span class="tablinks " onclick="openCity(event, 'tab3')">Безопасность</span>
+    </div>
+    <div id="tab1" class="tabcontent" style="display: block">
+        <section class="tab-content">
+            <div class="wrapper wrapper_green-border">
+                <div class="inner">
+                    <div class="profile-main">
+                        <img src="img/Avatar.png" alt="">
+                        <span class="profile-main__name">ChangeMeNow</span>
+                        <p class="profile-main__review">отзывы (<span class="profile-main__review-green">2</span>/<span class="profile-main__review-red">0</span>)</p>
+                        <p class="profile-main__text">о себе</p>
+                        <form class="profile-main__form" action="">
+                            <textarea class="profile-main__form-textarea" rows="1"  name="text" placeholder="Напишите о себе несколько слов"></textarea>
+                        </form>
                     </div>
+
                 </div>
-                <div class="wrapper wrapper_green-border">
-                    <div class="inner">
-                        <div class="transaction-turnover transaction-turnover_indents">
-                            <h3>Оборот транзакций</h3>
+            </div>
+            <div class="wrapper wrapper_green-border">
+                <div class="inner">
+                    <div class="transaction-turnover transaction-turnover_indents">
+                        <h3>Оборот транзакций</h3>
+                        <div>
+                            <div class="transaction-turnover__container">
+                                <div class="transaction-turnover__block">
+                                    <div class="transaction-turnover__block-name transaction-turnover__block-name_btc">BTC</div>
+                                    <div class="transaction-turnover__block-number">0.27050742</div>
+                                </div>
+
+                                <div class="transaction-turnover__block">
+                                    <div class="transaction-turnover__block-name transaction-turnover__block-name_usd">USD</div>
+                                    <div class="transaction-turnover__block-number">$1000</div>
+                                </div>
+
+                                <div class="transaction-turnover__block">
+                                    <div class="transaction-turnover__block-name transaction-turnover__block-name_total">Итого</div>
+                                    <div class="transaction-turnover__block-number">$ 1429</div>
+                                </div>
+                            </div>
                             <div>
-                                <div class="transaction-turnover__container">
-                                    <div class="transaction-turnover__block">
-                                        <div class="transaction-turnover__block-name transaction-turnover__block-name_btc">BTC</div>
-                                        <div class="transaction-turnover__block-number">0.27050742</div>
-                                    </div>
-
-                                    <div class="transaction-turnover__block">
-                                        <div class="transaction-turnover__block-name transaction-turnover__block-name_usd">USD</div>
-                                        <div class="transaction-turnover__block-number">$1000</div>
-                                    </div>
-
-                                    <div class="transaction-turnover__block">
-                                        <div class="transaction-turnover__block-name transaction-turnover__block-name_total">Итого</div>
-                                        <div class="transaction-turnover__block-number">$ 1429</div>
-                                    </div>
+                                <div class="progress">
+                                    <div class="progress-bar transaction-turnover_color-first" role="progressbar" style="width: 89%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar transaction-turnover_color-second" role="progressbar" style="width: 11%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <div>
-                                    <div class="progress">
-                                        <div class="progress-bar transaction-turnover_color-first" role="progressbar" style="width: 89%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                                        <div class="progress-bar transaction-turnover_color-second" role="progressbar" style="width: 11%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="wrapper wrapper_green-border">
+                <div class="inner">
+                    <div class="section-info">
+                        <a class="section-info__link" href="authorization-history.html">История авторизаций <span class="section-info__arrow"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper wrapper_green-border">
+                <div class="inner">
+                    <div class="section-info">
+                        <a class="section-info__link" href="safety-logs.html">Логи безопасности <span class="section-info__arrow"></span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="tab2" class="tabcontent" style="display: none">
+        <section class="tab-content">
+            <div class="security-container">
+                <div class="inner">
+                    <div class="section-security">
+                        <div class="section-security__wrap">
+                            <div class="section-security__wrap-firstRow">
+                                <h3>WEB уведомления</h3>
+                                <!--<div class="switch-btn"></div>-->
+                                <label class="switch section-security__switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="section-security__wrap-secondRow">
+                                <p>Уведомления приходят при личных <br> сообщениях и обновлениях в сделке.</p>
+                            </div>
+                            <div class="section-security__wrap-threeRow">
+                                <span>Личные сообщения</span>
+                                <!--<div class="switch-btn"></div>-->
+                                <label class="switch section-security__switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="section-security__wrap-threeRow">
+                                <span>Сделки</span>
+                                <!--<div class="switch-btn"></div>-->
+                                <label class="switch section-security__switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-security">
+                        <div class="section-security__wrap">
+                            <div class="section-security__wrap-firstRow">
+                                <h3>Telegram уведомления</h3>
+                                <!--<div class="switch-btn"></div>-->
+                                <label class="switch section-security__switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="section-security__wrap-secondRow">
+                                <p>Уведомления приходят при создании новой <br> сделки и изменении почты, а также о новых
+                                    <br> сообщениях, если вы оффлайн.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-security">
+                        <div class="section-security__wrap">
+                            <div class="section-security__wrap-firstRow">
+                                <h3>Email уведомления</h3>
+                                <!--<div class="switch-btn"></div>-->
+                                <label class="switch section-security__switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="section-security__wrap-secondRow">
+                                <p>Уведомления приходят при создании чата, <br> новой сделки и изменении почты.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="tab3" class="tabcontent" style="display: none">
+        <section class="tab-content">
+            <div class="security-container">
+                <div class="inner">
+                    <div class="section-security">
+                        <div class="section-security__wrapper">
+                            <div class="section-security__block section-security__blockLeft">
+                                <h3>E-mail</h3>
+                                <p class="section-security__block-text">Email: aleksey.stepikin@gmail.com</p>
+                            </div>
+                            <div class="section-security__block section-security__blockRight">
+                                <a href="#">Изменить</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-security">
+                        <div class="section-security__wrapper">
+                            <div class="section-security__block section-security__blockLeft">
+                                <h3>Пароль</h3>
+                                <p class="section-security__block-text">***************</p>
+                            </div>
+                            <div class="section-security__block section-security__blockRight">
+                                <a href="#">Изменить</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-security">
+                        <div class="section-security__wrap">
+                            <div class="section-security__wrap-firstRow">
+                                <h3>Двухфакторная аунтефикация</h3>
+                                <!--<div class="switch-btn"></div>-->
+                                <label class="switch section-security__switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="section-security__wrap-secondRow">
+                                <p>Уровень защиты: слабый.<br>
+                                    Для усиленя защиты рекоммендуем включить двухфакторную аунтефикацию</p>
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="wrapper wrapper_green-border">
-                    <div class="inner">
-                        <div class="section-info">
-                            <a class="section-info__link" href="authorization-history.html">История авторизаций <span class="section-info__arrow"></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrapper wrapper_green-border">
-                    <div class="inner">
-                        <div class="section-info">
-                            <a class="section-info__link" href="safety-logs.html">Логи безопасности <span class="section-info__arrow"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </li>
-        <li class="tabs-li">
-            <input id="tab2" type="radio" name="tabs">
-            <label for="tab2" class="label-tab" title="">
-                <span class="tab-span tab-span_right">Уведомления</span>
-            </label>
-            <section class="tab-content">
-                <div class="security-container">
-                    <div class="inner">
-                        <div class="section-security">
-                            <div class="section-security__wrap">
-                                <div class="section-security__wrap-firstRow">
-                                    <h3>WEB уведомления</h3>
-                                    <!--<div class="switch-btn"></div>-->
-                                    <label class="switch section-security__switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </div>
-                                <div class="section-security__wrap-secondRow">
-                                    <p>Уведомления приходят при личных <br> сообщениях и обновлениях в сделке.</p>
-                                </div>
-                                <div class="section-security__wrap-threeRow">
-                                    <span>Личные сообщения</span>
-                                    <!--<div class="switch-btn"></div>-->
-                                    <label class="switch section-security__switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </div>
-                                <div class="section-security__wrap-threeRow">
-                                    <span>Сделки</span>
-                                    <!--<div class="switch-btn"></div>-->
-                                    <label class="switch section-security__switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="section-security">
-                            <div class="section-security__wrap">
-                                <div class="section-security__wrap-firstRow">
-                                    <h3>Telegram уведомления</h3>
-                                    <!--<div class="switch-btn"></div>-->
-                                    <label class="switch section-security__switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </div>
-                                <div class="section-security__wrap-secondRow">
-                                    <p>Уведомления приходят при создании новой <br> сделки и изменении почты, а также о новых
-                                        <br> сообщениях, если вы оффлайн.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="section-security">
-                            <div class="section-security__wrap">
-                                <div class="section-security__wrap-firstRow">
-                                    <h3>Email уведомления</h3>
-                                    <!--<div class="switch-btn"></div>-->
-                                    <label class="switch section-security__switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </div>
-                                <div class="section-security__wrap-secondRow">
-                                    <p>Уведомления приходят при создании чата, <br> новой сделки и изменении почты.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-        </li>
-        <li class="tabs-li">
-            <input id="tab3" type="radio" name="tabs">
-            <label for="tab3" class="label-tab" title="">
-                <span class="tab-span tab-span_right">Безопасность</span>
-            </label>
-            <section class="tab-content">
-                <div class="security-container">
-                    <div class="inner">
-                        <div class="section-security">
-                            <div class="section-security__wrapper">
-                                <div class="section-security__block section-security__blockLeft">
-                                    <h3>E-mail</h3>
-                                    <p class="section-security__block-text">Email: aleksey.stepikin@gmail.com</p>
-                                </div>
-                                <div class="section-security__block section-security__blockRight">
-                                    <a href="#">Изменить</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="section-security">
-                            <div class="section-security__wrapper">
-                                <div class="section-security__block section-security__blockLeft">
-                                    <h3>Пароль</h3>
-                                    <p class="section-security__block-text">***************</p>
-                                </div>
-                                <div class="section-security__block section-security__blockRight">
-                                    <a href="#">Изменить</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="section-security">
-                            <div class="section-security__wrap">
-                                <div class="section-security__wrap-firstRow">
-                                    <h3>Двухфакторная аунтефикация</h3>
-                                    <!--<div class="switch-btn"></div>-->
-                                    <label class="switch section-security__switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </div>
-                                <div class="section-security__wrap-secondRow">
-                                    <p>Уровень защиты: слабый.<br>
-                                        Для усиленя защиты рекоммендуем включить двухфакторную аунтефикацию</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </li>
-    </ul>
+            </div>
+        </section>
+    </div>
 </main>
+
+<footer class="footer">
+    <a href="#" class="footer-logo"></a>
+    <p class="footer-caption">Sell & Buy cryptocurrency safely!</p>
+    <div class="footer-social">
+        <a href="#" class="footer-social__icon footer-social__icon-yb"></a>
+        <a href="#" class="footer-social__icon footer-social__icon-vk"></a>
+        <a href="#" class="footer-social__icon footer-social__icon-tw"></a>
+        <a href="#" class="footer-social__icon footer-social__icon-tg"></a>
+        <a href="#" class="footer-social__icon footer-social__icon-bc"></a>
+    </div>
+    <div class="footer-container">
+        <div class="footer-block">
+            <p class="footer-block__title">ИНФОРМАЦИЯ</p>
+            <ul class="footer-block__list">
+                <li class="footer-block__item">
+                    <a href="#">О проекте</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Наша команда</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Академия RiseX</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Информация о комиссиях</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">API</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-block">
+            <p class="footer-block__title">ПОДДЕРЖКА</p>
+            <ul class="footer-block__list">
+                <li class="footer-block__item">
+                    <a href="#">Саппорт портал</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Общий Telegram чат</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">F.A.Q</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-block">
+            <p class="footer-block__title">Сотрудничество</p>
+            <ul class="footer-block__list">
+                <li class="footer-block__item">
+                    <a href="#">Партнерская программа</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Сотрудничество</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">API</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="footer-block">
+            <p class="footer-block__title">Блог</p>
+            <ul class="footer-block__list">
+                <li class="footer-block__item">
+                    <a href="#">Golos.io</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Medium</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <span>&copy; 2019 Risex.net All right reserved.</span>
+        <p>Пользовательское соглашение и <br> политика конфиденциальности</p>
+    </div>
+</footer>
 
 <div>
     <div id="test-id" class="right-menu right-menu_position">

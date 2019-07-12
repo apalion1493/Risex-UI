@@ -27,50 +27,44 @@
 </header>
 
 <main class="main transactions-beginning-page">
-    <ul class="tabs wrapper_green-border review-container-tabs">
-        <li class="tabs-li">
-            <input id="tab1" type="radio" name="tabs" checked>
-            <label for="tab1" class="label-tab " title="">
-                <span class="tab-span tab-span_left">Купить BTC</span>
-            </label>
-            <section class="tab-content top-margin bottom-padding">
-                <div class="container review-container  wrapper_green-border">
-                    <header class="review-container__header">
-                        <a href="#">
-                            <span class="review-container__header-arrow"></span>
-                            <span class="review-container__header-text">К покупке</span>
-                        </a>
-                    </header>
-                    <div class="review-container__line"></div>
-                    <div class="review-container__content">
-                        <h4 class="review-container__content-title">Как вы оцените продавца?</h4>
-                        <p class="review-container__content-text">Отрицательный отзыв автоматически заблокирует этого пользователя для вас.</p>
-                        <div class="review-container__content-blocking">
-                            <form class="d-flex flex-column align-items-start" action="">
-                                <div>
-                                    <input class="form-check-input btn-bottomSection__checkbox" type="checkbox" value="" id="review-container-1">
-                                    <label class="form-check-label btn-bottomSection__label" for="review-container-1">Заблокировать с отзывом</label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input btn-bottomSection__checkbox" type="checkbox" value="" id="review-container-2">
-                                    <label class="form-check-label btn-bottomSection__label" for="review-container-2">Заблокировать без отзыва</label>
-                                </div>
-                            </form>
+    <div class="tab wrapper_green-border">
+        <span class="tablinks active" onclick="openCity(event, 'tab1')">Купить BTC</span>
+        <span class="tablinks " onclick="openCity(event, 'tab2')">Продать BTC</span>
+    </div>
+    <div id="tab1" class="tabcontent" style="display: block">
+        <section class="tab-content top-margin bottom-padding">
+            <div class="container review-container  wrapper_green-border">
+                <header class="review-container__header">
+                    <a href="#">
+                        <span class="review-container__header-arrow"></span>
+                        <span class="review-container__header-text">К покупке</span>
+                    </a>
+                </header>
+                <div class="review-container__line"></div>
+                <div class="review-container__content">
+                    <h4 class="review-container__content-title">Как вы оцените продавца?</h4>
+                    <p class="review-container__content-text">Отрицательный отзыв автоматически заблокирует этого пользователя для вас.</p>
+                    <div class="review-container__content-blocking">
+                        <form class="d-flex flex-column align-items-start" action="">
+                            <div>
+                                <input class="form-check-input btn-bottomSection__checkbox" type="checkbox" value="" id="review-container-1">
+                                <label class="form-check-label btn-bottomSection__label" for="review-container-1">Заблокировать с отзывом</label>
+                            </div>
+                            <div>
+                                <input class="form-check-input btn-bottomSection__checkbox" type="checkbox" value="" id="review-container-2">
+                                <label class="form-check-label btn-bottomSection__label" for="review-container-2">Заблокировать без отзыва</label>
+                            </div>
+                        </form>
 
-                        </div>
-                        <p class="review-container__content-text">Можете оставить личную заметку об этом пользователей. Это пригодится в будущем</p>
                     </div>
+                    <p class="review-container__content-text">Можете оставить личную заметку об этом пользователей. Это пригодится в будущем</p>
                 </div>
-            </section>
-        </li>
-        <li class="tabs-li">
-            <input id="tab2" type="radio" name="tabs">
-            <label for="tab2" class="label-tab " title="">
-                <span class="tab-span tab-span_right">Продать BTC</span>
-            </label>
-            <section class="tab-content top-margin"></section>
-        </li>
-    </ul>
+            </div>
+        </section>
+    </div>
+    <div id="tab2" class="tabcontent" style="display: none">
+
+    </div>
     <div class="message-box">
         <form action="">
             <div class="message-box__container">

@@ -28,262 +28,334 @@
 </header>
 
 <main class="main main_bottom-block">
-    <ul class="tabs wrapper_green-border">
-        <li class="tabs-li">
-            <input id="tab1" type="radio" name="tabs" checked>
-            <label for="tab1" class="label-tab" title="">
-                <span class="tab-span tab-span_left">Текущие</span>
-            </label>
-            <section class="tab-content top-margin wrapper_green-border" >
-                <div class="sale-purchase sale-purchase_padding-operation">
-                    <div class="inner">
-                        <div class="wrap-collabsible wrap-collabsible-operation">
-                            <input id="collapsible1-1" class="toggle" type="checkbox">
-                            <label for="collapsible1-1" class="lbl-toggle">
-                                <span class="wrap-collabsible-operation__arrow wrap-collabsible-operation__arrow-success"></span>
-                                <span class="wrap-collabsible-operation__text">
+    <div class="tab wrapper_green-border">
+        <span class="tablinks active" onclick="openCity(event, 'tab1')">Текущие</span>
+        <span class="tablinks " onclick="openCity(event, 'tab2')">Завершенные</span>
+    </div>
+    <div id="tab1" class="tabcontent" style="display: block">
+        <section class="tab-content top-margin wrapper_green-border" >
+            <div class="sale-purchase sale-purchase_padding-operation">
+                <div class="inner">
+                    <div class="wrap-collabsible wrap-collabsible-operation">
+                        <input id="collapsible1-1" class="toggle" type="checkbox">
+                        <label for="collapsible1-1" class="lbl-toggle">
+                            <span class="wrap-collabsible-operation__arrow wrap-collabsible-operation__arrow-success"></span>
+                            <span class="wrap-collabsible-operation__text">
                                 <span class="wrap-collabsible-operation__text-title">покупка</span>
                                 <time class="wrap-collabsible-operation__text-data">13.04.2019 16:49</time>
                             </span>
 
-                            </label>
-                            <div class="collapsible-content">
-                                <div class="content-inner">
-                                    <ul class="wrap-collabsible-operation__list">
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Метод</p>
-                                            <p>QIWI</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Отдано</p>
-                                            <p>5000 RUB</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Получено</p>
-                                            <p>0.01435717 BTC</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Цена</p>
-                                            <p>348 258 RUB</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Статус</p>
-                                            <p>В ожидании</p>
-                                        </li>
-                                    </ul>
-                                    <button type="button" class="btn btn-outline-dark btn-risex btn-risex_center wrap-collabsible-operation__button">К сделке</button>
-                                </div>
+                        </label>
+                        <div class="collapsible-content">
+                            <div class="content-inner">
+                                <ul class="wrap-collabsible-operation__list">
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Метод</p>
+                                        <p>QIWI</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Отдано</p>
+                                        <p>5000 RUB</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Получено</p>
+                                        <p>0.01435717 BTC</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Цена</p>
+                                        <p>348 258 RUB</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Статус</p>
+                                        <p>В ожидании</p>
+                                    </li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-dark btn-risex btn-risex_center wrap-collabsible-operation__button">К сделке</button>
                             </div>
                         </div>
-                        <div class="wrap-collabsible wrap-collabsible-operation">
-                            <input id="collapsible1-2" class="toggle" type="checkbox">
-                            <label for="collapsible1-2" class="lbl-toggle">
-                                <span class="wrap-collabsible-operation__arrow wrap-collabsible-operation__arrow-error"></span>
-                                <span class="wrap-collabsible-operation__text">
+                    </div>
+                    <div class="wrap-collabsible wrap-collabsible-operation">
+                        <input id="collapsible1-2" class="toggle" type="checkbox">
+                        <label for="collapsible1-2" class="lbl-toggle">
+                            <span class="wrap-collabsible-operation__arrow wrap-collabsible-operation__arrow-error"></span>
+                            <span class="wrap-collabsible-operation__text">
                                 <span class="wrap-collabsible-operation__text-title">продажа</span>
                                 <time class="wrap-collabsible-operation__text-data">13.04.2019 16:49</time>
                             </span>
 
-                            </label>
-                            <div class="collapsible-content">
-                                <div class="content-inner">
-                                    <ul class="wrap-collabsible-operation__list">
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Метод</p>
-                                            <p>QIWI</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Отдано</p>
-                                            <p>5000 RUB</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Получено</p>
-                                            <p>0.01435717 BTC</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Цена</p>
-                                            <p>348 258 RUB</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Статус</p>
-                                            <p>В ожидании</p>
-                                        </li>
-                                    </ul>
-                                    <button type="button" class="btn btn-outline-dark btn-risex btn-risex_center wrap-collabsible-operation__button">К сделке</button>
-                                </div>
+                        </label>
+                        <div class="collapsible-content">
+                            <div class="content-inner">
+                                <ul class="wrap-collabsible-operation__list">
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Метод</p>
+                                        <p>QIWI</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Отдано</p>
+                                        <p>5000 RUB</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Получено</p>
+                                        <p>0.01435717 BTC</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Цена</p>
+                                        <p>348 258 RUB</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Статус</p>
+                                        <p>В ожидании</p>
+                                    </li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-dark btn-risex btn-risex_center wrap-collabsible-operation__button">К сделке</button>
                             </div>
                         </div>
-                        <div class="wrap-collabsible wrap-collabsible-operation">
-                            <input id="collapsible1-3" class="toggle" type="checkbox">
-                            <label for="collapsible1-3" class="lbl-toggle">
-                                <span class="wrap-collabsible-operation__arrow wrap-collabsible-operation__arrow-error"></span>
-                                <span class="wrap-collabsible-operation__text">
+                    </div>
+                    <div class="wrap-collabsible wrap-collabsible-operation">
+                        <input id="collapsible1-3" class="toggle" type="checkbox">
+                        <label for="collapsible1-3" class="lbl-toggle">
+                            <span class="wrap-collabsible-operation__arrow wrap-collabsible-operation__arrow-error"></span>
+                            <span class="wrap-collabsible-operation__text">
                                 <span class="wrap-collabsible-operation__text-title">продажа</span>
                                 <time class="wrap-collabsible-operation__text-data">13.04.2019 16:49</time>
                             </span>
 
-                            </label>
-                            <div class="collapsible-content">
-                                <div class="content-inner">
-                                    <ul class="wrap-collabsible-operation__list">
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Метод</p>
-                                            <p>QIWI</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Отдано</p>
-                                            <p>5000 RUB</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Получено</p>
-                                            <p>0.01435717 BTC</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Цена</p>
-                                            <p>348 258 RUB</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Статус</p>
-                                            <p>В ожидании</p>
-                                        </li>
-                                    </ul>
-                                    <button type="button" class="btn btn-outline-dark btn-risex btn-risex_center wrap-collabsible-operation__button">К сделке</button>
-                                </div>
+                        </label>
+                        <div class="collapsible-content">
+                            <div class="content-inner">
+                                <ul class="wrap-collabsible-operation__list">
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Метод</p>
+                                        <p>QIWI</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Отдано</p>
+                                        <p>5000 RUB</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Получено</p>
+                                        <p>0.01435717 BTC</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Цена</p>
+                                        <p>348 258 RUB</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Статус</p>
+                                        <p>В ожидании</p>
+                                    </li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-dark btn-risex btn-risex_center wrap-collabsible-operation__button">К сделке</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </li>
+            </div>
+        </section>
+    </div>
 
-        <li class="tabs-li">
-            <input id="tab2" type="radio" name="tabs">
-            <label for="tab2" class="label-tab" title="">
-                <span class="tab-span tab-span_right">Завершенные</span>
-            </label>
-            <section class="tab-content top-margin wrapper_green-border">
-                <div class="sale-purchase sale-purchase_padding-operation">
-                    <div class="inner">
-                        <div class="wrap-collabsible wrap-collabsible-operation">
-                            <input id="collapsible2-1" class="toggle" type="checkbox">
-                            <label for="collapsible2-1" class="lbl-toggle">
-                                <span class="wrap-collabsible-operation__arrow wrap-collabsible-operation__arrow-success"></span>
-                                <span class="wrap-collabsible-operation__text">
+    <div id="tab2" class="tabcontent" style="display: none">
+        <section class="tab-content top-margin wrapper_green-border">
+            <div class="sale-purchase sale-purchase_padding-operation">
+                <div class="inner">
+                    <div class="wrap-collabsible wrap-collabsible-operation">
+                        <input id="collapsible2-1" class="toggle" type="checkbox">
+                        <label for="collapsible2-1" class="lbl-toggle">
+                            <span class="wrap-collabsible-operation__arrow wrap-collabsible-operation__arrow-success"></span>
+                            <span class="wrap-collabsible-operation__text">
                                 <span class="wrap-collabsible-operation__text-title">покупка</span>
                                 <time class="wrap-collabsible-operation__text-data">13.04.2019 16:49</time>
                             </span>
 
-                            </label>
-                            <div class="collapsible-content">
-                                <div class="content-inner">
-                                    <ul class="wrap-collabsible-operation__list">
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Метод</p>
-                                            <p>QIWI</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Отдано</p>
-                                            <p>5000 RUB</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Получено</p>
-                                            <p>0.01435717 BTC</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Цена</p>
-                                            <p>348 258 RUB</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Статус</p>
-                                            <p>Завершено</p>
-                                        </li>
-                                    </ul>
-                                    <button type="button" class="btn btn-outline-dark btn-risex btn-risex_center wrap-collabsible-operation__button">К сделке</button>
-                                </div>
+                        </label>
+                        <div class="collapsible-content">
+                            <div class="content-inner">
+                                <ul class="wrap-collabsible-operation__list">
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Метод</p>
+                                        <p>QIWI</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Отдано</p>
+                                        <p>5000 RUB</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Получено</p>
+                                        <p>0.01435717 BTC</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Цена</p>
+                                        <p>348 258 RUB</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Статус</p>
+                                        <p>Завершено</p>
+                                    </li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-dark btn-risex btn-risex_center wrap-collabsible-operation__button">К сделке</button>
                             </div>
                         </div>
-                        <div class="wrap-collabsible wrap-collabsible-operation">
-                            <input id="collapsible2-2" class="toggle" type="checkbox">
-                            <label for="collapsible2-2" class="lbl-toggle">
-                                <span class="wrap-collabsible-operation__arrow wrap-collabsible-operation__arrow-error"></span>
-                                <span class="wrap-collabsible-operation__text">
+                    </div>
+                    <div class="wrap-collabsible wrap-collabsible-operation">
+                        <input id="collapsible2-2" class="toggle" type="checkbox">
+                        <label for="collapsible2-2" class="lbl-toggle">
+                            <span class="wrap-collabsible-operation__arrow wrap-collabsible-operation__arrow-error"></span>
+                            <span class="wrap-collabsible-operation__text">
                                 <span class="wrap-collabsible-operation__text-title">продажа</span>
                                 <time class="wrap-collabsible-operation__text-data">13.04.2019 16:49</time>
                             </span>
 
-                            </label>
-                            <div class="collapsible-content">
-                                <div class="content-inner">
-                                    <ul class="wrap-collabsible-operation__list">
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Метод</p>
-                                            <p>QIWI</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Отдано</p>
-                                            <p>5000 RUB</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Получено</p>
-                                            <p>0.01435717 BTC</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Цена</p>
-                                            <p>348 258 RUB</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Статус</p>
-                                            <p>Завершено</p>
-                                        </li>
-                                    </ul>
-                                    <button type="button" class="btn btn-outline-dark btn-risex btn-risex_center wrap-collabsible-operation__button">К сделке</button>
-                                </div>
+                        </label>
+                        <div class="collapsible-content">
+                            <div class="content-inner">
+                                <ul class="wrap-collabsible-operation__list">
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Метод</p>
+                                        <p>QIWI</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Отдано</p>
+                                        <p>5000 RUB</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Получено</p>
+                                        <p>0.01435717 BTC</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Цена</p>
+                                        <p>348 258 RUB</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Статус</p>
+                                        <p>Завершено</p>
+                                    </li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-dark btn-risex btn-risex_center wrap-collabsible-operation__button">К сделке</button>
                             </div>
                         </div>
-                        <div class="wrap-collabsible wrap-collabsible-operation">
-                            <input id="collapsible2-3" class="toggle" type="checkbox">
-                            <label for="collapsible2-3" class="lbl-toggle">
-                                <span class="wrap-collabsible-operation__arrow wrap-collabsible-operation__arrow-error"></span>
-                                <span class="wrap-collabsible-operation__text">
+                    </div>
+                    <div class="wrap-collabsible wrap-collabsible-operation">
+                        <input id="collapsible2-3" class="toggle" type="checkbox">
+                        <label for="collapsible2-3" class="lbl-toggle">
+                            <span class="wrap-collabsible-operation__arrow wrap-collabsible-operation__arrow-error"></span>
+                            <span class="wrap-collabsible-operation__text">
                                 <span class="wrap-collabsible-operation__text-title">продажа</span>
                                 <time class="wrap-collabsible-operation__text-data">13.04.2019 16:49</time>
                             </span>
 
-                            </label>
-                            <div class="collapsible-content">
-                                <div class="content-inner">
-                                    <ul class="wrap-collabsible-operation__list">
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Метод</p>
-                                            <p>QIWI</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Отдано</p>
-                                            <p>5000 RUB</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Получено</p>
-                                            <p>0.01435717 BTC</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Цена</p>
-                                            <p>348 258 RUB</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Статус</p>
-                                            <p>Завершено</p>
-                                        </li>
-                                    </ul>
-                                    <button type="button" class="btn btn-outline-dark btn-risex btn-risex_center wrap-collabsible-operation__button">К сделке</button>
-                                </div>
+                        </label>
+                        <div class="collapsible-content">
+                            <div class="content-inner">
+                                <ul class="wrap-collabsible-operation__list">
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Метод</p>
+                                        <p>QIWI</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Отдано</p>
+                                        <p>5000 RUB</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Получено</p>
+                                        <p>0.01435717 BTC</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Цена</p>
+                                        <p>348 258 RUB</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Статус</p>
+                                        <p>Завершено</p>
+                                    </li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-dark btn-risex btn-risex_center wrap-collabsible-operation__button">К сделке</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </li>
-    </ul>
+            </div>
+        </section>
+    </div>
 </main>
+
+<footer class="footer">
+    <a href="#" class="footer-logo"></a>
+    <p class="footer-caption">Sell & Buy cryptocurrency safely!</p>
+    <div class="footer-social">
+        <a href="#" class="footer-social__icon footer-social__icon-yb"></a>
+        <a href="#" class="footer-social__icon footer-social__icon-vk"></a>
+        <a href="#" class="footer-social__icon footer-social__icon-tw"></a>
+        <a href="#" class="footer-social__icon footer-social__icon-tg"></a>
+        <a href="#" class="footer-social__icon footer-social__icon-bc"></a>
+    </div>
+    <div class="footer-container">
+        <div class="footer-block">
+            <p class="footer-block__title">ИНФОРМАЦИЯ</p>
+            <ul class="footer-block__list">
+                <li class="footer-block__item">
+                    <a href="#">О проекте</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Наша команда</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Академия RiseX</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Информация о комиссиях</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">API</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-block">
+            <p class="footer-block__title">ПОДДЕРЖКА</p>
+            <ul class="footer-block__list">
+                <li class="footer-block__item">
+                    <a href="#">Саппорт портал</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Общий Telegram чат</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">F.A.Q</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-block">
+            <p class="footer-block__title">Сотрудничество</p>
+            <ul class="footer-block__list">
+                <li class="footer-block__item">
+                    <a href="#">Партнерская программа</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Сотрудничество</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">API</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="footer-block">
+            <p class="footer-block__title">Блог</p>
+            <ul class="footer-block__list">
+                <li class="footer-block__item">
+                    <a href="#">Golos.io</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Medium</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <span>&copy; 2019 Risex.net All right reserved.</span>
+        <p>Пользовательское соглашение и <br> политика конфиденциальности</p>
+    </div>
+</footer>
 
 <div>
     <div id="test-id" class="right-menu right-menu_position">

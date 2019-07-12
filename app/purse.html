@@ -27,193 +27,260 @@
 </header>
 
 <main class="main">
-    <ul class="tabs triple-tabs wrapper_green-border">
-        <li class="tabs-li">
-            <input id="tab1" type="radio" name="tabs" checked>
-            <label for="tab1" class="label-tab" title="">
-                <span class="tab-span tab-span_left">Счет</span>
-            </label>
-            <section class="tab-content top-margin">
-                <div class="your-balance">
-                    <div class="your-balance__first">
-                        <span class="your-balance__first-btn your-balance__first-plus">+</span>
-                        <div class="your-balance__first-content">
-                            <h4 class="your-balance__first-content-title">Ваш баланс</h4>
-                            <span class="your-balance__first-content-balance">$ 266,<span class="your-balance__first-content-thinFont">11</span></span>
-                            <span class="your-balance__first-content-bank">BTC 0,05</span>
-                        </div>
-                        <span class="your-balance__first-btn your-balance__first-minus">-</span>
+    <div class="tab tab_triple wrapper_green-border">
+        <span class="tablinks active" onclick="openCity(event, 'tab1')">Счет</span>
+        <span class="tablinks " onclick="openCity(event, 'tab2')">Пополнить</span>
+        <span class="tablinks " onclick="openCity(event, 'tab3')">Вывести</span>
+    </div>
+    <div id="tab1" class="tabcontent" style="display: block">
+        <section class="tab-content top-margin">
+            <div class="your-balance">
+                <div class="your-balance__first">
+                    <span class="your-balance__first-btn your-balance__first-plus">+</span>
+                    <div class="your-balance__first-content">
+                        <h4 class="your-balance__first-content-title">Ваш баланс</h4>
+                        <span class="your-balance__first-content-balance">$ 266,<span class="your-balance__first-content-thinFont">11</span></span>
+                        <span class="your-balance__first-content-bank">BTC 0,05</span>
                     </div>
-                    <div class="your-balance__line"></div>
-                    <div class="your-balance__second">
-                        <div class="your-balance__second-column">
-                            <span class="your-balance__second-column-title">К использованию</span>
-                            <span class="your-balance__second-column-number">0,05 BTC</span>
-                        </div>
-
-                        <div class="your-balance__second-column">
-                            <span class="your-balance__second-column-title">В эскроу</span>
-                            <span class="your-balance__second-column-number">0,00 BTC</span>
-                        </div>
-                    </div>
-
+                    <span class="your-balance__first-btn your-balance__first-minus">-</span>
                 </div>
-                <div class="wallet-history wrapper_green-border">
-                    <h3 class="text-center wallet-history__title">История кошелька</h3>
-                    <div class="wrap-collabsible-container">
-                        <div class="wrap-collabsible wrap-collabsible-walletHistory">
-                            <input id="collapsible3-1" class="toggle" type="checkbox">
-                            <label for="collapsible3-1" class="lbl-toggle">
+                <div class="your-balance__line"></div>
+                <div class="your-balance__second">
+                    <div class="your-balance__second-column">
+                        <span class="your-balance__second-column-title">К использованию</span>
+                        <span class="your-balance__second-column-number">0,05 BTC</span>
+                    </div>
+
+                    <div class="your-balance__second-column">
+                        <span class="your-balance__second-column-title">В эскроу</span>
+                        <span class="your-balance__second-column-number">0,00 BTC</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="wallet-history wrapper_green-border">
+                <h3 class="text-center wallet-history__title">История кошелька</h3>
+                <div class="wrap-collabsible-container">
+                    <div class="wrap-collabsible wrap-collabsible-walletHistory">
+                        <input id="collapsible3-1" class="toggle" type="checkbox">
+                        <label for="collapsible3-1" class="lbl-toggle">
                             <span class="wrap-collabsible-operation__text">
                                 <time class="wrap-collabsible-operation__text-data">13.04.2019 16:49</time>
                                 <span class="wrap-collabsible-operation__text-title">трансфер</span>
                             </span>
 
-                            </label>
-                            <div class="collapsible-content">
-                                <div class="content-inner">
-                                    <ul class="wrap-collabsible-operation__list">
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Сумма</p>
-                                            <p>-0.19465562</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Баланс было</p>
-                                            <p>0.19475562</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Баланс стало</p>
-                                            <p>0.0001348</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Описание:</p>
-                                        </li>
-                                    </ul>
-                                </div>
+                        </label>
+                        <div class="collapsible-content">
+                            <div class="content-inner">
+                                <ul class="wrap-collabsible-operation__list">
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Сумма</p>
+                                        <p>-0.19465562</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Баланс было</p>
+                                        <p>0.19475562</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Баланс стало</p>
+                                        <p>0.0001348</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Описание:</p>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="wrap-collabsible wrap-collabsible-walletHistory">
-                            <input id="collapsible3-2" class="toggle" type="checkbox">
-                            <label for="collapsible3-2" class="lbl-toggle">
+                    </div>
+                    <div class="wrap-collabsible wrap-collabsible-walletHistory">
+                        <input id="collapsible3-2" class="toggle" type="checkbox">
+                        <label for="collapsible3-2" class="lbl-toggle">
                             <span class="wrap-collabsible-operation__text">
                                 <time class="wrap-collabsible-operation__text-data">13.04.2019 16:49</time>
                                 <span class="wrap-collabsible-operation__text-title">вывод</span>
                             </span>
 
-                            </label>
-                            <div class="collapsible-content">
-                                <div class="content-inner">
-                                    <ul class="wrap-collabsible-operation__list">
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Сумма</p>
-                                            <p>-0.19465562</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Баланс было</p>
-                                            <p>0.19475562</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Баланс стало</p>
-                                            <p>0.0001348</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Описание:</p>
-                                        </li>
-                                    </ul>
-                                </div>
+                        </label>
+                        <div class="collapsible-content">
+                            <div class="content-inner">
+                                <ul class="wrap-collabsible-operation__list">
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Сумма</p>
+                                        <p>-0.19465562</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Баланс было</p>
+                                        <p>0.19475562</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Баланс стало</p>
+                                        <p>0.0001348</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Описание:</p>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="wrap-collabsible wrap-collabsible-walletHistory">
-                            <input id="collapsible3-3" class="toggle" type="checkbox">
-                            <label for="collapsible3-3" class="lbl-toggle">
+                    </div>
+                    <div class="wrap-collabsible wrap-collabsible-walletHistory">
+                        <input id="collapsible3-3" class="toggle" type="checkbox">
+                        <label for="collapsible3-3" class="lbl-toggle">
                             <span class="wrap-collabsible-operation__text">
                                 <time class="wrap-collabsible-operation__text-data">13.04.2019 16:49</time>
                                 <span class="wrap-collabsible-operation__text-title">вывод</span>
                             </span>
 
-                            </label>
-                            <div class="collapsible-content">
-                                <div class="content-inner">
-                                    <ul class="wrap-collabsible-operation__list">
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Сумма</p>
-                                            <p>-0.19465562</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Баланс было</p>
-                                            <p>0.19475562</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Баланс стало</p>
-                                            <p>0.0001348</p>
-                                        </li>
-                                        <li class="wrap-collabsible-operation__item">
-                                            <p>Описание:</p>
-                                        </li>
-                                    </ul>
-                                    <p class="wrap-collabsible-operation__blockchain-text">Вывод средств через блокчейн на кошелёк
-                                        <br> 3DNsMPAGDUwPGWK4fGYK7jSAxAqE8vGTku</p>
-                                </div>
+                        </label>
+                        <div class="collapsible-content">
+                            <div class="content-inner">
+                                <ul class="wrap-collabsible-operation__list">
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Сумма</p>
+                                        <p>-0.19465562</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Баланс было</p>
+                                        <p>0.19475562</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Баланс стало</p>
+                                        <p>0.0001348</p>
+                                    </li>
+                                    <li class="wrap-collabsible-operation__item">
+                                        <p>Описание:</p>
+                                    </li>
+                                </ul>
+                                <p class="wrap-collabsible-operation__blockchain-text">Вывод средств через блокчейн на кошелёк
+                                    <br> 3DNsMPAGDUwPGWK4fGYK7jSAxAqE8vGTku</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </li>
-
-        <li class="tabs-li">
-            <input id="tab2" type="radio" name="tabs">
-            <label for="tab2" class="label-tab" title="">
-                <span class="tab-span tab-span_right">Пополнить</span>
-            </label>
-            <section class="tab-content top-margin">
-                <div class="address-btc wrapper_green-border">
-                    <h3 class="address-btc__title">Введите адрес пополнения BTC</h3>
-                    <p class="address-btc__desc-text">Отправьте BTC на адрес кошелька приведенного ниже. Депозит будет начислен на соответствующий кошелек.</p>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" value="3PPcukL21p4KjgeuPsMUdT3re4UHHEGHyn" onfocus="myFunction1(this)" onblur="myFunction2(this)">
+            </div>
+        </section>
+    </div>
+    <div id="tab2" class="tabcontent" style="display: none">
+        <section class="tab-content top-margin">
+            <div class="address-btc wrapper_green-border">
+                <h3 class="address-btc__title">Введите адрес пополнения BTC</h3>
+                <p class="address-btc__desc-text">Отправьте BTC на адрес кошелька приведенного ниже. Депозит будет начислен на соответствующий кошелек.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" value="3PPcukL21p4KjgeuPsMUdT3re4UHHEGHyn" onfocus="myFunction1(this)" onblur="myFunction2(this)">
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-success btn-risex btn-risex_center">Скопировать</button>
+                    </div>
+                </form>
+                <p class="address-btc__text text-center">или QR-код:</p>
+                <img class="address-btc__img-qr" src="img/code-img.jpg" alt="">
+                <ul class="address-btc__list">
+                    <li>Минимальная разрешенная сумма для ввода и вывода - 0.0002 btc</li>
+                    <li>Постоянная комиссия на ввод и вывод - 0.0001 btc</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <div id="tab3" class="tabcontent" style="display: none">
+        <section class="tab-content top-margin">
+            <div class="withdrawal-btc wrapper_green-border">
+                <h3>Введите адрес для вывода BTC</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control withdrawal-btc__first-form" value="3PPcukL21p4KjgeuPsMUdT3re4UHHEGHyn" onfocus="myFunction1(this)" onblur="myFunction2(this)">
+                        <div class="withdrawal-btc__color">
+                            <input type="text" class="form-control" value="0,05">
+                            <a href="#">вывести все</a>
                         </div>
-                        <div class="form-group">
-                            <button type="button" class="btn btn-success btn-risex btn-risex_center">Скопировать</button>
-                        </div>
-                    </form>
-                    <p class="address-btc__text text-center">или QR-код:</p>
-                    <img class="address-btc__img-qr" src="img/code-img.jpg" alt="">
-                    <ul class="address-btc__list">
-                        <li>Минимальная разрешенная сумма для ввода и вывода - 0.0002 btc</li>
-                        <li>Постоянная комиссия на ввод и вывод - 0.0001 btc</li>
-                    </ul>
-                </div>
-            </section>
-        </li>
-
-        <li class="tabs-li">
-            <input id="tab3" type="radio" name="tabs">
-            <label for="tab3" class="label-tab" title="">
-                <span class="tab-span tab-span_right">Вывести</span>
-            </label>
-            <section class="tab-content top-margin">
-                <div class="withdrawal-btc wrapper_green-border">
-                    <h3>Введите адрес для вывода BTC</h3>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control withdrawal-btc__first-form" value="3PPcukL21p4KjgeuPsMUdT3re4UHHEGHyn" onfocus="myFunction1(this)" onblur="myFunction2(this)">
-                            <div class="withdrawal-btc__color">
-                                <input type="text" class="form-control" value="0,05">
-                                <a href="#">вывести все</a>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <button type="button" class="btn btn-success btn-risex btn-risex_center">Запросить вывод</button>
-                        </div>
-                    </form>
-                    <p class="withdrawal-btc__text">комиссия 0,00001 BTC</p>
-                </div>
-            </section>
-        </li>
-    </ul>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-success btn-risex btn-risex_center">Запросить вывод</button>
+                    </div>
+                </form>
+                <p class="withdrawal-btc__text">комиссия 0,00001 BTC</p>
+            </div>
+        </section>
+    </div>
 </main>
+
+<footer class="footer">
+    <a href="#" class="footer-logo"></a>
+    <p class="footer-caption">Sell & Buy cryptocurrency safely!</p>
+    <div class="footer-social">
+        <a href="#" class="footer-social__icon footer-social__icon-yb"></a>
+        <a href="#" class="footer-social__icon footer-social__icon-vk"></a>
+        <a href="#" class="footer-social__icon footer-social__icon-tw"></a>
+        <a href="#" class="footer-social__icon footer-social__icon-tg"></a>
+        <a href="#" class="footer-social__icon footer-social__icon-bc"></a>
+    </div>
+    <div class="footer-container">
+        <div class="footer-block">
+            <p class="footer-block__title">ИНФОРМАЦИЯ</p>
+            <ul class="footer-block__list">
+                <li class="footer-block__item">
+                    <a href="#">О проекте</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Наша команда</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Академия RiseX</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Информация о комиссиях</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">API</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-block">
+            <p class="footer-block__title">ПОДДЕРЖКА</p>
+            <ul class="footer-block__list">
+                <li class="footer-block__item">
+                    <a href="#">Саппорт портал</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Общий Telegram чат</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">F.A.Q</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-block">
+            <p class="footer-block__title">Сотрудничество</p>
+            <ul class="footer-block__list">
+                <li class="footer-block__item">
+                    <a href="#">Партнерская программа</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Сотрудничество</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">API</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="footer-block">
+            <p class="footer-block__title">Блог</p>
+            <ul class="footer-block__list">
+                <li class="footer-block__item">
+                    <a href="#">Golos.io</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Medium</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <span>&copy; 2019 Risex.net All right reserved.</span>
+        <p>Пользовательское соглашение и <br> политика конфиденциальности</p>
+    </div>
+</footer>
 
 <div>
     <div id="test-id" class="right-menu right-menu_position">

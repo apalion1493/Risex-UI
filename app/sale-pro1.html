@@ -27,301 +27,374 @@
 </header>
 
 <main class="main transactions-beginning-page">
-    <ul class="tabs wrapper_green-border">
-        <li class="tabs-li">
-            <input id="tab1" type="radio" name="tabs" checked>
-            <label for="tab1" class="label-tab " title="">
-                <span class="tab-span tab-span_left">Купить BTC</span>
-            </label>
-            <section class="tab-content top-margin" >
-                <div class="transactions-beginning-page__section transactions-beginning-page__first-slide wrapper_green-border">
-                    <div class="transactions-beginning-page__first-slide-mainInfo">
-                        <h2 class="transactions-beginning-page__first-slide-mainInfo-title">Покупка №1</h2>
-                        <span class="transactions-beginning-page__first-slide-mainInfo-percent">0,05 BTC</span>
-                        <p class="transactions-beginning-page__first-slide-mainInfo-sum">за 17341,72 РУБ</p>
-                        <a class="transactions-beginning-page__first-slide-mainInfo-link" href="#ModalWindow">Условия покупки</a>
-                    </div>
-                    <div class="transactions-beginning-page__first-slide-bottomBlock">
-                        <div class="transactions-beginning-page__first-slide-bottomBlock-column">
-                            <p>Комиссия</p>
-                            <span>0,003 BTC</span>
-                        </div>
+    <div class="tab wrapper_green-border">
+        <span class="tablinks active" onclick="openCity(event, 'tab1')">Купить BTC</span>
+        <span class="tablinks " onclick="openCity(event, 'tab2')">Продать BTC</span>
+    </div>
 
-                        <div class="transactions-beginning-page__first-slide-bottomBlock-column">
-                            <p>Получаете</p>
-                            <span>0,05 BTC</span>
+    <div id="tab1" class="tabcontent" style="display: block">
+        <section class="tab-content top-margin" >
+            <div class="transactions-beginning-page__section transactions-beginning-page__first-slide wrapper_green-border">
+                <div class="transactions-beginning-page__first-slide-mainInfo">
+                    <h2 class="transactions-beginning-page__first-slide-mainInfo-title">Покупка №1</h2>
+                    <span class="transactions-beginning-page__first-slide-mainInfo-percent">0,05 BTC</span>
+                    <p class="transactions-beginning-page__first-slide-mainInfo-sum">за 17341,72 РУБ</p>
+                    <a class="transactions-beginning-page__first-slide-mainInfo-link" href="#ModalWindow">Условия покупки</a>
+                </div>
+                <div class="transactions-beginning-page__first-slide-bottomBlock">
+                    <div class="transactions-beginning-page__first-slide-bottomBlock-column">
+                        <p>Комиссия</p>
+                        <span>0,003 BTC</span>
+                    </div>
+
+                    <div class="transactions-beginning-page__first-slide-bottomBlock-column">
+                        <p>Получаете</p>
+                        <span>0,05 BTC</span>
+                    </div>
+                </div>
+            </div>
+            <div class="transactions-beginning-page__section transactions-beginning-page__second-slide wrapper_green-border transactions-beginning-page__section-active">
+                <div class=" transactions-beginning-page__section-firstRow">
+                    <span class="transactions-beginning-page__number-block">1</span>
+                    <h3 class="transactions-beginning-page__section-title">Отправьте деньги продавцу</h3>
+                    <a class="transactions-beginning-page__section-iconComment" href="#">
+                        <span class="transactions-beginning-page__section-informer">3</span>
+                    </a>
+                </div>
+                <div class=" transactions-beginning-page__section-content">
+                    <p class="transactions-beginning-page__section-content-text">Отправьте 17341,72 рублей на карту Сбербанка и нажмите кнопку «Подтвердить»</p>
+                    <form action="" class="form-button">
+                        <div class="form-group">
+                            <!--<input type="text" class="form-control" value="4276 3324 8743 2212">-->
+                            <span class="text-box-span">4276 3324 8743 2212</span>
+                            <a href="#">Скопировать</a>
+                        </div>
+                        <button type="button" class="btn btn-success btn-risex btn-risex_center">Подтвердить оплату</button>
+                        <button type="button" class="btn btn-outline-secondary w-100">Оплата подтверждена</button>
+                    </form>
+                </div>
+            </div>
+            <div class="transactions-beginning-page__section transactions-beginning-page__second-slide wrapper_green-border ">
+                <div class=" transactions-beginning-page__section-firstRow">
+                    <span class="transactions-beginning-page__number-block">1</span>
+                    <h3 class="transactions-beginning-page__section-title">Отправьте деньги продавцу</h3>
+                    <a class="transactions-beginning-page__section-iconComment" href="#">
+                        <span class="transactions-beginning-page__section-informer">3</span>
+                    </a>
+                </div>
+                <div class=" transactions-beginning-page__section-content">
+                    <p class="transactions-beginning-page__section-content-text">Отправьте 17341,72 рублей на карту Сбербанка и нажмите кнопку «Подтвердить»</p>
+                    <form action="" class="form-button">
+                        <div class="form-group">
+                            <!--<input type="text" class="form-control" value="4276 3324 8743 2212">-->
+                            <span class="text-box-span">4276 3324 8743 2212</span>
+                            <a href="#">Скопировать</a>
+                        </div>
+                        <button type="button" class="btn btn-success w-100">Подтвердить оплату</button>
+                        <button type="button" class="btn btn-outline-secondary mt-3 btn-risex btn-risex_center">Оплата подтверждена</button>
+                    </form>
+                </div>
+            </div>
+            <div class="transactions-beginning-page__section transactions-beginning-page__three-slide wrapper_green-border transactions-beginning-page__section-active">
+                <div class="transactions-beginning-page__section-firstRow">
+                    <span class="transactions-beginning-page__number-block">2</span>
+                    <h3 class="transactions-beginning-page__section-title">Укажите свои реквизиты</h3>
+                </div>
+                <div class="transactions-beginning-page__section-content">
+                    <p class="transactions-beginning-page__section-content-text">Так продавец поймет, что это поступившая сумма на его счет именно от Вас</p>
+                    <form action="" class="form-button">
+                        <div class="form-group">
+                            <input type="text" class="form-control" value="4276 3324 8743 2212" onfocus="myFunction1(this)" onblur="myFunction2(this)">
+                            <a href="#">Сохранить</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="transactions-beginning-page__section transactions-beginning-page__three-slide wrapper_green-border ">
+                <div class="transactions-beginning-page__section-firstRow">
+                    <span class="transactions-beginning-page__number-block">2</span>
+                    <h3 class="transactions-beginning-page__section-title">Укажите свои реквизиты</h3>
+                </div>
+                <div class="transactions-beginning-page__section-content">
+                    <p class="transactions-beginning-page__section-content-text">Так продавец поймет, что это поступившая сумма на его счет именно от Вас</p>
+                    <form action="" class="form-button">
+                        <div class="form-group">
+                            <input type="text" class="form-control" value="4276 3324 8743 2212" onfocus="myFunction1(this)" onblur="myFunction2(this)">
+                            <a href="#">Сохранить</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="transactions-beginning-page__section transactions-beginning-page__fourth-slide wrapper_green-border transactions-beginning-page__section-active">
+                <div class="transactions-beginning-page__section-firstRow">
+                    <span class="transactions-beginning-page__number-block">3</span>
+                    <h3 class="transactions-beginning-page__section-title">Поступление денег на счет</h3>
+                </div>
+                <div class="transactions-beginning-page__section-content">
+                    <p class="transactions-beginning-page__section-content-text">Ожидайте поступления денег на ваш счет в RiseX. Обычно это происходит не более 5 минут</p>
+                    <div class="transactions-beginning-page__section-arrival">
+                        <div class="transactions-beginning-page__section-arrival-text">
+                            <p>поступление</p>
+                        </div>
+                        <div class="transactions-beginning-page__section-arrival-status">
+                            <span class="transactions-beginning-page__section-arrival-status-icon transactions-beginning-page__section-arrival-status-iconSuccess"></span>
+                            <div class="transactions-beginning-page__section-arrival-status-text">получено</div>
                         </div>
                     </div>
                 </div>
-                <div class="transactions-beginning-page__section transactions-beginning-page__second-slide wrapper_green-border transactions-beginning-page__section-active">
-                    <div class=" transactions-beginning-page__section-firstRow">
-                        <span class="transactions-beginning-page__number-block">1</span>
-                        <h3 class="transactions-beginning-page__section-title">Отправьте деньги продавцу</h3>
-                        <a class="transactions-beginning-page__section-iconComment" href="#">
-                            <span class="transactions-beginning-page__section-informer">3</span>
-                        </a>
+            </div>
+            <div class="transactions-beginning-page__section transactions-beginning-page__fourth-slide wrapper_green-border">
+                <div class="transactions-beginning-page__section-firstRow">
+                    <span class="transactions-beginning-page__number-block">3</span>
+                    <h3 class="transactions-beginning-page__section-title">Поступление денег на счет</h3>
+                </div>
+                <div class="transactions-beginning-page__section-content">
+                    <p class="transactions-beginning-page__section-content-text">Ожидайте поступления денег на ваш счет в RiseX. Обычно это происходит не более 5 минут</p>
+                    <div class="transactions-beginning-page__section-arrival">
+                        <div class="transactions-beginning-page__section-arrival-text">
+                            <p>поступление</p>
+                        </div>
+                        <div class="transactions-beginning-page__section-arrival-status">
+                            <span class="transactions-beginning-page__section-arrival-status-icon"></span>
+                            <div class="transactions-beginning-page__section-arrival-status-text">в ожидании</div>
+                        </div>
                     </div>
-                    <div class=" transactions-beginning-page__section-content">
-                        <p class="transactions-beginning-page__section-content-text">Отправьте 17341,72 рублей на карту Сбербанка и нажмите кнопку «Подтвердить»</p>
-                        <form action="" class="form-button">
-                            <div class="form-group">
-                                <!--<input type="text" class="form-control" value="4276 3324 8743 2212">-->
-                                <span class="text-box-span">4276 3324 8743 2212</span>
-                                <a href="#">Скопировать</a>
-                            </div>
-                            <button type="button" class="btn btn-success btn-risex btn-risex_center">Подтвердить оплату</button>
-                            <button type="button" class="btn btn-outline-secondary w-100">Оплата подтверждена</button>
+                </div>
+            </div>
+            <div class="transactions-beginning-page__btn-block">
+                <button type="button" class="btn btn-outline-danger btn-risex btn-risex_center">Отменить покупку</button>
+                <button type="button" class="btn btn-outline-dark btn-risex btn-risex_center mt-3">Оспорить покупку</button>
+                <button type="button" class="btn btn-success btn-risex btn-risex_center mt-3">Оценить продавца</button>
+            </div>
+        </section>
+    </div>
+    <div id="tab2" class="tabcontent" style="display: none">
+        <section class="tab-content top-margin">
+            <div class="slider-container slider-container_top-margin">
+                <span class="caption-text text-center d-block">Криптовалюта</span>
+                <div class="slider-bank pt-0">
+                    <div class="slider-bank__box active">
+                        <img src="img/Promsvyazbank.png" alt="">
+                        <p class="slider-bank__box-text">Биткоин</p>
+                    </div>
+                    <div class="slider-bank__box selected">
+                        <img src="img/litecoin-icon.png" alt="">
+                        <p class="slider-bank__box-text">Litecoin</p>
+                    </div>
+                    <div class="slider-bank__box">
+                        <img src="img/Ethereum-icon.png" alt="">
+                        <p class="slider-bank__box-text">Ethereum</p>
+                    </div>
+                    <div class="slider-bank__box">
+                        <img src="img/Dashcoin-icon.png" alt="">
+                        <p class="slider-bank__box-text">Dashcoin</p>
+                    </div>
+                    <div class="indent-block"></div>
+                </div>
+            </div>
+            <div class="slider-container">
+                <span class="caption-text text-center d-block">Способ получения</span>
+                <div class="slider-bank pt-0">
+                    <div class="slider-bank__box active">
+                        <img src="img/Promsvyazbank.png" alt="">
+                        <p class="slider-bank__box-text">ПСБ</p>
+                    </div>
+                    <div class="slider-bank__box selected">
+                        <img src="img/Sberbank.png" alt="">
+                        <p class="slider-bank__box-text">Сбербанк</p>
+                    </div>
+                    <div class="slider-bank__box">
+                        <img src="img/Raiffeisen.png" alt="">
+                        <p class="slider-bank__box-text">Raiffeisen</p>
+                    </div>
+                    <div class="slider-bank__box">
+                        <img src="img/Alfa-Bank.png" alt="">
+                        <p class="slider-bank__box-text">Альфа-банк</p>
+                    </div>
+                    <div class="slider-bank__box">
+                        <img src="img/PrivatBank.png" alt="">
+                        <p class="slider-bank__box-text">PrivatBank</p>
+                    </div>
+                    <div class="indent-block"></div>
+                </div>
+            </div>
+            <span class="caption-text text-center d-block mb-2">введите сумму покупки</span>
+            <div class="converter inner converter_mb">
+                <div class="converter__left-column">
+                    <div class="converter__left-column-first converter__left-column-row">
+                        <p class="converter__left-column-text">получаете</p>
+                        <form class="converter__left-column-form converter__left-column-form-recipient" action="">
+                            <input type="text" value="0,05">
                         </form>
                     </div>
-                </div>
-                <div class="transactions-beginning-page__section transactions-beginning-page__second-slide wrapper_green-border ">
-                    <div class=" transactions-beginning-page__section-firstRow">
-                        <span class="transactions-beginning-page__number-block">1</span>
-                        <h3 class="transactions-beginning-page__section-title">Отправьте деньги продавцу</h3>
-                        <a class="transactions-beginning-page__section-iconComment" href="#">
-                            <span class="transactions-beginning-page__section-informer">3</span>
-                        </a>
-                    </div>
-                    <div class=" transactions-beginning-page__section-content">
-                        <p class="transactions-beginning-page__section-content-text">Отправьте 17341,72 рублей на карту Сбербанка и нажмите кнопку «Подтвердить»</p>
-                        <form action="" class="form-button">
-                            <div class="form-group">
-                                <!--<input type="text" class="form-control" value="4276 3324 8743 2212">-->
-                                <span class="text-box-span">4276 3324 8743 2212</span>
-                                <a href="#">Скопировать</a>
-                            </div>
-                            <button type="button" class="btn btn-success w-100">Подтвердить оплату</button>
-                            <button type="button" class="btn btn-outline-secondary mt-3 btn-risex btn-risex_center">Оплата подтверждена</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="transactions-beginning-page__section transactions-beginning-page__three-slide wrapper_green-border transactions-beginning-page__section-active">
-                    <div class="transactions-beginning-page__section-firstRow">
-                        <span class="transactions-beginning-page__number-block">2</span>
-                        <h3 class="transactions-beginning-page__section-title">Укажите свои реквизиты</h3>
-                    </div>
-                    <div class="transactions-beginning-page__section-content">
-                        <p class="transactions-beginning-page__section-content-text">Так продавец поймет, что это поступившая сумма на его счет именно от Вас</p>
-                        <form action="" class="form-button">
-                            <div class="form-group">
-                                <input type="text" class="form-control" value="4276 3324 8743 2212" onfocus="myFunction1(this)" onblur="myFunction2(this)">
-                                <a href="#">Сохранить</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="transactions-beginning-page__section transactions-beginning-page__three-slide wrapper_green-border ">
-                    <div class="transactions-beginning-page__section-firstRow">
-                        <span class="transactions-beginning-page__number-block">2</span>
-                        <h3 class="transactions-beginning-page__section-title">Укажите свои реквизиты</h3>
-                    </div>
-                    <div class="transactions-beginning-page__section-content">
-                        <p class="transactions-beginning-page__section-content-text">Так продавец поймет, что это поступившая сумма на его счет именно от Вас</p>
-                        <form action="" class="form-button">
-                            <div class="form-group">
-                                <input type="text" class="form-control" value="4276 3324 8743 2212" onfocus="myFunction1(this)" onblur="myFunction2(this)">
-                                <a href="#">Сохранить</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="transactions-beginning-page__section transactions-beginning-page__fourth-slide wrapper_green-border transactions-beginning-page__section-active">
-                    <div class="transactions-beginning-page__section-firstRow">
-                        <span class="transactions-beginning-page__number-block">3</span>
-                        <h3 class="transactions-beginning-page__section-title">Поступление денег на счет</h3>
-                    </div>
-                    <div class="transactions-beginning-page__section-content">
-                        <p class="transactions-beginning-page__section-content-text">Ожидайте поступления денег на ваш счет в RiseX. Обычно это происходит не более 5 минут</p>
-                        <div class="transactions-beginning-page__section-arrival">
-                            <div class="transactions-beginning-page__section-arrival-text">
-                                <p>поступление</p>
-                            </div>
-                            <div class="transactions-beginning-page__section-arrival-status">
-                                <span class="transactions-beginning-page__section-arrival-status-icon transactions-beginning-page__section-arrival-status-iconSuccess"></span>
-                                <div class="transactions-beginning-page__section-arrival-status-text">получено</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="transactions-beginning-page__section transactions-beginning-page__fourth-slide wrapper_green-border">
-                    <div class="transactions-beginning-page__section-firstRow">
-                        <span class="transactions-beginning-page__number-block">3</span>
-                        <h3 class="transactions-beginning-page__section-title">Поступление денег на счет</h3>
-                    </div>
-                    <div class="transactions-beginning-page__section-content">
-                        <p class="transactions-beginning-page__section-content-text">Ожидайте поступления денег на ваш счет в RiseX. Обычно это происходит не более 5 минут</p>
-                        <div class="transactions-beginning-page__section-arrival">
-                            <div class="transactions-beginning-page__section-arrival-text">
-                                <p>поступление</p>
-                            </div>
-                            <div class="transactions-beginning-page__section-arrival-status">
-                                <span class="transactions-beginning-page__section-arrival-status-icon"></span>
-                                <div class="transactions-beginning-page__section-arrival-status-text">в ожидании</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="transactions-beginning-page__btn-block">
-                    <button type="button" class="btn btn-outline-danger btn-risex btn-risex_center">Отменить покупку</button>
-                    <button type="button" class="btn btn-outline-dark btn-risex btn-risex_center mt-3">Оспорить покупку</button>
-                    <button type="button" class="btn btn-success btn-risex btn-risex_center mt-3">Оценить продавца</button>
-                </div>
-            </section>
-        </li>
-        <li class="tabs-li">
-            <input id="tab2" type="radio" name="tabs">
-            <label for="tab2" class="label-tab " title="">
-                <span class="tab-span tab-span_right">Продать BTC</span>
-            </label>
-            <section class="tab-content top-margin">
-                <div class="slider-container slider-container_top-margin">
-                    <span class="caption-text text-center d-block">Криптовалюта</span>
-                    <div class="slider-bank pt-0">
-                        <div class="slider-bank__box active">
-                            <img src="img/Promsvyazbank.png" alt="">
-                            <p class="slider-bank__box-text">Биткоин</p>
-                        </div>
-                        <div class="slider-bank__box selected">
-                            <img src="img/litecoin-icon.png" alt="">
-                            <p class="slider-bank__box-text">Litecoin</p>
-                        </div>
-                        <div class="slider-bank__box">
-                            <img src="img/Ethereum-icon.png" alt="">
-                            <p class="slider-bank__box-text">Ethereum</p>
-                        </div>
-                        <div class="slider-bank__box">
-                            <img src="img/Dashcoin-icon.png" alt="">
-                            <p class="slider-bank__box-text">Dashcoin</p>
-                        </div>
-                        <div class="indent-block"></div>
-                    </div>
-                </div>
-                <div class="slider-container">
-                    <span class="caption-text text-center d-block">Способ получения</span>
-                    <div class="slider-bank pt-0">
-                        <div class="slider-bank__box active">
-                            <img src="img/Promsvyazbank.png" alt="">
-                            <p class="slider-bank__box-text">ПСБ</p>
-                        </div>
-                        <div class="slider-bank__box selected">
-                            <img src="img/Sberbank.png" alt="">
-                            <p class="slider-bank__box-text">Сбербанк</p>
-                        </div>
-                        <div class="slider-bank__box">
-                            <img src="img/Raiffeisen.png" alt="">
-                            <p class="slider-bank__box-text">Raiffeisen</p>
-                        </div>
-                        <div class="slider-bank__box">
-                            <img src="img/Alfa-Bank.png" alt="">
-                            <p class="slider-bank__box-text">Альфа-банк</p>
-                        </div>
-                        <div class="slider-bank__box">
-                            <img src="img/PrivatBank.png" alt="">
-                            <p class="slider-bank__box-text">PrivatBank</p>
-                        </div>
-                        <div class="indent-block"></div>
-                    </div>
-                </div>
-                <span class="caption-text text-center d-block mb-2">введите сумму покупки</span>
-                <div class="converter inner converter_mb">
-                    <div class="converter__left-column">
-                        <div class="converter__left-column-first converter__left-column-row">
-                            <p class="converter__left-column-text">получаете</p>
-                            <form class="converter__left-column-form converter__left-column-form-recipient" action="">
-                                <input type="text" value="0,05">
+                    <div class="converter-line"></div>
+                    <div class="converter__left-column-second converter__left-column-row">
+                        <div>
+                            <p class="converter__left-column-text">оплачиваете</p>
+                            <form class="converter__left-column-form converter__left-column-form-pay" action="">
+                                <input type="text" value="17341,72">
                             </form>
                         </div>
-                        <div class="converter-line"></div>
-                        <div class="converter__left-column-second converter__left-column-row">
-                            <div>
-                                <p class="converter__left-column-text">оплачиваете</p>
-                                <form class="converter__left-column-form converter__left-column-form-pay" action="">
-                                    <input type="text" value="17341,72">
-                                </form>
-                            </div>
-                            <div class="converter__advice">
-                                <p class="converter__advice-text">RiseX советует</p>
-                            </div>
+                        <div class="converter__advice">
+                            <p class="converter__advice-text">RiseX советует</p>
                         </div>
                     </div>
-                    <div class="converter__right-column">
-                        <span class="converter__right-column-text converter__right-column-textGreen">BTC</span>
-                        <div class="converter__right-column-arrows">
-                            <input id="switch-arrows" class="converter__right-column-arrowsCheck" type="checkbox">
-                            <label for="switch-arrows" class="converter__right-column-arrowsIcon"></label>
+                </div>
+                <div class="converter__right-column">
+                    <span class="converter__right-column-text converter__right-column-textGreen">BTC</span>
+                    <div class="converter__right-column-arrows">
+                        <input id="switch-arrows" class="converter__right-column-arrowsCheck" type="checkbox">
+                        <label for="switch-arrows" class="converter__right-column-arrowsIcon"></label>
+                    </div>
+                    <span class="converter__right-column-text">RUB</span>
+                </div>
+            </div>
+            <div class="transactions-beginning-page__section transactions-beginning-page__second-slide wrapper_green-border transactions-beginning-page__section-active">
+                <div class=" transactions-beginning-page__section-firstRow">
+                    <span class="transactions-beginning-page__number-block">1</span>
+                    <h3 class="transactions-beginning-page__section-title">Платежные реквизиты</h3>
+                    <a class="transactions-beginning-page__section-iconComment" href="#">
+                        <span class="transactions-beginning-page__section-informer">3</span>
+                    </a>
+                </div>
+                <div class=" transactions-beginning-page__section-content">
+                    <p class="transactions-beginning-page__section-content-text transactions-beginning-page__section-content-text_black">Введите реквизиты, по которым покупатель отправит деньги (номер карты, телефон или счет)</p>
+                    <form action="" class="form-button">
+                        <div class="form-group form-group__sale form-group_pr120">
+                            <input type="text" class="form-control" value="4276 3324 8743 2212" onfocus="myFunction1(this)" onblur="myFunction2(this)">
+                            <a class="button-bank" href="#"><span class="icon-bank"></span>Сбербанк</a>
                         </div>
-                        <span class="converter__right-column-text">RUB</span>
-                    </div>
+                        <button type="button" class="btn btn-success btn-risex btn-risex_center">Отравить реквизиты</button>
+                        <button type="button" class="btn btn-outline-secondary w-100">Реквизиты отправлены</button>
+                    </form>
                 </div>
-                <div class="transactions-beginning-page__section transactions-beginning-page__second-slide wrapper_green-border transactions-beginning-page__section-active">
-                    <div class=" transactions-beginning-page__section-firstRow">
-                        <span class="transactions-beginning-page__number-block">1</span>
-                        <h3 class="transactions-beginning-page__section-title">Платежные реквизиты</h3>
-                        <a class="transactions-beginning-page__section-iconComment" href="#">
-                            <span class="transactions-beginning-page__section-informer">3</span>
-                        </a>
-                    </div>
-                    <div class=" transactions-beginning-page__section-content">
-                        <p class="transactions-beginning-page__section-content-text transactions-beginning-page__section-content-text_black">Введите реквизиты, по которым покупатель отправит деньги (номер карты, телефон или счет)</p>
-                        <form action="" class="form-button">
-                            <div class="form-group form-group__sale form-group_pr120">
-                                <input type="text" class="form-control" value="4276 3324 8743 2212" onfocus="myFunction1(this)" onblur="myFunction2(this)">
-                                <a class="button-bank" href="#"><span class="icon-bank"></span>Сбербанк</a>
-                            </div>
-                            <button type="button" class="btn btn-success btn-risex btn-risex_center">Отравить реквизиты</button>
-                            <button type="button" class="btn btn-outline-secondary w-100">Реквизиты отправлены</button>
-                        </form>
-                    </div>
+            </div>
+            <div class="transactions-beginning-page__section transactions-beginning-page__second-slide wrapper_green-border ">
+                <div class=" transactions-beginning-page__section-firstRow">
+                    <span class="transactions-beginning-page__number-block">1</span>
+                    <h3 class="transactions-beginning-page__section-title">Платежные реквизиты</h3>
+                    <a class="transactions-beginning-page__section-iconComment" href="#">
+                        <span class="transactions-beginning-page__section-informer">3</span>
+                    </a>
                 </div>
-                <div class="transactions-beginning-page__section transactions-beginning-page__second-slide wrapper_green-border ">
-                    <div class=" transactions-beginning-page__section-firstRow">
-                        <span class="transactions-beginning-page__number-block">1</span>
-                        <h3 class="transactions-beginning-page__section-title">Платежные реквизиты</h3>
-                        <a class="transactions-beginning-page__section-iconComment" href="#">
-                            <span class="transactions-beginning-page__section-informer">3</span>
-                        </a>
-                    </div>
-                    <div class=" transactions-beginning-page__section-content">
-                        <p class="transactions-beginning-page__section-content-text transactions-beginning-page__section-content-text_black">Введите реквизиты, по которым покупатель отправит деньги (номер карты, телефон или счет)</p>
-                        <form action="" class="form-button">
-                            <div class="form-group form-group__sale form-group_pr120">
-                                <input type="text" class="form-control" value="4276 3324 8743 2212" onfocus="myFunction1(this)" onblur="myFunction2(this)">
-                                <a class="button-bank" href="#"><span class="icon-bank"></span>Сбербанк</a>
-                            </div>
-                            <button type="button" class="btn btn-success w-100">Отравить реквизиты</button>
-                            <button type="button" class="btn btn-outline-secondary mt-3 btn-risex btn-risex_center">Реквизиты отправлены</button>
-                        </form>
-                    </div>
+                <div class=" transactions-beginning-page__section-content">
+                    <p class="transactions-beginning-page__section-content-text transactions-beginning-page__section-content-text_black">Введите реквизиты, по которым покупатель отправит деньги (номер карты, телефон или счет)</p>
+                    <form action="" class="form-button">
+                        <div class="form-group form-group__sale form-group_pr120">
+                            <input type="text" class="form-control" value="4276 3324 8743 2212" onfocus="myFunction1(this)" onblur="myFunction2(this)">
+                            <a class="button-bank" href="#"><span class="icon-bank"></span>Сбербанк</a>
+                        </div>
+                        <button type="button" class="btn btn-success w-100">Отравить реквизиты</button>
+                        <button type="button" class="btn btn-outline-secondary mt-3 btn-risex btn-risex_center">Реквизиты отправлены</button>
+                    </form>
                 </div>
-                <div class="transactions-beginning-page__section transactions-beginning-page__three-slide wrapper_green-border transactions-beginning-page__section-active">
-                    <div class="transactions-beginning-page__section-firstRow">
-                        <span class="transactions-beginning-page__number-block">2</span>
-                        <h3 class="transactions-beginning-page__section-title">Укажите свои реквизиты</h3>
-                    </div>
-                    <div class="transactions-beginning-page__section-content">
-                        <p class="transactions-beginning-page__section-content-text">Так продавец поймет, что это поступившая сумма на его счет именно от Вас</p>
-                        <button type="button" class="btn btn-success btn-risex btn-risex_center">Подтвердить оплату</button>
-                        <button type="button" class="btn btn-success btn-risex btn-risex_center mt-3" disabled>Оплата подтверждена</button>
-                        <button type="button" class="btn btn-grey mt-3 ">Подтвердить оплату</button>
-                        <button type="button" class="btn btn-outline-dark mt-3 btn-risex btn-risex_center">Оспорить продажу</button>
-                    </div>
+            </div>
+            <div class="transactions-beginning-page__section transactions-beginning-page__three-slide wrapper_green-border transactions-beginning-page__section-active">
+                <div class="transactions-beginning-page__section-firstRow">
+                    <span class="transactions-beginning-page__number-block">2</span>
+                    <h3 class="transactions-beginning-page__section-title">Укажите свои реквизиты</h3>
                 </div>
-                <div class="transactions-beginning-page__section transactions-beginning-page__three-slide wrapper_green-border ">
-                    <div class="transactions-beginning-page__section-firstRow">
-                        <span class="transactions-beginning-page__number-block">2</span>
-                        <h3 class="transactions-beginning-page__section-title">Подтверждение оплаты</h3>
-                    </div>
-                    <div class="transactions-beginning-page__section-content">
-                        <p class="transactions-beginning-page__section-content-text">Подтвердите оплату, как только получите деньги. Биткойны будут списаны автоматически</p>
-                        <button type="button" class="btn btn-success w-100">Подтвердить оплату</button>
-                        <button type="button" class="btn btn-grey mt-3 btn-risex btn-risex_center">Подтвердить оплату</button>
-                        <button type="button" class="btn btn-outline-dark btn-risex btn-risex_center mt-3">Оспорить продажу</button>
-                    </div>
+                <div class="transactions-beginning-page__section-content">
+                    <p class="transactions-beginning-page__section-content-text">Так продавец поймет, что это поступившая сумма на его счет именно от Вас</p>
+                    <button type="button" class="btn btn-success btn-risex btn-risex_center">Подтвердить оплату</button>
+                    <button type="button" class="btn btn-success btn-risex btn-risex_center mt-3" disabled>Оплата подтверждена</button>
+                    <button type="button" class="btn btn-grey mt-3 ">Подтвердить оплату</button>
+                    <button type="button" class="btn btn-outline-dark mt-3 btn-risex btn-risex_center">Оспорить продажу</button>
                 </div>
-            </section>
-        </li>
-    </ul>
+            </div>
+            <div class="transactions-beginning-page__section transactions-beginning-page__three-slide wrapper_green-border ">
+                <div class="transactions-beginning-page__section-firstRow">
+                    <span class="transactions-beginning-page__number-block">2</span>
+                    <h3 class="transactions-beginning-page__section-title">Подтверждение оплаты</h3>
+                </div>
+                <div class="transactions-beginning-page__section-content">
+                    <p class="transactions-beginning-page__section-content-text">Подтвердите оплату, как только получите деньги. Биткойны будут списаны автоматически</p>
+                    <button type="button" class="btn btn-success w-100">Подтвердить оплату</button>
+                    <button type="button" class="btn btn-grey mt-3 btn-risex btn-risex_center">Подтвердить оплату</button>
+                    <button type="button" class="btn btn-outline-dark btn-risex btn-risex_center mt-3">Оспорить продажу</button>
+                </div>
+            </div>
+        </section>
+    </div>
 </main>
+
+<footer class="footer">
+    <a href="#" class="footer-logo"></a>
+    <p class="footer-caption">Sell & Buy cryptocurrency safely!</p>
+    <div class="footer-social">
+        <a href="#" class="footer-social__icon footer-social__icon-yb"></a>
+        <a href="#" class="footer-social__icon footer-social__icon-vk"></a>
+        <a href="#" class="footer-social__icon footer-social__icon-tw"></a>
+        <a href="#" class="footer-social__icon footer-social__icon-tg"></a>
+        <a href="#" class="footer-social__icon footer-social__icon-bc"></a>
+    </div>
+    <div class="footer-container">
+        <div class="footer-block">
+            <p class="footer-block__title">ИНФОРМАЦИЯ</p>
+            <ul class="footer-block__list">
+                <li class="footer-block__item">
+                    <a href="#">О проекте</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Наша команда</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Академия RiseX</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Информация о комиссиях</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">API</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-block">
+            <p class="footer-block__title">ПОДДЕРЖКА</p>
+            <ul class="footer-block__list">
+                <li class="footer-block__item">
+                    <a href="#">Саппорт портал</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Общий Telegram чат</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">F.A.Q</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-block">
+            <p class="footer-block__title">Сотрудничество</p>
+            <ul class="footer-block__list">
+                <li class="footer-block__item">
+                    <a href="#">Партнерская программа</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Сотрудничество</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">API</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="footer-block">
+            <p class="footer-block__title">Блог</p>
+            <ul class="footer-block__list">
+                <li class="footer-block__item">
+                    <a href="#">Golos.io</a>
+                </li>
+                <li class="footer-block__item">
+                    <a href="#">Medium</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <span>&copy; 2019 Risex.net All right reserved.</span>
+        <p>Пользовательское соглашение и <br> политика конфиденциальности</p>
+    </div>
+</footer>
 
 <div>
     <div id="test-id" class="right-menu right-menu_position">
