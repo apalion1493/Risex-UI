@@ -1,6 +1,33 @@
 @import "../library.blocks/bootstrap/bootstrap-reboot";
 @import "variable-color";
 
+.slider-bank-shadow {
+  width: 100%;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 69%);
+    width: 30px;
+    height: 120px;
+    z-index: 1000;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(left, rgba(255,255,255,0) 0% , rgba(255,255,255,1) 69%);
+    width: 30px;
+    height: 120px;
+    z-index: 1000;
+  }
+}
+
 .slider-bank {
   padding-top: 10px;
   padding-bottom: 10px;
